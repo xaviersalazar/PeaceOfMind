@@ -5,12 +5,9 @@ import {
   Row,
   Col,
   Card,
-  CardImg,
   CardText,
   CardBody,
-  CardTitle,
-  CardSubtitle,
-  Button
+  CardTitle
 } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
