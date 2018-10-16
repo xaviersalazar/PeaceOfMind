@@ -6,7 +6,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
-  background: #fef9fe !important;
+  background: #fffafb !important;
 }
 
 h1,
@@ -15,14 +15,19 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: 900 !important;
+  color: #2ecc71 !important;
+  text-transform: uppercase;
 }
 
 p {
-  font-weight: 300;
+  font-weight: 100 !important;
 }
 
 /* NAVBAR */
+.navbar-toggler {
+  border: none !important;
+}
 
 #navbar {
   position: absolute;
@@ -37,14 +42,26 @@ p {
 }
 
 #navbar .navbar-brand {
-  font-weight: 900;
+  font-weight: 900 !important;
 }
 
 #navbar .nav-link {
-  font-weight: 300;
+  font-weight: 100 !important;
 }
 
 /* HOME */
+.card {
+  margin: 1rem auto;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border: none !important;
+  border-radius: 0 !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-text {
+  font-style: italic;
+}
+
 #home-jumbotron {
   height: 100vh;
   width: 100%;
@@ -56,4 +73,33 @@ p {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* Media Quieries */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .card {
+    margin: 1rem 1rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .card {
+    margin: 1rem 3rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .card {
+    margin: 1rem 5rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .card {
+    margin: 1rem 6rem;
+  }
 }
