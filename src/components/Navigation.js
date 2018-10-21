@@ -12,6 +12,7 @@ import {
   DropdownMenu,
   DropdownItem
 } from "reactstrap";
+import $ from "jquery";
 import { NavLink as RouterNavLink } from "react-router-dom";
 
 export default class Navigation extends Component {
@@ -22,6 +23,23 @@ export default class Navigation extends Component {
       isOpen: false
     };
   }
+
+  componentDidMount = () => {
+    window.addEventListener("scroll", this.handleScroll);
+  };
+
+  componentWillUnmount = () => {
+    window.removeEventListener("scroll", this.handleScroll);
+  };
+
+  handleScroll = () => {
+    if ($(window).scrollTop() >= 30) {
+      $("#navbar").addClass("navbar-scroll");
+    } else {
+      $("#navbar").removeClass("navbar-scroll");
+    }
+  };
+
   toggle = () => {
     this.setState({
       isOpen: !this.state.isOpen
@@ -30,7 +48,7 @@ export default class Navigation extends Component {
   render() {
     return (
       <nav>
-        <Navbar color="light" light expand="md" id="navbar">
+        <Navbar className="fixed-top" light expand="md" id="navbar">
           <NavbarBrand>
             <RouterNavLink to="/">Peace Of Mind</RouterNavLink>
           </NavbarBrand>
