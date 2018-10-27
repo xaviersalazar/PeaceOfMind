@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NavLink, Switch, Route } from "react-router-dom";
-import Home from "./Home";
+import Home from "./home/Home";
 import About from "./About";
 import Contact from "./Contact";
 
