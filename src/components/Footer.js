@@ -9,7 +9,7 @@ import {
   FormText,
   Button
 } from "reactstrap";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const FormInput = styled(Input)`
   && {
@@ -19,6 +19,16 @@ const FormInput = styled(Input)`
     border-radius: 0;
     padding: 1.5rem;
     background: inherit;
+    transition: 0.8s all;
+
+    &:focus {
+      background: inherit;
+      border-top-color: none;
+      border-left-color: none;
+      border-right-color: none;
+      border-bottom-color: #b3ffab;
+      box-shadow: none;
+    }
   }
 `;
 
@@ -36,7 +46,7 @@ const SendButton = styled.button`
   }
 
   &:hover {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: rgba(0, 0, 0, 0.12) 0 3px 13px 1px;
   }
 `;
 
@@ -50,7 +60,7 @@ const TagLine = styled.p`
 export default class Footer extends Component {
   render() {
     return (
-      <Row className="py-5">
+      <Row className="py-5" id="contact">
         <Col xs={12}>
           <h1 className="text-center pb-3">CONTACT US</h1>
         </Col>
@@ -60,8 +70,7 @@ export default class Footer extends Component {
             isn’t always easy!
           </TagLine>
           <p className="mb-0">Our Hours:</p>
-          <p className="p-0 m-0">Monday - Saturday: 8:30AM - 9:00PM</p>
-          <p className="p-0 mt-0">Sunday: By appointment only</p>
+          <p className="p-0">Everyday @ 8:30AM - 9:00PM</p>
           <p className="p-0 m-0">
             <i className="far fa-building" />
             &nbsp;602 N Lower Broadway St Corpus Christi, TX 78401
@@ -77,7 +86,7 @@ export default class Footer extends Component {
             10% discount for all military!
           </p>
         </Col>
-        <Col xs={12} md={6} className="-3">
+        <Col xs={12} md={6} className="p-3">
           <Form>
             <FormGroup className="py-3">
               <FormInput

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import Navigation from "./components/Navigation";
+import { BrowserRouter as Router } from "react-router-dom";
+import Navigation from "./components/nav/Navigation";
 import Main from "./components/Main";
 import styled, { createGlobalStyle } from "styled-components";
+import "./App.css";
 
 const GlobalStyle = createGlobalStyle`
   && {
@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
       margin: 0;
       overflow-x: hidden;
       font-family: 'Montserrat', sans-serif !important;
-      background: #fffafb !important;
+      background: #fff !important;
     }
   
     h1,
@@ -37,11 +37,13 @@ const GlobalStyle = createGlobalStyle`
 class App extends Component {
   render() {
     return (
-      <div>
-        <GlobalStyle />
-        <Navigation />
-        <Main />
-      </div>
+      <Router>
+        <div>
+          <GlobalStyle />
+          <Navigation />
+          <Main />
+        </div>
+      </Router>
     );
   }
 }

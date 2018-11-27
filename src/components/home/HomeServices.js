@@ -3,7 +3,7 @@ import { Container, Row, Col } from "reactstrap";
 import styled from "styled-components";
 
 const ServicesContainer = styled(Container)`
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: rgba(0, 0, 0, 0.12) 0 0 70px 6px;
   border-radius: 15px;
   margin-left: 25px !important;
   margin-right: 25px !important;
@@ -41,7 +41,7 @@ const ServiceButton = styled.a`
   }
 
   &:hover {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: rgba(0, 0, 0, 0.12) 0 3px 13px 1px;
   }
 `;
 
