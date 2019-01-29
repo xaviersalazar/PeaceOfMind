@@ -67,7 +67,7 @@ export default class Footer extends Component {
             &nbsp;602 N Lower Broadway St Corpus Christi, TX 78401
           </p>
           <p className="p-0 mt-0">
-            <i class="fas fa-phone" />
+            <i className="fas fa-phone" />
             &nbsp;361-737-7813
           </p>
           <p>

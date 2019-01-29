@@ -103,7 +103,7 @@ export default class About extends Component {
             </p>
           </Col>
         </Row>
-        <ColoredRow odd className="px-3">
+        <ColoredRow odd={true} className="px-3">
           <Col xs={12}>
             <h1 className="text-center pb-3">Why a Massage?</h1>
           </Col>
