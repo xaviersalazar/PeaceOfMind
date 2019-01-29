@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Col } from "reactstrap";
 import styled from "styled-components";
 
 const BesameLogo = styled.img`
@@ -14,12 +14,6 @@ const BesameLogo = styled.img`
   @media (min-width: 992px) {
     width: 15%;
   }
-`;
-
-const ColoredRow = styled(Row)`
-  background: ${props => (props.odd ? "#f3eff5" : "#fff")};
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 `;
 
 export default class AboutBesame extends Component {

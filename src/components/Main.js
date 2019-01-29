@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./home/Home";
 import About from "./about/About";
 import AboutBesame from "./besame/AboutBesame";
+import BesameLipstick from "./besame/BesameLipstick";
 import BesameEyes from "./besame/BesameEyes";
 import BesameFace from "./besame/BesameFace";
 import AddOns from "./services/AddOns";
@@ -22,6 +23,7 @@ export default class Main extends Component {
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/besame/about" component={AboutBesame} />
+        <Route path="/besame/lipstick" component={BesameLipstick} />
         <Route path="/besame/eyes" component={BesameEyes} />
         <Route path="/besame/face" component={BesameFace} />
         <Route path="/services/addons" component={AddOns} />
