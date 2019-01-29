@@ -215,6 +215,54 @@ export default class About extends Component {
                 </p>
               </Col>
             </Row>
+            <Row>
+              <Col xs={12} md={6} className="p-3">
+                <h4 className="text-center">Skin &amp; related structures</h4>
+                <p className="text-center p-0 m-0">
+                  <FontAwesomeIcon icon={faPlus} style={{ paddingRight: 5 }} />
+                  Increases Skin Temperature
+                </p>
+                <p className="text-center p-0 m-0">
+                  <FontAwesomeIcon icon={faPlus} style={{ paddingRight: 5 }} />
+                  Improves Skin Condition
+                </p>
+                <p className="text-center p-0 m-0">
+                  <FontAwesomeIcon icon={faPlus} style={{ paddingRight: 5 }} />
+                  Improves Skin Pathologies
+                </p>
+                <p className="text-center p-0 m-0">
+                  <FontAwesomeIcon icon={faPlus} style={{ paddingRight: 5 }} />
+                  Reduces Superficial Skin Formation
+                </p>
+                <p className="text-center p-0 m-0">
+                  <FontAwesomeIcon icon={faPlus} style={{ paddingRight: 5 }} />
+                  Stimulates Sebaceous Glands
+                </p>
+              </Col>
+              <Col xs={12} md={6} className="p-3">
+                <h4 className="text-center">On the muscles</h4>
+                <p className="text-center p-0 m-0">
+                  <FontAwesomeIcon icon={faPlus} style={{ paddingRight: 5 }} />
+                  Relieves Muscular Tension
+                </p>
+                <p className="text-center p-0 m-0">
+                  <FontAwesomeIcon icon={faPlus} style={{ paddingRight: 5 }} />
+                  Relaxes Muscles
+                </p>
+                <p className="text-center p-0 m-0">
+                  <FontAwesomeIcon icon={faPlus} style={{ paddingRight: 5 }} />
+                  Reduces Muscle Soreness &amp; Fatigue
+                </p>
+                <p className="text-center p-0 m-0">
+                  <FontAwesomeIcon icon={faPlus} style={{ paddingRight: 5 }} />
+                  Tones Weak Muscles
+                </p>
+                <p className="text-center p-0 m-0">
+                  <FontAwesomeIcon icon={faPlus} style={{ paddingRight: 5 }} />
+                  Improves Balance &amp; Posture
+                </p>
+              </Col>
+            </Row>
           </BenefitsContainer>
         </Row>
       </Container>
