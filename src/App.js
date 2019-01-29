@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import Navigation from "./components/nav/Navigation";
+import Navigation from "./components/layout/Navigation";
 import Main from "./components/Main";
-import styled, { createGlobalStyle } from "styled-components";
+import Footer from "./components/layout/Footer";
+import { createGlobalStyle } from "styled-components";
 import "./App.css";
 
 const GlobalStyle = createGlobalStyle`
@@ -42,6 +43,7 @@ class App extends Component {
           <GlobalStyle />
           <Navigation />
           <Main />
+          <Footer />
         </div>
       </Router>
     );

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";

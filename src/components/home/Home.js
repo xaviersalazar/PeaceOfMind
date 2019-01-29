@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-import { Container } from "reactstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Container, Row, Col } from "reactstrap";
 import HomeJumbotron from "./HomeJumbotron";
 import HomeBanner from "./HomeBanner";
 import HomeServices from "./HomeServices";
-import Footer from "../Footer";
-import { Row, Col } from "reactstrap";
 import styled from "styled-components";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const ColoredRow = styled(Row)`
   background: ${props => (props.odd ? "#f3eff5" : "#fff")};
@@ -29,7 +27,6 @@ export default class Home extends Component {
             </Col>
             <HomeServices />
           </ColoredRow>
-          <Footer />
         </Container>
       </Container>
     );

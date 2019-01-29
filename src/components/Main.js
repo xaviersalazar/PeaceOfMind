@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import Home from "./home/Home";
-import About from "./About";
+import About from "./about/About";
 import AboutBesame from "./besame/AboutBesame";
 import BesameEyes from "./besame/BesameEyes";
 import BesameFace from "./besame/BesameFace";

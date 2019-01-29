@@ -1,15 +1,6 @@
 import React, { Component } from "react";
-import {
-  Col,
-  Row,
-  Form,
-  FormGroup,
-  Label,
-  Input,
-  FormText,
-  Button
-} from "reactstrap";
-import styled, { keyframes } from "styled-components";
+import { Col, Row, Form, FormGroup, Input } from "reactstrap";
+import styled from "styled-components";
 
 const FormInput = styled(Input)`
   && {
