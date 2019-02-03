@@ -11,6 +11,11 @@ const Lipsticks = styled.img`
   border-radius: 50%;
 `;
 
+const Disclaimer = styled.p`
+  text-align: center;
+  margin-top: 50px;
+`;
+
 export default class BesameLipstick extends Component {
   render() {
     return (
@@ -124,6 +129,11 @@ export default class BesameLipstick extends Component {
               className="img-fluid"
             />
             <p>Chocolate Kiss</p>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12}>
+            <Disclaimer>All products sold in store only</Disclaimer>
           </Col>
         </Row>
       </MainContainer>
