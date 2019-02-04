@@ -81,6 +81,51 @@ export default class DeluxeCouplesMassages extends Component {
             </p>
           </Col>
         </Row>
+        <Row className="text-center">
+          <Col xs={12} md={4}>
+            <DeluxeMassage
+              src="/resources/icons/couples/pampered.png"
+              className="img-fluid"
+            />
+            <h6>Pampered Party Packet</h6>
+            <p>
+              1 Hour and 35 Minutes of Swedish Massage, Hot Stones, Reflexology,
+              Aromatherapy, and a Pressure Point Release Rain Drop Facial and
+              Pearl Mask.
+            </p>
+          </Col>
+          <Col xs={12} md={4}>
+            <DeluxeMassage
+              src="/resources/icons/couples/silk.png"
+              className="img-fluid"
+            />
+            <h6>Silk Spine Massage</h6>
+            <p>
+              Gliding around spine very gently pushing tired knotted up muscles
+              away from the spine gently caressing the nerves in the surrounding
+              are to relive and relax your central nervous system. Allowing your
+              central nervous system to flow freely and unblocked. Better sleep
+              and fewer headaches along with lowered anxiety. Overall mood
+              improver!
+            </p>
+          </Col>
+          <Col xs={12} md={4}>
+            <DeluxeMassage
+              src="/resources/icons/couples/fourhand.png"
+              className="img-fluid"
+            />
+            <h6>4 Handed Massage</h6>
+            <p>
+              A therapeutic, duet massage is performed by two therapists whose
+              coordinated movements induce relaxation and ease tension. To
+              promote self balance and clarity. A soothing scalp massage and
+              reflexology will leave you with a sense of calm and well-being.
+              The organic,balancing massage oil used during this treatment
+              soothes the senses and nourishes the skin. Emerge renewed,
+              refreshed and relaxed.
+            </p>
+          </Col>
+        </Row>
         <Row>
           <Col xs={12}>
             <Disclaimer>
