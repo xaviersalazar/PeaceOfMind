@@ -45,21 +45,28 @@ const ServiceButton = styled.a`
   }
 `;
 
+const Icon = styled.img`
+  margin: 10px 0;
+  border-radius: 50%;
+  width: 25%;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
+`;
+
 const serviceColumn1 = [
   {
-    icon: "fas fa-hand-holding-heart",
+    icon: "/resources/icons/massage.png",
     service: "Massage",
     message: "You will leave completely reqjuvenated",
     hrefLink: "#"
   },
   {
-    icon: "fas fa-users",
+    icon: "/resources/icons/couples.png",
     service: "Deluxe Couples",
     message: "Stimulating massages for the couples",
     hrefLink: "#"
   },
   {
-    icon: "far fa-laugh-beam",
+    icon: "/resources/icons/facial.png",
     service: "Facials",
     message: "Treatments surely to make your face radiate",
     hrefLink: "#"
@@ -68,19 +75,19 @@ const serviceColumn1 = [
 
 const serviceColumn2 = [
   {
-    icon: "fas fa-diagnoses",
+    icon: "/resources/icons/waxes.png",
     service: "Waxes",
     message: "Full service waxing",
     hrefLink: "#"
   },
   {
-    icon: "fas fa-hands",
+    icon: "/resources/icons/weightloss.png",
     service: "Scrubs/Weight Loss",
     message: "Our deep scrubs and weight loss treatments",
     hrefLink: "#"
   },
   {
-    icon: "far fa-heart",
+    icon: "/resources/icons/sauna.png",
     service: "Infrared Sauna",
     message: "Infrared light therapy to help you heal",
     hrefLink: "#"
@@ -89,19 +96,19 @@ const serviceColumn2 = [
 
 const serviceColumn3 = [
   {
-    icon: "fas fa-brain",
+    icon: "/resources/icons/oxygen.png",
     service: "Oxygen Bar",
     message: "Oxygen rejuvenation for the brain",
     hrefLink: "#"
   },
   {
-    icon: "fas fa-shoe-prints",
+    icon: "/resources/icons/foot.png",
     service: "Oxygen Foot Soak",
     message: "Detox the impurities from your body",
     hrefLink: "#"
   },
   {
-    icon: "fas fa-plus",
+    icon: "/resources/icons/addons.png",
     service: "Add On Services",
     message: "Services to add onto your massages",
     hrefLink: "#"
@@ -112,7 +119,7 @@ const createServiceColumn = props => {
   return props.map(service => {
     return (
       <ServiceColumn key={service.service} xs={12} md={4}>
-        <i className={service.icon} />
+        <Icon src={service.icon} className="img-fluid" />
         <h6>{service.service}</h6>
         <p>{service.message}</p>
         <ServiceButton href={service.hrefLink}>More Info</ServiceButton>

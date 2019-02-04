@@ -5,7 +5,7 @@ import styled from "styled-components";
 const BesameLogo = styled.img`
   width: 25%;
   display: block;
-  margin: 6rem auto 3rem auto;
+  margin: 10rem auto 3rem auto;
 
   @media (min-width: 576px) {
     width: 25%;

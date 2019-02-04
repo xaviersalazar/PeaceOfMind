@@ -6,6 +6,11 @@ const MainContainer = styled(Container)`
   margin: 6rem auto 3rem auto;
 `;
 
+const BesameTitle = styled.h1`
+  text-align: center;
+  padding: 5rem 0;
+`;
+
 const FaceProduct = styled.img`
   margin: 10px 0;
   border-radius: 50%;
@@ -21,7 +26,7 @@ export default class BesameFace extends Component {
     return (
       <MainContainer fluid>
         <Col xs={12} className="mt-5">
-          <h1 className="text-center pb-3">Face</h1>
+          <BesameTitle>Face</BesameTitle>
         </Col>
         <Row className="text-center">
           <Col xs={12} md={3}>

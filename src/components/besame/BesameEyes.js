@@ -6,6 +6,11 @@ const MainContainer = styled(Container)`
   margin: 6rem auto 3rem auto;
 `;
 
+const BesameTitle = styled.h1`
+  text-align: center;
+  padding: 5rem 0;
+`;
+
 const Eye = styled.img`
   margin: 10px 0;
   border-radius: 50%;
@@ -21,7 +26,7 @@ export default class BesameEyes extends Component {
     return (
       <MainContainer fluid>
         <Col xs={12} className="mt-5">
-          <h1 className="text-center pb-3">Eyes</h1>
+          <BesameTitle>Eyes</BesameTitle>
         </Col>
         <Row className="text-center">
           <Col xs={12} md={4}>
@@ -40,7 +45,11 @@ export default class BesameEyes extends Component {
             <p>Black Cake Mascara</p>
           </Col>
         </Row>
-        <Disclaimer>All products sold in store only</Disclaimer>
+        <Row>
+          <Col xs={12}>
+            <Disclaimer>All products sold in store only</Disclaimer>
+          </Col>
+        </Row>
       </MainContainer>
     );
   }
