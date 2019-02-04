@@ -2,10 +2,15 @@ import React, { Component } from "react";
 import { Container, Col } from "reactstrap";
 import styled from "styled-components";
 
+const MainContainer = styled(Container)`
+  background: #f3eff5;
+  padding-top: 10rem;
+`;
+
 const BesameLogo = styled.img`
   width: 25%;
   display: block;
-  margin: 10rem auto 3rem auto;
+  margin: auto;
 
   @media (min-width: 576px) {
     width: 25%;
@@ -19,7 +24,7 @@ const BesameLogo = styled.img`
 export default class AboutBesame extends Component {
   render() {
     return (
-      <Container fluid>
+      <MainContainer fluid>
         <BesameLogo src="/resources/besameLogo.png" className="img-fluid" />
         <Col xs={12}>
           <h1 className="text-center pb-3">Besame Cosmetics</h1>
@@ -48,7 +53,7 @@ export default class AboutBesame extends Component {
             American Horror Story: Freak Show.
           </p>
         </Col>
-      </Container>
+      </MainContainer>
     );
   }
 }

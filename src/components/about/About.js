@@ -4,6 +4,11 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 
+const MainContainer = styled(Container)`
+  background: #f3eff5;
+  padding-top: 10rem;
+`;
+
 const PeaceOfMind = styled.img`
   width: 100%;
   display: block;
@@ -47,10 +52,28 @@ const BenefitsContainer = styled(Container)`
   }
 `;
 
+const BenefitsIcon = styled.img`
+  margin: 10px 0;
+  border-radius: 50%;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
+  width: 25%;
+`;
+
+const BenefitsIconLastTwoRows = styled.img`
+  margin: 10px 0;
+  border-radius: 50%;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
+  width: 25%;
+
+  @media (min-width: 992px) {
+    width: 20%;
+  }
+`;
+
 export default class About extends Component {
   render() {
     return (
-      <Container fluid>
+      <MainContainer fluid>
         <PeaceOfMind src="/resources/about.png" className="img-fluid" />
         <Row className="px-3">
           <Col xs={12}>
@@ -103,7 +126,7 @@ export default class About extends Component {
             </p>
           </Col>
         </Row>
-        <ColoredRow odd={true} className="px-3">
+        <ColoredRow odd={false} className="px-3">
           <Col xs={12}>
             <h1 className="text-center pb-3">Why a Massage?</h1>
           </Col>
@@ -145,7 +168,15 @@ export default class About extends Component {
           </Col>
           <BenefitsContainer>
             <Row>
-              <Col xs={12} md={4} className="p-3">
+              <Col xs={12} lg={4} className="p-3">
+                <Row>
+                  <Col xs={12} className="text-center">
+                    <BenefitsIcon
+                      src="/resources/icons/about/cardiovascular.png"
+                      className="img-fluid"
+                    />
+                  </Col>
+                </Row>
                 <h4 className="text-center">Cardiovascular System</h4>
                 <p className="text-center p-0 m-0">
                   <FontAwesomeIcon icon={faPlus} style={{ paddingRight: 5 }} />
@@ -168,7 +199,15 @@ export default class About extends Component {
                   Replenishes Nutritive Materials
                 </p>
               </Col>
-              <Col xs={12} md={4} className="p-3">
+              <Col xs={12} lg={4} className="p-3">
+                <Row>
+                  <Col xs={12} className="text-center">
+                    <BenefitsIcon
+                      src="/resources/icons/about/immune.png"
+                      className="img-fluid"
+                    />
+                  </Col>
+                </Row>
                 <h4 className="text-center">Lymphatic/Immune System</h4>
                 <p className="text-center p-0 m-0">
                   <FontAwesomeIcon icon={faPlus} style={{ paddingRight: 5 }} />
@@ -191,7 +230,15 @@ export default class About extends Component {
                   Increases Lymphocyte Count
                 </p>
               </Col>
-              <Col xs={12} md={4} className="p-3">
+              <Col xs={12} lg={4} className="p-3">
+                <Row>
+                  <Col xs={12} className="text-center">
+                    <BenefitsIcon
+                      src="/resources/icons/about/nervous.png"
+                      className="img-fluid"
+                    />
+                  </Col>
+                </Row>
                 <h4 className="text-center">Nervous &amp; Endocrine System</h4>
                 <p className="text-center p-0 m-0">
                   <FontAwesomeIcon icon={faPlus} style={{ paddingRight: 5 }} />
@@ -216,7 +263,15 @@ export default class About extends Component {
               </Col>
             </Row>
             <Row>
-              <Col xs={12} md={6} className="p-3">
+              <Col xs={12} lg={6} className="p-3">
+                <Row>
+                  <Col xs={12} className="text-center">
+                    <BenefitsIconLastTwoRows
+                      src="/resources/icons/about/skin.png"
+                      className="img-fluid"
+                    />
+                  </Col>
+                </Row>
                 <h4 className="text-center">Skin &amp; related structures</h4>
                 <p className="text-center p-0 m-0">
                   <FontAwesomeIcon icon={faPlus} style={{ paddingRight: 5 }} />
@@ -239,7 +294,15 @@ export default class About extends Component {
                   Stimulates Sebaceous Glands
                 </p>
               </Col>
-              <Col xs={12} md={6} className="p-3">
+              <Col xs={12} lg={6} className="p-3">
+                <Row>
+                  <Col xs={12} className="text-center">
+                    <BenefitsIconLastTwoRows
+                      src="/resources/icons/about/muscles.png"
+                      className="img-fluid"
+                    />
+                  </Col>
+                </Row>
                 <h4 className="text-center">On the muscles</h4>
                 <p className="text-center p-0 m-0">
                   <FontAwesomeIcon icon={faPlus} style={{ paddingRight: 5 }} />
@@ -265,7 +328,7 @@ export default class About extends Component {
             </Row>
           </BenefitsContainer>
         </Row>
-      </Container>
+      </MainContainer>
     );
   }
 }

@@ -3,7 +3,8 @@ import { Container, Row, Col } from "reactstrap";
 import styled from "styled-components";
 
 const MainContainer = styled(Container)`
-  margin: 6rem auto 3rem auto;
+  padding-top: 5rem;
+  background: #f3eff5;
 `;
 
 const ServiceTitle = styled.h1`

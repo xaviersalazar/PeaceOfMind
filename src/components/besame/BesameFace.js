@@ -3,7 +3,8 @@ import { Container, Row, Col } from "reactstrap";
 import styled from "styled-components";
 
 const MainContainer = styled(Container)`
-  margin: 6rem auto 3rem auto;
+  background: #f3eff5;
+  padding-top: 5rem;
 `;
 
 const BesameTitle = styled.h1`
@@ -14,6 +15,17 @@ const BesameTitle = styled.h1`
 const FaceProduct = styled.img`
   margin: 10px 0;
   border-radius: 50%;
+  width: 50%;
+`;
+
+const FaceProductLastRow = styled.img`
+  margin: 10px 0;
+  border-radius: 50%;
+  width: 50%;
+
+  @media (min-width: 767px) {
+    width: 25%;
+  }
 `;
 
 const Disclaimer = styled.p`
@@ -150,14 +162,14 @@ export default class BesameFace extends Component {
         </Row>
         <Row className="text-center">
           <Col xs={12} md={6}>
-            <FaceProduct
+            <FaceProductLastRow
               src="/resources/face/violet-brightening-powder-compacts.jpg"
               className="img-fluid"
             />
             <p>Violet Brightening Powder Compact</p>
           </Col>
           <Col xs={12} md={6}>
-            <FaceProduct
+            <FaceProductLastRow
               src="/resources/face/yellow-cameo-souffle-foundation.jpg"
               className="img-fluid"
             />

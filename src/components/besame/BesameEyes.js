@@ -3,7 +3,8 @@ import { Container, Row, Col } from "reactstrap";
 import styled from "styled-components";
 
 const MainContainer = styled(Container)`
-  margin: 6rem auto 3rem auto;
+  background: #f3eff5;
+  padding-top: 5rem;
 `;
 
 const BesameTitle = styled.h1`
@@ -14,6 +15,7 @@ const BesameTitle = styled.h1`
 const Eye = styled.img`
   margin: 10px 0;
   border-radius: 50%;
+  width: 50%;
 `;
 
 const Disclaimer = styled.p`
