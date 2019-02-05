@@ -84,7 +84,7 @@ export default class Navigation extends Component {
         background: "transparent",
         "box-shadow": "none"
       });
-      $(".dropdown-menu").css("background", "transparent");
+      $(".dropdown-menu").css("background", "#fff");
     }
   };
 
