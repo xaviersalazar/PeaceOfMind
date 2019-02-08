@@ -18,7 +18,7 @@ const Disclaimer = styled.p`
   margin-top: 50px;
 `;
 
-const facials = [
+const waxes = [
   {
     row: [
       {
@@ -140,7 +140,7 @@ export default class Waxes extends Component {
         <Col xs={12} className="mt-5">
           <ServiceTitle>Full Waxing Services</ServiceTitle>
         </Col>
-        <ServiceRows rows={facials} />
+        <ServiceRows rows={waxes} />
         <Row>
           <Col xs={12}>
             <Disclaimer>
