@@ -72,6 +72,42 @@ const facials = [
           "Minimize pores and wipes out dead surface from your face. Rare Amazonian white clay, Herbal Moisturizer, cinnamon Bark, Ginger Root, Apricot Kernel Oil, Vitamin E, Avocado Oil Sweet Almond Oil."
       }
     ]
+  },
+  {
+    row: [
+      {
+        icon: "/resources/icons/facials/honeybee.png",
+        title: "Honey Bee Pollen My Feathers",
+        price: "Add on $25.00 to any Facial",
+        desc:
+          "This mask works against Acne and eczema. Perfect for anti-aging absorbs free Radicals."
+      },
+      {
+        icon: "/resources/icons/facials/justforhim.png",
+        title: "Just For Him Hot Towel",
+        price: "35 Minutes: $125.00",
+        desc:
+          "This tailor made treatment utilizes actives that address his skin. The face is deeply cleansed, moisturized, and soothed to reduce sensitivity commonly associated with daily shaving. An energizing facial mask applied during a scalp massage is a must to leave him feeling revived and relaxed, so that challenges of the day can be boldly met and conquered with confidence."
+      }
+    ]
+  },
+  {
+    row: [
+      {
+        icon: "/resources/icons/facials/pumpkin.png",
+        title: "Pumpkin Pie Without A Limit",
+        price: "45 Minutes: $125.00",
+        desc:
+          "Pumpkin, naturally rich in beta carotene and active enzymes, renews tired skin and clays gently draw out impurities and toxins. It is also a powerful antioxidant that has the ability to make your skin glow. Vitamin A also makes its appearance in pumpkin with the ability to exfoliate and reveal brighter skin and minimize the appearance of sun damage."
+      },
+      {
+        icon: "/resources/icons/facials/volcanic.png",
+        title: "Just For Him Hot Towel",
+        price: "45 Minutes: $125.00",
+        desc:
+          "Its fights free radicals, rejuvenates your face while recharging your cells. It keeps you moisturized all day helping you pull out hard to get white heads. Charcoal, volcanic ash, Acai and goji berry, green tea and fig antioxidants."
+      }
+    ]
   }
 ];
 
