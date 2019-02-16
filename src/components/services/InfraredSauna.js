@@ -161,7 +161,7 @@ export default class InfraredSauna extends Component {
           </ServiceSubTitle>
         </ParagraphsCol>
         <Row>
-          <ParagraphsCol xs={12} className="mb-3" style={{ padding: "0 3rem" }}>
+          <ParagraphsCol xs={12} className="mb-3">
             <p style={{ textAlign: "center" }}>
               Light Therapy has been valued throughout history as remarkable
               source of healing. Today, the therapeutic applications fo light
@@ -174,7 +174,7 @@ export default class InfraredSauna extends Component {
           </ParagraphsCol>
         </Row>
         <Row>
-          <ParagraphsCol xs={12} style={{ padding: "0 3rem" }}>
+          <ParagraphsCol xs={12}>
             <SectionTitle>Medical Benefits</SectionTitle>
             <p style={{ textAlign: "center" }}>
               Light Therapy has been reported to reduce swelling, relieve pain,
@@ -202,7 +202,7 @@ export default class InfraredSauna extends Component {
           </ParagraphsCol>
         </Row>
         <Row>
-          <ParagraphsCol xs={12} style={{ padding: "0 3rem" }}>
+          <ParagraphsCol xs={12}>
             <SectionTitle>Cosmetic Benefits</SectionTitle>
             <p style={{ textAlign: "center" }}>
               Light therapy is also a growing treatment for anti-aging. Many
@@ -220,7 +220,7 @@ export default class InfraredSauna extends Component {
           </ParagraphsCol>
         </Row>
         <Row>
-          <ParagraphsCol xs={12} style={{ padding: "0 3rem" }}>
+          <ParagraphsCol xs={12}>
             <ServiceIcon
               src="/resources/icons/sauna/colors.png"
               className="img-fluid"
@@ -241,7 +241,7 @@ export default class InfraredSauna extends Component {
           <ServiceRows rows={colors} />
         </Container>
         <Row style={{ marginTop: "25px" }}>
-          <ParagraphsCol xs={12} style={{ padding: "0 3rem" }}>
+          <ParagraphsCol xs={12}>
             <p style={{ textAlign: "center" }}>
               Light therapy uses colors for their proposed healing abilites in
               treating emotional and physical disturbances. Light therapy is
