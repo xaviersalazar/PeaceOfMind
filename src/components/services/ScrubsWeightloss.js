@@ -63,7 +63,7 @@ export default class ScrubsWeightloss extends Component {
     return (
       <MainContainer fluid>
         <ParagraphsCol xs={12} className="mt-5">
-          <ServiceTitle>Full Waxing Services</ServiceTitle>
+          <ServiceTitle>Scrub Massages and Weightloss Treatments</ServiceTitle>
         </ParagraphsCol>
         <ServiceRows rows={scrubs} />
         <Row>

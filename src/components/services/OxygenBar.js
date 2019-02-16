@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
 import styled from "styled-components";
-import ServiceRows from "../common/ServiceRows";
 
 const MainContainer = styled(Container)`
   padding-top: 5rem;
@@ -16,6 +15,24 @@ const ServiceTitle = styled.h1`
 const ServiceSubTitle = styled.p`
   text-align: center;
   padding: 0 0 5rem 0;
+`;
+
+const ServiceIcon = styled.img`
+  position: relative;
+  margin: 25px 0 0 0;
+  border-radius: 50%;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
+  width: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: 576px) {
+    width: 20%;
+  }
+
+  @media (min-width: 992px) {
+    width: 8%;
+  }
 `;
 
 const Disclaimer = styled.p`
@@ -60,6 +77,10 @@ export default class OxygenBar extends Component {
         </Row>
         <Row>
           <ParagraphsCol xs={12}>
+            <ServiceIcon
+              src="/resources/icons/oxygen/brain.png"
+              className="img-fluid"
+            />
             <SectionTitle>Benefits of Oxygen</SectionTitle>
             <p style={{ textAlign: "center" }}>
               Oxygen is an element of vitality for the body, asthenia, chronic

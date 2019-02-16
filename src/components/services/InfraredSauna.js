@@ -175,6 +175,10 @@ export default class InfraredSauna extends Component {
         </Row>
         <Row>
           <ParagraphsCol xs={12}>
+            <ServiceIcon
+              src="/resources/icons/sauna/medical.png"
+              className="img-fluid"
+            />
             <SectionTitle>Medical Benefits</SectionTitle>
             <p style={{ textAlign: "center" }}>
               Light Therapy has been reported to reduce swelling, relieve pain,
@@ -203,6 +207,10 @@ export default class InfraredSauna extends Component {
         </Row>
         <Row>
           <ParagraphsCol xs={12}>
+            <ServiceIcon
+              src="/resources/icons/sauna/cosmetic.png"
+              className="img-fluid"
+            />
             <SectionTitle>Cosmetic Benefits</SectionTitle>
             <p style={{ textAlign: "center" }}>
               Light therapy is also a growing treatment for anti-aging. Many
