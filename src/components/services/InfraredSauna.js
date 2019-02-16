@@ -237,7 +237,7 @@ export default class InfraredSauna extends Component {
             </p>
           </ParagraphsCol>
         </Row>
-        <Container className="service-rows" style={{ padding: 0 }}>
+        <Container style={{ padding: 0, margin: "0 auto" }}>
           <ServiceRows rows={colors} />
         </Container>
         <Row style={{ marginTop: "25px" }}>
@@ -262,7 +262,7 @@ export default class InfraredSauna extends Component {
           </Col>
           <BenefitsContainer>
             <Row>
-              <ParagraphsCol xs={12} lg={4} className="p-3">
+              <Col xs={12} lg={4} className="p-3">
                 <Row>
                   <Col xs={12} className="text-center">
                     <BenefitsIcon
@@ -278,7 +278,7 @@ export default class InfraredSauna extends Component {
                   muscle recovery, and decrease pain and inflammation after
                   intense exercise.
                 </p>
-              </ParagraphsCol>
+              </Col>
               <Col xs={12} lg={4} className="p-3">
                 <Row>
                   <Col xs={12} className="text-center">
@@ -352,11 +352,11 @@ export default class InfraredSauna extends Component {
           </BenefitsContainer>
         </Row>
         <Row>
-          <Col xs={12} style={{ padding: "0 3rem" }}>
+          <ParagraphsCol xs={12} style={{ padding: "0 3rem" }}>
             <Disclaimer>
               NOTICE: Prices Are Subject To Change Without Prior Notice
             </Disclaimer>
-          </Col>
+          </ParagraphsCol>
         </Row>
       </MainContainer>
     );

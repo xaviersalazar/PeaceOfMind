@@ -70,24 +70,32 @@ const BenefitsIconLastTwoRows = styled.img`
   }
 `;
 
+const ParagraphsCol = styled(Col)`
+  padding: 0 3rem;
+
+  @media (min-width: 1440px) {
+    padding: 0 10rem !important;
+  }
+`;
+
 export default class About extends Component {
   render() {
     return (
       <MainContainer fluid>
         <PeaceOfMind src="/resources/about.png" className="img-fluid" />
         <Row className="px-3">
-          <Col xs={12}>
+          <ParagraphsCol xs={12}>
             <h1 className="text-center pb-3">Our Story</h1>
-          </Col>
-          <Col xs={12} className="px-5 text-center">
+          </ParagraphsCol>
+          <ParagraphsCol xs={12} className="text-center">
             <p>
               Peace of Mind Massage Therapy &amp; Natural Healing is a Woman
               Owned Business based on mother nature's common grounds, located at
               602 N Lower Broadway were Peoples St meets the wall to Upper
               downtown , Opened July 10, 2010.
             </p>
-          </Col>
-          <Col xs={12} className="px-5 text-center">
+          </ParagraphsCol>
+          <ParagraphsCol xs={12} className="text-center">
             <p>
               Peace of mind will transform all of your aches and pains internal
               and external into comfort, by giving you ease and relief with
@@ -96,8 +104,8 @@ export default class About extends Component {
               techniques stemmed from Austin School of Massage Therapy and
               Homeopathic remedies passed down from past generations.
             </p>
-          </Col>
-          <Col xs={12} className="px-5 text-center">
+          </ParagraphsCol>
+          <ParagraphsCol xs={12} className="text-center">
             <p>
               Peace of Mind Promises to Corpus Christi is to help, encourage and
               beautify our sparkling city through community service volunteering
@@ -109,8 +117,8 @@ export default class About extends Component {
               Spaulding for Children, The Corpus Christi Hispanic Chamber and
               CASA.
             </p>
-          </Col>
-          <Col xs={12} className="px-5 text-center">
+          </ParagraphsCol>
+          <ParagraphsCol xs={12} className="text-center">
             <p>
               We invite you to come in anytime or call to schedule your massage
               to get your kick start in your wellness plan. We offer chair
@@ -124,13 +132,13 @@ export default class About extends Component {
               welcomed open from 8:30 am till 9:00 pm every day, to fit your
               busy hectic schedule.
             </p>
-          </Col>
+          </ParagraphsCol>
         </Row>
         <ColoredRow odd={false} className="px-3">
-          <Col xs={12}>
+          <ParagraphsCol xs={12}>
             <h1 className="text-center pb-3">Why a Massage?</h1>
-          </Col>
-          <Col xs={12} className="px-5 text-center">
+          </ParagraphsCol>
+          <ParagraphsCol xs={12} className="text-center">
             <p>
               We all have stress, tension, aches and pains that we experience
               and need to give attention to, in order to take care of our
@@ -143,8 +151,8 @@ export default class About extends Component {
               muscles, tired eyes , and slower,more easily irritated mental
               process.
             </p>
-          </Col>
-          <Col xs={12} className="px-5 text-center">
+          </ParagraphsCol>
+          <ParagraphsCol xs={12} className="text-center">
             <p>
               Human touch increases the production of endorphins, growth
               hormone, along with DHEA, all of which lengthen your life span and
@@ -152,15 +160,15 @@ export default class About extends Component {
               patients who are regularly touched recover faster than those who
               are not touched. So get a massage and feel your mood improve.
             </p>
-          </Col>
-          <Col xs={12} className="px-5 text-center">
+          </ParagraphsCol>
+          <ParagraphsCol xs={12} className="text-center">
             <p>
               We have heard many people complain of being over medicated, tired
               and stressed. With every massage we give the option to mankind’s
               first medicine which consists of 100% natural oils combined in to
               your massage cream or oils, and other healing earth products.
             </p>
-          </Col>
+          </ParagraphsCol>
         </ColoredRow>
         <Row className="px-3 py-5">
           <Col xs={12}>

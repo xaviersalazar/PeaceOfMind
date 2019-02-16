@@ -18,6 +18,14 @@ const Disclaimer = styled.p`
   margin-top: 50px;
 `;
 
+const ParagraphsCol = styled(Col)`
+  padding: 0 3rem;
+
+  @media (min-width: 1440px) {
+    padding: 0 10rem !important;
+  }
+`;
+
 const facials = [
   {
     row: [
@@ -115,16 +123,16 @@ export default class Facials extends Component {
   render() {
     return (
       <MainContainer fluid>
-        <Col xs={12} className="mt-5">
+        <ParagraphsCol xs={12} className="mt-5">
           <ServiceTitle>Massages For Your Face</ServiceTitle>
-        </Col>
+        </ParagraphsCol>
         <ServiceRows rows={facials} />
         <Row>
-          <Col xs={12}>
+          <ParagraphsCol xs={12}>
             <Disclaimer>
               NOTICE: Prices Are Subject To Change Without Prior Notice
             </Disclaimer>
-          </Col>
+          </ParagraphsCol>
         </Row>
       </MainContainer>
     );
