@@ -22,10 +22,12 @@ export default class Home extends Component {
             <HomeBanner />
           </ColoredRow>
           <ColoredRow odd>
-            <Col>
+            <Col xs={12}>
               <h1 className="text-center px-5">Services</h1>
             </Col>
-            <HomeServices />
+            <Col xs={12}>
+              <HomeServices />
+            </Col>
           </ColoredRow>
         </Container>
       </Container>
