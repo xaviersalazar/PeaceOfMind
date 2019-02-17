@@ -5,8 +5,6 @@ import styled from "styled-components";
 const ServicesContainer = styled(Container)`
   box-shadow: rgba(0, 0, 0, 0.12) 0 0 70px 6px;
   border-radius: 15px;
-  margin-left: 25px !important;
-  margin-right: 25px !important;
 
   @media (min-width: 576px) {
     margin-left: auto !important;

@@ -53,6 +53,12 @@ const StyledNavbarCollapse = styled(Collapse)`
   }
 `;
 
+const StyleDropdownMenu = styled(DropdownMenu)`
+  border: none !important;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 0 70px 6px;
+  border-radius: 8px !important;
+`;
+
 export default class Navigation extends Component {
   constructor(props) {
     super(props);
@@ -117,7 +123,7 @@ export default class Navigation extends Component {
                 <DropdownToggle nav caret>
                   BESAME COSMETICS
                 </DropdownToggle>
-                <DropdownMenu right>
+                <StyleDropdownMenu right>
                   <DropdownItem>
                     <RouterNavLink to="/besame/about">
                       ABOUT BESAME
@@ -134,13 +140,13 @@ export default class Navigation extends Component {
                   <DropdownItem>
                     <RouterNavLink to="/besame/eyes">EYES</RouterNavLink>
                   </DropdownItem>
-                </DropdownMenu>
+                </StyleDropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   SERVICES
                 </DropdownToggle>
-                <DropdownMenu right>
+                <StyleDropdownMenu right>
                   <DropdownItem>
                     <RouterNavLink to="/services/massages">
                       MASSAGES
@@ -184,7 +190,7 @@ export default class Navigation extends Component {
                       ADD ON'S
                     </RouterNavLink>
                   </DropdownItem>
-                </DropdownMenu>
+                </StyleDropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
                 <NavLink href="#contact">CONTACT US</NavLink>

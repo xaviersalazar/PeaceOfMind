@@ -44,7 +44,6 @@ const SendButton = styled.button`
 const TagLine = styled.p`
   && {
     font-weight: 400 !important;
-    text-align: center;
   }
 `;
 
