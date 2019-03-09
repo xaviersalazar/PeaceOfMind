@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Col, Row, Form, FormGroup, Input } from "reactstrap";
+import { Col, Row, FormGroup, Input, FormFeedback } from "reactstrap";
+import NetlifyForm from "react-netlify-form";
 import styled from "styled-components";
 
 const FormInput = styled(Input)`
@@ -48,7 +49,47 @@ const TagLine = styled.p`
 `;
 
 export default class Footer extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      name: "",
+      email: "",
+      validate: {
+        emailState: ""
+      },
+      emailSent: false
+    };
+  }
+
+  validateEmail = e => {
+    const emailRex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const { validate } = this.state;
+
+    if (emailRex.test(e.target.value)) {
+      validate.emailState = "has-success";
+    } else {
+      validate.emailState = "has-danger";
+    }
+
+    this.setState({ validate });
+  };
+
+  handleChange = e => {
+    e.persist();
+
+    const { target } = e;
+    const value = target.value;
+    const { name } = target;
+
+    this.setState({
+      [name]: value
+    });
+  };
+
   render() {
+    const { name, email } = this.state;
+
     return (
       <Row className="py-5" id="contact">
         <Col xs={12}>
@@ -76,34 +117,61 @@ export default class Footer extends Component {
             10% discount for all military!
           </p>
         </Col>
+
         <Col xs={12} md={6} className="p-3">
-          <Form>
-            <FormGroup className="py-3">
-              <FormInput
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Your name"
-              />
-            </FormGroup>
-            <FormGroup className="py-3">
-              <FormInput
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Your email"
-              />
-            </FormGroup>
-            <FormGroup className="py-3">
-              <FormInput
-                type="textarea"
-                name="message"
-                id="message"
-                placeholder="Got a question?"
-              />
-            </FormGroup>
-            <SendButton type="submit">Send a message!</SendButton>
-          </Form>
+          <NetlifyForm name="Contact Form">
+            {({ loading, error, success }) => (
+              <div>
+                {error && console.log("Something went wrong")}
+                {success && console.log("Message was sent")}
+                {!loading && !success && (
+                  <div>
+                    <FormGroup className="py-3">
+                      <FormInput
+                        type="text"
+                        name="name"
+                        id="name"
+                        value={name}
+                        onChange={e => this.handleChange(e)}
+                        placeholder="Your name"
+                      />
+                    </FormGroup>
+                    <FormGroup className="py-3">
+                      <FormInput
+                        type="email"
+                        name="email"
+                        id="email"
+                        value={email}
+                        valid={this.state.validate.emailState === "has-success"}
+                        invalid={
+                          this.state.validate.emailState === "has-danger"
+                        }
+                        onChange={e => {
+                          this.validateEmail(e);
+                          this.handleChange(e);
+                        }}
+                        placeholder="Your email"
+                      />
+                      <FormFeedback valid>That's a valid email</FormFeedback>
+                      <FormFeedback>
+                        Looks like there is an issue with your email. Please
+                        input a correct email.
+                      </FormFeedback>
+                    </FormGroup>
+                    <FormGroup className="py-3">
+                      <FormInput
+                        type="textarea"
+                        name="message"
+                        id="message"
+                        placeholder="Got a question?"
+                      />
+                    </FormGroup>
+                    <SendButton type="submit">Send a message!</SendButton>
+                  </div>
+                )}
+              </div>
+            )}
+          </NetlifyForm>
         </Col>
       </Row>
     );
