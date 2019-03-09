@@ -87,6 +87,14 @@ export default class Footer extends Component {
     });
   };
 
+  onSuccess = e => {
+    console.log(e);
+  };
+
+  onError = e => {
+    console.log(e);
+  };
+
   render() {
     const { name, email } = this.state;
 
@@ -119,10 +127,14 @@ export default class Footer extends Component {
         </Col>
 
         <Col xs={12} md={6} className="p-3">
-          <NetlifyForm name="Contact Form">
+          <NetlifyForm
+            name="Contact Form"
+            onSuccess={e => this.onSuccess(e)}
+            onError={e => this.onError(e)}
+          >
             {({ loading, error, success }) => (
               <div>
-                {error && console.log("Something went wrong")}
+                {error && console.log(error, "Something went wrong")}
                 {success && console.log("Message was sent")}
                 {!loading && !success && (
                   <div>
