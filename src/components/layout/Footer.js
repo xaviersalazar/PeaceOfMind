@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Col, Row, FormGroup, Input, FormFeedback } from "reactstrap";
 import NetlifyForm from "react-netlify-form";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
 import styled from "styled-components";
 
 const FormInput = styled(Input)`
@@ -55,6 +57,7 @@ export default class Footer extends Component {
     this.state = {
       name: "",
       email: "",
+      message: "",
       validate: {
         emailState: ""
       },
@@ -88,15 +91,25 @@ export default class Footer extends Component {
   };
 
   onSuccess = e => {
-    console.log(e);
+    toast("Thanks! We got your message. Someone will get back to you shortly", {
+      type: toast.TYPE.SUCCESS
+    });
+
+    this.setState({
+      name: "",
+      email: "",
+      message: ""
+    });
   };
 
   onError = e => {
-    console.log(e);
+    toast("Uh oh! Something went wrong. Please try again", {
+      type: toast.TYPE.ERROR
+    });
   };
 
   render() {
-    const { name, email } = this.state;
+    const { name, email, message } = this.state;
 
     return (
       <Row className="py-5" id="contact">
@@ -175,6 +188,8 @@ export default class Footer extends Component {
                         type="textarea"
                         name="message"
                         id="message"
+                        value={message}
+                        onChange={e => this.handleChange(e)}
                         placeholder="Got a question?"
                       />
                     </FormGroup>
