@@ -37,6 +37,7 @@ const SendButton = styled.button`
     background: linear-gradient(-45deg, #b3ffab, #12fff7);
     padding: 5px;
     transition: 0.8s all;
+    cursor: pointer;
   }
 
   &:hover {
@@ -193,7 +194,9 @@ export default class Footer extends Component {
                         placeholder="Got a question?"
                       />
                     </FormGroup>
-                    <SendButton type="submit">Send a message!</SendButton>
+                    <SendButton type="submit" disabled={loading}>
+                      Send a message!
+                    </SendButton>
                   </div>
                 }
               </div>
