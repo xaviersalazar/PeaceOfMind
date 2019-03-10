@@ -4,6 +4,7 @@ import Navigation from "./components/layout/Navigation";
 import Main from "./components/Main";
 import Footer from "./components/layout/Footer";
 import { createGlobalStyle } from "styled-components";
+import { ToastContainer } from "react-toastify";
 import "./App.css";
 
 const GlobalStyle = createGlobalStyle`
@@ -44,6 +45,7 @@ class App extends Component {
           <Navigation />
           <Main />
           <Footer />
+          <ToastContainer />
         </div>
       </Router>
     );

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Col, Row, FormGroup, Input, FormFeedback } from "reactstrap";
 import NetlifyForm from "react-netlify-form";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 import styled from "styled-components";
 
@@ -60,8 +60,7 @@ export default class Footer extends Component {
       message: "",
       validate: {
         emailState: ""
-      },
-      emailSent: false
+      }
     };
   }
 
@@ -90,7 +89,7 @@ export default class Footer extends Component {
     });
   };
 
-  onSuccess = e => {
+  onSuccess = () => {
     toast("Thanks! We got your message. Someone will get back to you shortly", {
       type: toast.TYPE.SUCCESS
     });
@@ -98,11 +97,14 @@ export default class Footer extends Component {
     this.setState({
       name: "",
       email: "",
-      message: ""
+      message: "",
+      validate: {
+        emailState: ""
+      }
     });
   };
 
-  onError = e => {
+  onError = () => {
     toast("Uh oh! Something went wrong. Please try again", {
       type: toast.TYPE.ERROR
     });
@@ -142,8 +144,8 @@ export default class Footer extends Component {
         <Col xs={12} md={6} className="p-3">
           <NetlifyForm
             name="Contact Form"
-            onSuccess={e => this.onSuccess(e)}
-            onError={e => this.onError(e)}
+            onSuccess={() => this.onSuccess()}
+            onError={() => this.onError()}
           >
             {({ loading, error, success }) => (
               <div>
