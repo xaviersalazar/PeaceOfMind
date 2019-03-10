@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Navigation from "./components/layout/Navigation";
 import Main from "./components/Main";
 import Footer from "./components/layout/Footer";
+import ScrollToTop from "./components/common/ScrollToTop";
 import { createGlobalStyle } from "styled-components";
 import { ToastContainer } from "react-toastify";
 import "./App.css";
@@ -40,13 +41,15 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div>
-          <GlobalStyle />
-          <Navigation />
-          <Main />
-          <Footer />
-          <ToastContainer />
-        </div>
+        <ScrollToTop>
+          <div>
+            <GlobalStyle />
+            <Navigation />
+            <Main />
+            <Footer />
+            <ToastContainer />
+          </div>
+        </ScrollToTop>
       </Router>
     );
   }
