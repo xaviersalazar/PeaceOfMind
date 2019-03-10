@@ -149,9 +149,7 @@ export default class Footer extends Component {
           >
             {({ loading, error, success }) => (
               <div>
-                {error && console.log(error, "Something went wrong")}
-                {success && console.log("Message was sent")}
-                {!loading && !success && (
+                {
                   <div>
                     <FormGroup className="py-3">
                       <FormInput
@@ -197,7 +195,7 @@ export default class Footer extends Component {
                     </FormGroup>
                     <SendButton type="submit">Send a message!</SendButton>
                   </div>
-                )}
+                }
               </div>
             )}
           </NetlifyForm>
