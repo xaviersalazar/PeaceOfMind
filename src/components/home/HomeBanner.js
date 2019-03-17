@@ -5,7 +5,7 @@ export default class HomeBanner extends Component {
   render() {
     return (
       <Col>
-        <h1 className="text-center">Massage &amp; Natural Healing</h1>
+        <h1 className="text-center">Massage Therapy &amp; Natural Healing</h1>
         <p className="text-center px-5">
           Come in today for a Singles Massage Session or a Couples Discounted
           Massage Packet. We use all organic massage products using plants,
