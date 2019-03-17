@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
+import { NavLink as RouterNavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const ServicesContainer = styled(Container)`
@@ -26,7 +27,7 @@ const ServiceColumn = styled(Col)`
   }
 `;
 
-const ServiceButton = styled.a`
+const ServiceButton = styled(RouterNavLink)`
   && {
     font-size: 10px;
     background: linear-gradient(-45deg, #b3ffab, #12fff7);
@@ -35,6 +36,9 @@ const ServiceButton = styled.a`
     color: #3d3d3d;
     padding: 0.5rem;
     text-decoration: none;
+    width: 25%;
+    margin: 0 auto;
+    color: #000;
     transition: 0.5s all;
   }
 
@@ -55,19 +59,19 @@ const serviceColumn1 = [
     icon: "/resources/icons/massage.png",
     service: "Massage",
     message: "You will leave completely reqjuvenated",
-    hrefLink: "#"
+    hrefLink: "/services/massages"
   },
   {
     icon: "/resources/icons/couples.png",
     service: "Deluxe Couples",
     message: "Stimulating massages for the couples",
-    hrefLink: "#"
+    hrefLink: "/services/deluxe-couples"
   },
   {
     icon: "/resources/icons/facial.png",
     service: "Facials",
     message: "Treatments surely to make your face radiate",
-    hrefLink: "#"
+    hrefLink: "/services/facials"
   }
 ];
 
@@ -76,19 +80,19 @@ const serviceColumn2 = [
     icon: "/resources/icons/waxes.png",
     service: "Waxes",
     message: "Full service waxing",
-    hrefLink: "#"
+    hrefLink: "/services/waxes"
   },
   {
     icon: "/resources/icons/weightloss.png",
     service: "Scrubs/Weight Loss",
     message: "Our deep scrubs and weight loss treatments",
-    hrefLink: "#"
+    hrefLink: "/services/scrubs-weightloss"
   },
   {
     icon: "/resources/icons/sauna.png",
     service: "Infrared Sauna",
     message: "Infrared light therapy to help you heal",
-    hrefLink: "#"
+    hrefLink: "/services/infrared-sauna"
   }
 ];
 
@@ -97,19 +101,19 @@ const serviceColumn3 = [
     icon: "/resources/icons/oxygen.png",
     service: "Oxygen Bar",
     message: "Oxygen rejuvenation for the brain",
-    hrefLink: "#"
+    hrefLink: "/services/oxygen-bar"
   },
   {
     icon: "/resources/icons/foot.png",
     service: "Oxygen Foot Soak",
     message: "Detox the impurities from your body",
-    hrefLink: "#"
+    hrefLink: "/services/oxygen-foot-soak"
   },
   {
     icon: "/resources/icons/addons.png",
     service: "Add On Services",
     message: "Services to add onto your massages",
-    hrefLink: "#"
+    hrefLink: "/services/addons"
   }
 ];
 
@@ -120,7 +124,7 @@ const createServiceColumn = props => {
         <Icon src={service.icon} className="img-fluid" />
         <h6>{service.service}</h6>
         <p>{service.message}</p>
-        <ServiceButton href={service.hrefLink}>More Info</ServiceButton>
+        <ServiceButton to={service.hrefLink}>More Info</ServiceButton>
       </ServiceColumn>
     );
   });
