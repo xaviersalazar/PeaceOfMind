@@ -7,6 +7,7 @@ const HomeJumbotronStyled = styled(Jumbotron)`
   width: 100%;
   border-radius: 0;
   background: linear-gradient(-45deg, #b3ffab, #12fff7);
+  margin-bottom: 0px !important;
 `;
 
 const HomeJumbotronBackground = styled.img`

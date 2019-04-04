@@ -8,8 +8,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const ColoredRow = styled(Row)`
   background: ${props => (props.odd ? "#f3eff5" : "#fff")};
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 `;
 
 export default class Home extends Component {
@@ -18,10 +16,10 @@ export default class Home extends Component {
       <Container className="p-0 m-0" fluid>
         <HomeJumbotron />
         <Container fluid>
-          <ColoredRow>
+          <ColoredRow odd={false}>
             <HomeBanner />
           </ColoredRow>
-          <ColoredRow odd>
+          <ColoredRow odd={true} style={{ padding: "3rem 0" }}>
             <Col xs={12}>
               <h1 className="text-center px-5">Services</h1>
             </Col>

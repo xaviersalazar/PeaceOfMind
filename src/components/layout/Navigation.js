@@ -24,7 +24,7 @@ const StyledNavbar = styled(Navbar)`
 
   a {
     color: #3d3d3d !important;
-    text-decoration: none;
+    text-decoration: none !important;
     text-transform: uppercase;
   }
 
@@ -57,6 +57,14 @@ const StyleDropdownMenu = styled(DropdownMenu)`
   border: none !important;
   box-shadow: rgba(0, 0, 0, 0.12) 0 0 70px 6px;
   border-radius: 8px !important;
+`;
+
+const StyleDropdownItem = styled(DropdownItem)`
+  & {
+    :hover {
+      background: linear-gradient(-45deg, #b3ffab, #12fff7);
+    }
+  }
 `;
 
 export default class Navigation extends Component {
@@ -124,22 +132,91 @@ export default class Navigation extends Component {
                   BESAME COSMETICS
                 </DropdownToggle>
                 <StyleDropdownMenu right>
-                  <DropdownItem>
+                  <StyleDropdownItem>
                     <RouterNavLink to="/besame/about">
                       ABOUT BESAME
                     </RouterNavLink>
-                  </DropdownItem>
-                  <DropdownItem>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
                     <RouterNavLink to="/besame/lipstick">
                       LIPSTICK
                     </RouterNavLink>
-                  </DropdownItem>
-                  <DropdownItem>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
                     <RouterNavLink to="/besame/face">FACE</RouterNavLink>
-                  </DropdownItem>
-                  <DropdownItem>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
                     <RouterNavLink to="/besame/eyes">EYES</RouterNavLink>
-                  </DropdownItem>
+                  </StyleDropdownItem>
+                </StyleDropdownMenu>
+              </UncontrolledDropdown>
+              <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle nav caret>
+                  SALON
+                </DropdownToggle>
+                <StyleDropdownMenu right>
+                  <StyleDropdownItem>
+                    <RouterNavLink to="/salon/about">
+                      ABOUT OUR SALON
+                    </RouterNavLink>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
+                    <RouterNavLink to="/salon/haircuts">HAIRCUTS</RouterNavLink>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
+                    <RouterNavLink to="/salon/hair-coloring">
+                      HAIR COLORING
+                    </RouterNavLink>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
+                    <RouterNavLink to="/salon/hair-extensions">
+                      HAIR EXTENSIONS
+                    </RouterNavLink>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
+                    <RouterNavLink to="/salon/hair-highlights">
+                      HAIR HIGHLIGHTS
+                    </RouterNavLink>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
+                    <RouterNavLink to="/salon/hair-treatments">
+                      HAIR TREATMENTS
+                    </RouterNavLink>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
+                    <RouterNavLink to="/salon/mens-services">
+                      MENS SERVICES
+                    </RouterNavLink>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
+                    <RouterNavLink to="/salon/perms">PERMS</RouterNavLink>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
+                    <RouterNavLink to="/salon/sets-twists">
+                      SETS &amp; TWISTS
+                    </RouterNavLink>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
+                    <RouterNavLink to="/salon/locs">LOCS</RouterNavLink>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
+                    <RouterNavLink to="/salon/relaxer">RELAXER</RouterNavLink>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
+                    <RouterNavLink to="/salon/natural-styling">
+                      NATURAL STYLING
+                    </RouterNavLink>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
+                    <RouterNavLink to="/salon/specialty-extensions">
+                      SPECIALTY w/ EXTENSIONS
+                    </RouterNavLink>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
+                    <RouterNavLink to="/salon/finishing-touches">
+                      FINISHING TOUCHES
+                    </RouterNavLink>
+                  </StyleDropdownItem>
                 </StyleDropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
@@ -147,49 +224,49 @@ export default class Navigation extends Component {
                   SERVICES
                 </DropdownToggle>
                 <StyleDropdownMenu right>
-                  <DropdownItem>
+                  <StyleDropdownItem>
                     <RouterNavLink to="/services/massages">
                       MASSAGES
                     </RouterNavLink>
-                  </DropdownItem>
-                  <DropdownItem>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
                     <RouterNavLink to="/services/deluxe-couples">
                       DELUXE/COUPLES MASSAGES
                     </RouterNavLink>
-                  </DropdownItem>
-                  <DropdownItem>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
                     <RouterNavLink to="/services/facials">
                       FACIALS
                     </RouterNavLink>
-                  </DropdownItem>
-                  <DropdownItem>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
                     <RouterNavLink to="/services/waxes">WAXES</RouterNavLink>
-                  </DropdownItem>
-                  <DropdownItem>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
                     <RouterNavLink to="/services/scrubs-weightloss">
                       SCRUBS/WEIGHTLOSS
                     </RouterNavLink>
-                  </DropdownItem>
-                  <DropdownItem>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
                     <RouterNavLink to="/services/infrared-sauna">
                       INFRARED SAUNA
                     </RouterNavLink>
-                  </DropdownItem>
-                  <DropdownItem>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
                     <RouterNavLink to="/services/oxygen-bar">
                       OXYGEN BAR
                     </RouterNavLink>
-                  </DropdownItem>
-                  <DropdownItem>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
                     <RouterNavLink to="/services/oxygen-foot-soak">
                       OXYGEN FOOT SOAK
                     </RouterNavLink>
-                  </DropdownItem>
-                  <DropdownItem>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
                     <RouterNavLink to="/services/addons">
                       ADD ON'S
                     </RouterNavLink>
-                  </DropdownItem>
+                  </StyleDropdownItem>
                 </StyleDropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
