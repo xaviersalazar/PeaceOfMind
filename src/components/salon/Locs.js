@@ -26,6 +26,25 @@ const Disclaimer = styled.p`
   margin-top: 50px;
 `;
 
+const locs = [
+  {
+    row: [
+      {
+        icon: "/resources/icons/salon/locs/maintainence.png",
+        title: "Loc Maintainence",
+        price: "$100.00 - $200.00",
+        desc: ""
+      },
+      {
+        icon: "/resources/icons/salon/locs/styling.png",
+        title: "Loc Styling",
+        price: "$100.00 - $230.00",
+        desc: ""
+      }
+    ]
+  }
+];
+
 export default class Locs extends Component {
   render() {
     return (
@@ -33,6 +52,7 @@ export default class Locs extends Component {
         <ParagraphsCol xs={12} className="mt-5">
           <ServiceTitle>Locs</ServiceTitle>
         </ParagraphsCol>
+        <ServiceRows rows={locs} />
         <Row>
           <ParagraphsCol xs={12}>
             <Disclaimer>
