@@ -99,10 +99,6 @@ export default class HairTreatments extends Component {
           <ParagraphsCol xs={12}>
             <Disclaimer>
               NOTICE: Prices Are Subject To Change Without Prior Notice
-              <br />
-              <small style={{ fontWeight: "inherit" }}>
-                +Upcharge of $20 for premium color
-              </small>
             </Disclaimer>
           </ParagraphsCol>
         </Row>
