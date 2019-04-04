@@ -26,6 +26,41 @@ const Disclaimer = styled.p`
   margin-top: 50px;
 `;
 
+const perms = [
+  {
+    row: [
+      {
+        icon: "/resources/icons/salon/perms/basic.png",
+        title: "Basic Wave",
+        price: "$90.00 - $120.00",
+        desc: ""
+      },
+      {
+        icon: "/resources/icons/salon/highlighting/ombre-haircut.png",
+        title: "Basic Wave w/ Haircut",
+        price: "$95.00 - $130.00",
+        desc: ""
+      }
+    ]
+  },
+  {
+    row: [
+      {
+        icon: "/resources/icons/salon/perms/specialty.png",
+        title: "Specialty Wave",
+        price: "$95.00 - $140.00",
+        desc: ""
+      },
+      {
+        icon: "/resources/icons/salon/highlighting/foil-haircut.png",
+        title: "Specialty Wave w/ Haircut",
+        price: "$110.00 - $150.00",
+        desc: ""
+      }
+    ]
+  }
+];
+
 export default class Perms extends Component {
   render() {
     return (
@@ -33,6 +68,7 @@ export default class Perms extends Component {
         <ParagraphsCol xs={12} className="mt-5">
           <ServiceTitle>Perms</ServiceTitle>
         </ParagraphsCol>
+        <ServiceRows rows={perms} />
         <Row>
           <ParagraphsCol xs={12}>
             <Disclaimer>
