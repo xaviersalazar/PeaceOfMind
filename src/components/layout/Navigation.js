@@ -203,6 +203,11 @@ export default class Navigation extends Component {
                     <RouterNavLink to="/salon/relaxer">RELAXER</RouterNavLink>
                   </StyleDropdownItem>
                   <StyleDropdownItem>
+                    <RouterNavLink to="/salon/straightening-services">
+                      STRAIGHTENING SERVICES
+                    </RouterNavLink>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
                     <RouterNavLink to="/salon/natural-styling">
                       NATURAL STYLING
                     </RouterNavLink>

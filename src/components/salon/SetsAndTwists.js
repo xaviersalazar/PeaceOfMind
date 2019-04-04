@@ -26,6 +26,67 @@ const Disclaimer = styled.p`
   margin-top: 50px;
 `;
 
+const setsAndTwists = [
+  {
+    row: [
+      {
+        icon: "/resources/icons/salon/setsandtwists/pressandcurl.png",
+        title: "Press and Curl",
+        price: "$100.00 - $150.00",
+        desc: ""
+      },
+      {
+        icon: "/resources/icons/salon/setsandtwists/shampoo.png",
+        title: "Shampoo Services w/ Two-Stand Twist",
+        price: "$95.00 - $110.00",
+        desc: ""
+      }
+    ]
+  },
+  {
+    row: [
+      {
+        icon: "/resources/icons/salon/setsandtwists/shampoo2.png",
+        title: "Shampoo Services w/ Flat-Twist Set",
+        price: "$95.00 - $110.00",
+        desc: ""
+      },
+      {
+        icon: "/resources/icons/salon/setsandtwists/singletwist.png",
+        title: "Single Twist Comb Twist",
+        price: "$90.00 - $200.00",
+        desc: ""
+      }
+    ]
+  },
+  {
+    row: [
+      {
+        icon: "/resources/icons/salon/setsandtwists/doubletwist.png",
+        title: "Double Twist Two Strand",
+        price: "$90.00 - $200.00",
+        desc: ""
+      },
+      {
+        icon: "/resources/icons/salon/setsandtwists/straw.png",
+        title: "Straw Set",
+        price: "$90.00 - $150.00",
+        desc: ""
+      }
+    ]
+  },
+  {
+    row: [
+      {
+        icon: "/resources/icons/salon/setsandtwists/rod.png",
+        title: "Rod Set",
+        price: "$90.00 - $150.00",
+        desc: ""
+      }
+    ]
+  }
+];
+
 export default class SetsAndTwists extends Component {
   render() {
     return (
@@ -33,6 +94,7 @@ export default class SetsAndTwists extends Component {
         <ParagraphsCol xs={12} className="mt-5">
           <ServiceTitle>Sets &amp; Twists</ServiceTitle>
         </ParagraphsCol>
+        <ServiceRows rows={setsAndTwists} />
         <Row>
           <ParagraphsCol xs={12}>
             <Disclaimer>

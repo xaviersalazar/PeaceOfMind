@@ -29,6 +29,7 @@ import Relaxer from "./salon/Relaxer";
 import NaturalStyling from "./salon/NaturalStyling";
 import SpecialtyExtensions from "./salon/SpecialtyExtensions";
 import FinishingTouches from "./salon/FinishingTouches";
+import StraighteningServices from "./salon/StraighteningServices";
 
 export default class Main extends Component {
   render() {
@@ -52,6 +53,10 @@ export default class Main extends Component {
         <Route path="/salon/locs" component={Locs} />
         <Route path="/salon/relaxer" component={Relaxer} />
         <Route path="/salon/natural-styling" component={NaturalStyling} />
+        <Route
+          path="/salon/straightening-services"
+          component={StraighteningServices}
+        />
         <Route
           path="/salon/specialty-extensions"
           component={SpecialtyExtensions}
