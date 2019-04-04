@@ -26,6 +26,59 @@ const Disclaimer = styled.p`
   margin-top: 50px;
 `;
 
+const straighteningServices = [
+  {
+    row: [
+      {
+        icon: "/resources/icons/salon/straightening/organic-blowout.png",
+        title: "Organic Colours Systems Ultimate Blowout",
+        price: "$150.00",
+        desc: ""
+      },
+      {
+        icon:
+          "/resources/icons/salon/straightening/organic-blowout-haircut.png",
+        title: "Organic Colours Systems Blowout w/ Haircut",
+        price: "$170.00 - $180.00",
+        desc: ""
+      }
+    ]
+  },
+  {
+    row: [
+      {
+        icon: "/resources/icons/salon/straightening/organic-straightening.png",
+        title: "Organic Colours Systems Thermal Straightening",
+        price: "$300.00 - $350.00",
+        desc: ""
+      },
+      {
+        icon:
+          "/resources/icons/salon/straightening/organic-straightening-haircut.png",
+        title: "Organic Colours Systems Thermal Straightening w/ Haircut",
+        price: "$325.00 - $350.00",
+        desc: ""
+      }
+    ]
+  },
+  {
+    row: [
+      {
+        icon: "/resources/icons/salon/relaxer/retouch.png",
+        title: "Retouch",
+        price: "$245.00",
+        desc: ""
+      },
+      {
+        icon: "/resources/icons/salon/haircuts/bandtrim.png",
+        title: "Retouch w/ Haircut",
+        price: "$260.00",
+        desc: ""
+      }
+    ]
+  }
+];
+
 export default class StraighteningServices extends Component {
   render() {
     return (
@@ -33,6 +86,7 @@ export default class StraighteningServices extends Component {
         <ParagraphsCol xs={12} className="mt-5">
           <ServiceTitle>Straightening Services</ServiceTitle>
         </ParagraphsCol>
+        <ServiceRows rows={straighteningServices} />
         <Row>
           <ParagraphsCol xs={12}>
             <Disclaimer>
