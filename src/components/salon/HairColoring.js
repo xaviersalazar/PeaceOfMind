@@ -32,7 +32,7 @@ const hairColoring = [
       {
         icon: "/resources/icons/salon/color/haircolor.png",
         title: "Premium Color",
-        price: "$85.00 - $105",
+        price: "$85.00 - $105.00",
         desc:
           "The ultimate in hair coloring, providing smoothness, protection and brilliant shine for long-lasting color"
       },
@@ -65,7 +65,7 @@ const hairColoring = [
       {
         icon: "/resources/icons/salon/color/haircolor5.png",
         title: "Double-Process+",
-        price: "$90.00 - $120.00+",
+        price: "$90.00 - $120.00",
         desc: "Bleach & tone or high lift color & tone"
       },
       {
@@ -116,6 +116,10 @@ export default class HairColoring extends Component {
           <ParagraphsCol xs={12}>
             <Disclaimer>
               NOTICE: Prices Are Subject To Change Without Prior Notice
+              <br />
+              <small style={{ fontWeight: "inherit" }}>
+                +Upcharge of $20 for premium color
+              </small>
             </Disclaimer>
           </ParagraphsCol>
         </Row>
