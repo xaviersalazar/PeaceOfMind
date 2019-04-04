@@ -26,6 +26,35 @@ const Disclaimer = styled.p`
   margin-top: 50px;
 `;
 
+const finishingTouches = [
+  {
+    row: [
+      {
+        icon: "/resources/icons/salon/finishing/blowdry.png",
+        title: "Blow Dry",
+        price: "$25.00 - $45.00",
+        desc: ""
+      },
+      {
+        icon: "/resources/icons/salon/finishing/formal.png",
+        title: "Formal Up-do",
+        price: "$80.00 - $100.00",
+        desc: "Braiding, up-styles and curls"
+      }
+    ]
+  },
+  {
+    row: [
+      {
+        icon: "/resources/icons/salon/finishing/ironworks.png",
+        title: "Ironworks",
+        price: "$25.00",
+        desc: ""
+      }
+    ]
+  }
+];
+
 export default class FinishingTouches extends Component {
   render() {
     return (
@@ -33,6 +62,7 @@ export default class FinishingTouches extends Component {
         <ParagraphsCol xs={12} className="mt-5">
           <ServiceTitle>Finishing Touches</ServiceTitle>
         </ParagraphsCol>
+        <ServiceRows rows={finishingTouches} />
         <Row>
           <ParagraphsCol xs={12}>
             <Disclaimer>
