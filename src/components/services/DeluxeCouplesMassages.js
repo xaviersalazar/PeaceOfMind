@@ -32,7 +32,7 @@ const deluxeCouplesMassages = [
       {
         icon: "/resources/icons/couples/couple1.png",
         title: "Couples #1",
-        price: "1 Hour: $220.00 | Upgrade to Deep Tissue: $270.00",
+        price: "1 Hour: $247.00 | Upgrade to Deep Tissue: $297.00",
         desc:
           "Swedish Massage with Aromatherapy.Performed in a serene setting, the duet massage encourages unity,connection and collective calm. Ease stress and unwind as two therapists perform side-by-side Swedish Massages that help the two of you relax. With a Cooling Mint Eye mask. Including reflexology and a scalp massage. Breathing treatment & Herbal infused hot towel with a foot detox herbal spray."
       },
