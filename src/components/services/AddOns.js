@@ -119,7 +119,7 @@ const addons = [
     row: [
       {
         icon: "/resources/icons/addons/pedi.png",
-        title: "Manicure",
+        title: "Pedicure",
         price: "45 Minutes - 1 Hour: $80.00",
         desc:
           "Unlike most nail salons where you dip your feet in the same contaminated foot bath bowl, we use fresh clean hot towels that are infused with Herbs & Aromatherapy oils, ensuring you to never get a foot fungus. Using hot stones to massage tired aching feet, an all-natural organic foot and leg scrub and a revitalizing foot massage. Cuticle clean up, cut and crystal file leaving nails silky smooth. Using an all organic nontoxic, Free of DBP, Toluene, Formaldehyde, Formaldehyde Resin, Non GMO, Nail Lacquer."

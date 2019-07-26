@@ -57,7 +57,7 @@ const massages = [
       {
         icon: "/resources/icons/massages/deeptissue.png",
         title: "Deep Tissue",
-        price: "30 Minutes: $50.00 | 1 Hour: $100.00 | 1 Hour ½: $150.00",
+        price: "30 Minutes: $50.00 | 1 Hour: $112.00 | 1 Hour ½: $167.00",
         desc:
           "A style of massage that is designed to get into the connective tissue of the body, rather than just the surface muscles. Many clients have a more intense experience with a deep tissue massage, but also feel that it is more beneficial, because it addresses deep-seated muscle pains. Like other types of massage,deep tissue is most beneficial when undertaken on a regular basis, so that therapist and client can work together to correct long term problems, relax the body, and prevent injury."
       }
@@ -147,7 +147,7 @@ const massages = [
       {
         icon: "/resources/icons/massages/swedish.png",
         title: "Swedish Massage",
-        price: "30 Minutes: $45.00 | 1 Hour: $80.00 | 1 Hour ½: $130.00",
+        price: "30 Minutes: $52.00 | 1 Hour: $87.00 | 1 Hour ½: $130.00",
         desc:
           "This classic massage treatment is also known as a Relaxation Massage and the goal is to relax the entire body through various techniques such as long, flowing strokes using light to medium pressure. Your session will address such issues as stress, tension and mild to moderate muscle discomfort. Swedish massage is often recommended for first time massage clients and is excellent for improving circulation and flexibility while easing tension."
       }
