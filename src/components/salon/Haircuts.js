@@ -32,7 +32,7 @@ const haircuts = [
       {
         icon: "/resources/icons/salon/haircuts/haircut.png",
         title: "Haircut & Blow dry",
-        price: "$70.00 - $90.00",
+        price: "$72.00",
         desc: ""
       },
       {

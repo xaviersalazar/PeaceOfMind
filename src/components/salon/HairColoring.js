@@ -18,7 +18,7 @@ const ParagraphsCol = styled(Col)`
 
 const ServiceTitle = styled.h1`
   text-align: center;
-  padding: 5rem 0 3rem 0;
+  padding: 5rem 0 0 0;
 `;
 
 const Disclaimer = styled.p`
@@ -110,6 +110,15 @@ export default class HairColoring extends Component {
       <MainContainer fluid>
         <ParagraphsCol xs={12} className="mt-5">
           <ServiceTitle>Hair Coloring</ServiceTitle>
+          <p
+            style={{
+              fontWeight: "inherit",
+              textAlign: "center",
+              paddingBottom: "3rem"
+            }}
+          >
+            Starting at $147.00
+          </p>
         </ParagraphsCol>
         <ServiceRows rows={hairColoring} />
         <Row>
