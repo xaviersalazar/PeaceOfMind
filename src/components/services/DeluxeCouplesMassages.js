@@ -39,7 +39,7 @@ const deluxeCouplesMassages = [
       {
         icon: "/resources/icons/couples/couple1.png",
         title: "Couples #2",
-        price: "1 Hour &amp; 30 mins: $480.00",
+        price: "1 Hour & 30 mins: $480.00",
         desc:
           "Hot Stones & Aromatherapy. Performed in a serene setting, the duet massage encourages unity, connection and collective calm. Ease stress and unwind as two therapists perform side-by-side Swedish Massages that help the two of you relax.With a Cooling Mint Eye mask. Including reflexology and a scalp massage. Breathing treatment, with a Herbal infused detox spray."
       }
