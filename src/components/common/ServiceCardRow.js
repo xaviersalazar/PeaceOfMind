@@ -5,7 +5,7 @@ import ServiceCard from "./ServiceCard";
 const ServiceCardRow = ({ rows }) => {
   return rows.map((row, i) => {
     return (
-      <Row key={i}>
+      <Row key={i} className="justify-content-center">
         {row.row.map(s => {
           return (
             <ServiceCard

@@ -4,8 +4,17 @@ import styled from "styled-components";
 import ServiceCardRow from "../common/ServiceCardRow";
 
 const MainContainer = styled(Container)`
-  padding-top: 5rem;
+  padding: 5rem 2.5rem 0 2.5rem !important;
   background: #f3eff5;
+
+  @media (min-width: 768px) {
+    background-attachment: fixed;
+    padding: 5rem 3.5rem 0 3.5rem !important;
+  }
+
+  @media (min-width: 992px) {
+    padding: 5rem 5rem 0 5rem !important;
+  }
 `;
 
 const Background = styled.div`
