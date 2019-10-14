@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
       padding: 0;
       margin: 0;
       overflow-x: hidden;
-      font-family: 'Montserrat', sans-serif !important;
+      font-family: 'Open Sans', sans-serif !important;
       background: #fff !important;
     }
   
@@ -26,13 +26,9 @@ const GlobalStyle = createGlobalStyle`
     h4,
     h5,
     h6 {
-      font-weight: 900 !important;
+      font-weight: 700 !important;
       color: #3d3d3d !important;
       text-transform: uppercase;
-    }
-  
-    p {
-      font-weight: 200 !important;
     }
   }
 `;

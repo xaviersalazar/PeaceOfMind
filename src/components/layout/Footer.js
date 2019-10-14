@@ -28,20 +28,20 @@ const FormInput = styled(Input)`
 
 const SendButton = styled.button`
   && {
-    display: block;
-    width: 50%;
-    margin: 0 auto;
-    border-radius: 15px;
-    border: none;
-    font-size: 15px;
-    background: linear-gradient(-45deg, #b3ffab, #12fff7);
-    padding: 5px;
-    transition: 0.8s all;
-    cursor: pointer;
-  }
-
-  &:hover {
+    border-radius: 8px;
+    padding: 0.5rem 2rem;
     box-shadow: rgba(0, 0, 0, 0.12) 0 3px 13px 1px;
+    font-size: 12px;
+    background: linear-gradient(-45deg, #b3ffab, #12fff7);
+    border: none;
+    color: #3d3d3d;
+    text-decoration: none;
+    width: 75%;
+    margin: 0 auto;
+    transition: 0.5s all;
+    position: absolute;
+    width: 75%;
+    left: 13%;
   }
 `;
 
@@ -134,12 +134,7 @@ export default class Footer extends Component {
             <i className="fas fa-phone" />
             &nbsp;361-737-7813
           </p>
-          <p>
-            <span role="img" aria-label="sheep">
-              🇺🇸
-            </span>
-            10% discount for all military!
-          </p>
+          <p>10% discount for all military!</p>
         </Col>
 
         <Col xs={12} md={6} className="p-3">
@@ -191,7 +186,7 @@ export default class Footer extends Component {
                         id="message"
                         value={message}
                         onChange={e => this.handleChange(e)}
-                        placeholder="Got a question?"
+                        placeholder="Got a question? Need to book an appointment? "
                       />
                     </FormGroup>
                     <SendButton type="submit" disabled={loading}>
