@@ -1,11 +1,37 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
 import styled from "styled-components";
-import ServiceRows from "../common/ServiceRows";
+import ServiceCardRow from "../common/ServiceCardRow";
 
 const MainContainer = styled(Container)`
   padding-top: 5rem;
   background: #f3eff5;
+`;
+
+const Background = styled.div`
+  background-image: url("/resources/services/salon/haircuts-main.jpg");
+  height: 50vh;
+  width: 100vw;
+  min-width: 100vw;
+  background-attachment: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    background-attachment: fixed;
+  }
+`;
+
+const Title = styled.div`
+  position: absolute;
+  top: 25%;
+  right: 50%;
+  transform: translateX(50%);
+  font-size: 4.5rem;
+  color: #fff !important;
 `;
 
 const ParagraphsCol = styled(Col)`
@@ -17,8 +43,21 @@ const ParagraphsCol = styled(Col)`
 `;
 
 const ServiceTitle = styled.h1`
-  text-align: center;
-  padding: 5rem 0 3rem 0;
+  color: #fff !important;
+  font-size: 3.5rem;
+  margin: 0;
+  padding: 0;
+`;
+
+const Hr = styled.hr`
+  background: #fff;
+  padding: 0;
+  width: 80%;
+  margin: 0 auto;
+
+  @media (min-width: 992px) {
+    width: 81%;
+  }
 `;
 
 const Disclaimer = styled.p`
@@ -30,32 +69,40 @@ const haircuts = [
   {
     row: [
       {
-        icon: "/resources/icons/salon/haircuts/haircut.png",
+        icon: "/resources/services/salon/haircut-blow-dry.jpg",
         title: "Haircut & Blow dry",
         price: "$72.00",
-        desc: ""
+        desc: "",
+        sm: 12,
+        md: 6,
+        lg: 3
       },
       {
-        icon: "/resources/icons/salon/haircuts/express.png",
+        icon: "/resources/services/salon/haircut-express.jpg",
         title: "Express cut",
         price: "$35.00 - $45.00",
-        desc: ""
-      }
-    ]
-  },
-  {
-    row: [
-      {
-        icon: "/resources/icons/salon/haircuts/kids.png",
-        title: "Kid's Haircut (12 & under)",
-        price: "$15.00 - $20.00",
-        desc: ""
+        desc: "",
+        sm: 12,
+        md: 6,
+        lg: 3
       },
       {
-        icon: "/resources/icons/salon/haircuts/bandtrim.png",
+        icon: "/resources/services/salon/haircut-kids.jpg",
+        title: "Kid's Haircut (12 & under)",
+        price: "$15.00 - $20.00",
+        desc: "",
+        sm: 12,
+        md: 6,
+        lg: 3
+      },
+      {
+        icon: "/resources/services/salon/haircut-band-trim.jpg",
         title: "Complimentary Band Trim",
         price: "FREE (Service not required)",
-        desc: ""
+        desc: "",
+        sm: 12,
+        md: 6,
+        lg: 3
       }
     ]
   }
@@ -64,19 +111,23 @@ const haircuts = [
 export default class Haircuts extends Component {
   render() {
     return (
-      <MainContainer fluid>
-        <ParagraphsCol xs={12} className="mt-5">
+      <div>
+        <Title>
           <ServiceTitle>Haircuts</ServiceTitle>
-        </ParagraphsCol>
-        <ServiceRows rows={haircuts} />
-        <Row>
-          <ParagraphsCol xs={12}>
-            <Disclaimer>
-              NOTICE: Prices Are Subject To Change Without Prior Notice
-            </Disclaimer>
-          </ParagraphsCol>
-        </Row>
-      </MainContainer>
+          <Hr />
+        </Title>
+        <Background />
+        <MainContainer fluid>
+          <ServiceCardRow rows={haircuts} />
+          <Row>
+            <ParagraphsCol xs={12}>
+              <Disclaimer>
+                NOTICE: Prices Are Subject To Change Without Prior Notice
+              </Disclaimer>
+            </ParagraphsCol>
+          </Row>
+        </MainContainer>
+      </div>
     );
   }
 }

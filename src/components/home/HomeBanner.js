@@ -43,7 +43,7 @@ export default class HomeBanner extends Component {
   render() {
     return (
       <div>
-        <ColoredCol xs={12} odd={false}>
+        <ColoredCol xs={12}>
           <h1 className="text-center">Massage Therapy &amp; Natural Healing</h1>
           <Hr />
           <p className="text-center px-5">

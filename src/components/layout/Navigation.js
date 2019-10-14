@@ -67,6 +67,20 @@ const StyledNavbarCollapse = styled(Collapse)`
   }
 `;
 
+const AboutRouterLink = styled(RouterNavLink)`
+  position: relative;
+  top: -4px;
+  left: 0px;
+  display: block;
+
+  @media (min-width: 768px) {
+    top: 8px;
+    left: -5px;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+`;
+
 const StyleDropdownMenu = styled(DropdownMenu)`
   border: none !important;
   box-shadow: rgba(0, 0, 0, 0.12) 0 0 70px 6px;
@@ -166,18 +180,16 @@ export default class Navigation extends Component {
           >
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink>
-                  <RouterNavLink
-                    className={`top-level-nav-link ${
-                      windowWidth >= 768
-                        ? "top-level-nav-link-white"
-                        : "top-level-nav-link-black"
-                    }`}
-                    to="/about"
-                  >
-                    About
-                  </RouterNavLink>
-                </NavLink>
+                <AboutRouterLink
+                  className={`top-level-nav-link ${
+                    windowWidth >= 768
+                      ? "top-level-nav-link-white"
+                      : "top-level-nav-link-black"
+                  }`}
+                  to="/about"
+                >
+                  About
+                </AboutRouterLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle

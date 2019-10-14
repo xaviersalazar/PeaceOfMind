@@ -27,10 +27,10 @@ const HomeJumbotronBackground = styled.div`
 `;
 
 const Logo = styled.img`
-  transform: translateX(50%);
   position: absolute;
   top: 35%;
   right: 50%;
+  transform: translateX(50%);
 
   @media (min-width: 768px) {
     top: 30%;

@@ -7,7 +7,7 @@ import styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const ColoredRow = styled(Row)`
-  background: ${props => (props.odd ? "#f3eff5" : "#fff")};
+  background: ${props => (props.odd === "true" ? "#f3eff5" : "#fff")};
 `;
 
 const Hr = styled.hr`
@@ -20,10 +20,10 @@ export default class Home extends Component {
       <Container className="p-0 m-0" fluid>
         <HomeJumbotron />
         <Container fluid>
-          <ColoredRow odd={false}>
+          <ColoredRow>
             <HomeBanner />
           </ColoredRow>
-          <ColoredRow odd={true} style={{ padding: "3rem 0" }}>
+          <ColoredRow odd={"true"} style={{ padding: "3rem 0" }}>
             <Col xs={12}>
               <h1 className="text-center px-5 mb-3">Services</h1>
               <Hr />
