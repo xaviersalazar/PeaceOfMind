@@ -1,5 +1,13 @@
 import React from "react";
-import { Col, Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
+import {
+  Col,
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  CardSubtitle
+} from "reactstrap";
 import styled from "styled-components";
 
 const ServiceCardMain = styled(Card)`
@@ -27,6 +35,14 @@ const ServiceCardText = styled(CardText)`
   }
 `;
 
+const ServiceCardPrice = styled(CardSubtitle)`
+  && {
+    font-size: 0.75rem;
+    font-weight: 500 !important;
+    margin-bottom: 15px;
+  }
+`;
+
 const ServiceCard = ({ ...props }) => {
   return (
     <Col
@@ -40,6 +56,7 @@ const ServiceCard = ({ ...props }) => {
         <CardImg top width="100%" src={props.icon} alt={props.title} />
         <ServiceCardBody>
           <CardTitle>{props.title}</CardTitle>
+          <ServiceCardPrice>{props.price}</ServiceCardPrice>
           <ServiceCardText>{props.desc}</ServiceCardText>
         </ServiceCardBody>
       </ServiceCardMain>
