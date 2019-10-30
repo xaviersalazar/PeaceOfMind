@@ -74,6 +74,7 @@ const Disclaimer = styled.p`
   text-align: center;
   margin-top: 50px;
 `;
+
 const hairHighlighting = [
   {
     row: [
