@@ -129,7 +129,7 @@ const hairTreatment = [
       },
       {
         icon: "/resources/services/salon/hair-treatments-scalp.jpg",
-        title: "Dry Scalp & Dandruff",
+        title: "Dry Scalp",
         price: "$20.00",
         desc: "Dry Scalp Tonic",
         sm: 12,
