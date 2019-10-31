@@ -1,11 +1,57 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
 import styled from "styled-components";
-import ServiceRows from "../common/ServiceRows";
+import ServiceCardRow from "../common/ServiceCardRow";
 
 const MainContainer = styled(Container)`
-  padding-top: 5rem;
+  padding: 5rem 2.5rem 0 2.5rem !important;
   background: #f3eff5;
+
+  @media (min-width: 768px) {
+    background-attachment: fixed;
+    padding: 5rem 3.5rem 0 3.5rem !important;
+  }
+
+  @media (min-width: 992px) {
+    padding: 5rem 5rem 0 5rem !important;
+  }
+`;
+
+const Background = styled.div`
+  background-image: url("/resources/services/salon/locs-main.jpg");
+  height: 50vh;
+  width: 100vw;
+  min-width: 100vw;
+  background-attachment: scroll;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    background-attachment: fixed;
+  }
+`;
+
+const Title = styled.div`
+  position: absolute;
+  top: 25%;
+  right: 50%;
+  transform: translateX(50%);
+  font-size: 4.5rem;
+  color: #fff !important;
+`;
+
+const Hr = styled.hr`
+  background: #fff;
+  padding: 0;
+  width: 80%;
+  margin: 0 auto;
+
+  @media (min-width: 992px) {
+    width: 81%;
+  }
 `;
 
 const ParagraphsCol = styled(Col)`
@@ -17,8 +63,11 @@ const ParagraphsCol = styled(Col)`
 `;
 
 const ServiceTitle = styled.h1`
+  color: #fff !important;
+  font-size: 3.5rem;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  padding: 5rem 0 3rem 0;
 `;
 
 const Disclaimer = styled.p`
@@ -30,16 +79,22 @@ const locs = [
   {
     row: [
       {
-        icon: "/resources/icons/salon/locs/maintainence.png",
+        icon: "/resources/services/salon/locs-maintainence.jpg",
         title: "Loc Maintainence",
         price: "$100.00 - $200.00",
-        desc: ""
+        desc: "",
+        sm: 12,
+        md: 6,
+        lg: 3
       },
       {
-        icon: "/resources/icons/salon/locs/styling.png",
+        icon: "/resources/services/salon/locs-styling.jpg",
         title: "Loc Styling",
         price: "$100.00 - $230.00",
-        desc: ""
+        desc: "",
+        sm: 12,
+        md: 6,
+        lg: 3
       }
     ]
   }
@@ -48,19 +103,23 @@ const locs = [
 export default class Locs extends Component {
   render() {
     return (
-      <MainContainer fluid>
-        <ParagraphsCol xs={12} className="mt-5">
+      <div>
+        <Title>
           <ServiceTitle>Locs</ServiceTitle>
-        </ParagraphsCol>
-        <ServiceRows rows={locs} />
-        <Row>
-          <ParagraphsCol xs={12}>
-            <Disclaimer>
-              NOTICE: Prices Are Subject To Change Without Prior Notice
-            </Disclaimer>
-          </ParagraphsCol>
-        </Row>
-      </MainContainer>
+          <Hr />
+        </Title>
+        <Background />
+        <MainContainer fluid>
+          <ServiceCardRow rows={locs} />
+          <Row>
+            <ParagraphsCol xs={12}>
+              <Disclaimer>
+                NOTICE: Prices Are Subject To Change Without Prior Notice
+              </Disclaimer>
+            </ParagraphsCol>
+          </Row>
+        </MainContainer>
+      </div>
     );
   }
 }
