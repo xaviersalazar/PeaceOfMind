@@ -1,8 +1,18 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import ServiceCardRow from "./ServiceCardRow";
 
+// Keyframes
+const expandHr = keyframes`
+  from {
+    width: 0%;
+  } to {
+    width: 80%
+  }
+`;
+
+// Styles
 const MainContainer = styled(Container)`
   padding: 5rem 2.5rem 0 2.5rem !important;
   background: #f3eff5;
@@ -48,10 +58,7 @@ const Hr = styled.hr`
   padding: 0;
   width: 80%;
   margin: 0 auto;
-
-  @media (min-width: 992px) {
-    width: 81%;
-  }
+  animation: ${expandHr} 3s linear;
 `;
 
 const ParagraphsCol = styled(Col)`
@@ -89,6 +96,15 @@ const ServicePage = ({ ...props }) => {
           <ParagraphsCol xs={12}>
             <Disclaimer>
               NOTICE: Prices Are Subject To Change Without Prior Notice
+              {props.smallNotice ? (
+                <div>
+                  <small style={{ fontWeight: "inherit" }}>
+                    {props.smallNotice}
+                  </small>
+                </div>
+              ) : (
+                ""
+              )}
             </Disclaimer>
           </ParagraphsCol>
         </Row>
