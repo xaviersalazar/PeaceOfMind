@@ -36,12 +36,10 @@ const SendButton = styled.button`
     border: none;
     color: #3d3d3d;
     text-decoration: none;
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
     transition: 0.5s all;
-    position: absolute;
-    width: 75%;
-    left: 13%;
+    position: relative;
   }
 `;
 
@@ -127,13 +125,9 @@ export default class Footer extends Component {
           <p className="mb-0">Our Hours:</p>
           <p className="p-0">Everyday @ 8:30AM - 9:00PM</p>
           <p className="p-0 m-0">
-            <i className="far fa-building" />
-            &nbsp;602 N Lower Broadway St Corpus Christi, TX 78401
+            602 N Lower Broadway St Corpus Christi, TX 78401
           </p>
-          <p className="p-0 mt-0">
-            <i className="fas fa-phone" />
-            &nbsp;361-737-7813
-          </p>
+          <p className="p-0 mt-0">361-737-7813</p>
           <p>10% discount for all military!</p>
         </Col>
 
