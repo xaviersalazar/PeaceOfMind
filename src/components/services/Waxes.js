@@ -1,141 +1,148 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "reactstrap";
-import styled from "styled-components";
-import ServiceRows from "../common/ServiceRows";
+import ServicePage from "../common/ServicePage";
 
-const MainContainer = styled(Container)`
-  padding-top: 5rem;
-  background: #f3eff5;
-`;
-
-const ServiceTitle = styled.h1`
-  text-align: center;
-  padding: 5rem 0;
-`;
-
-const Disclaimer = styled.p`
-  text-align: center;
-  margin-top: 50px;
-`;
-
-const ParagraphsCol = styled(Col)`
-  padding: 0 3rem;
-
-  @media (min-width: 1440px) {
-    padding: 0 10rem !important;
-  }
-`;
-
+const background = "/resources/services/massages/waxing-main.jpg";
+const title = "Waxing";
 const waxes = [
   {
     row: [
       {
-        icon: "/resources/icons/waxing/arm.png",
+        icon: "/resources/services/massages/waxing-arms.jpg",
         title: "Arm Waxing",
         price: "$25.00",
-        desc: ""
+        desc: "",
+        sm: 12,
+        md: 6,
+        lg: 3
       },
       {
-        icon: "/resources/icons/waxing/back.png",
+        icon: "/resources/services/massages/waxing-back.jpg",
         title: "Back Waxing",
         price: "$70.00",
-        desc: ""
-      }
-    ]
-  },
-  {
-    row: [
+        desc: "",
+        sm: 12,
+        md: 6,
+        lg: 3
+      },
       {
-        icon: "/resources/icons/waxing/bikini.png",
+        icon: "/resources/services/massages/waxing-bikini.jpg",
         title: "Bikini Waxing",
         price: "$35.00",
-        desc: ""
+        desc: "",
+        sm: 12,
+        md: 6,
+        lg: 3
       },
       {
-        icon: "/resources/icons/waxing/brazilianbikini.png",
+        icon: "/resources/services/massages/waxing-brazilian.jpg",
         title: "Brazilian Bikini Waxing",
         price: "$80.00",
-        desc: ""
+        desc: "",
+        sm: 12,
+        md: 6,
+        lg: 3
       }
     ]
   },
   {
     row: [
       {
-        icon: "/resources/icons/waxing/chest.png",
+        icon: "/resources/services/massages/waxing-chest.jpg",
         title: "Chest Waxing",
         price: "$50.00",
-        desc: ""
+        desc: "",
+        sm: 12,
+        md: 6,
+        lg: 3
       },
       {
-        icon: "/resources/icons/waxing/chin.png",
+        icon: "/resources/services/massages/waxing-chin.jpg",
         title: "Chin Waxing",
         price: "$18.00",
-        desc: ""
-      }
-    ]
-  },
-  {
-    row: [
+        desc: "",
+        sm: 12,
+        md: 6,
+        lg: 3
+      },
       {
-        icon: "/resources/icons/waxing/extendedbikini.png",
+        icon: "/resources/services/massages/waxing-extended-bikini.jpg",
         title: "Extended Bikini Waxing",
         price: "$55.00",
-        desc: ""
+        desc: "",
+        sm: 12,
+        md: 6,
+        lg: 3
       },
       {
-        icon: "/resources/icons/waxing/eyebrow.png",
+        icon: "/resources/services/massages/waxing-eyebrow.jpg",
         title: "Eyebrow Waxing",
         price: "$25.00",
-        desc: ""
+        desc: "",
+        sm: 12,
+        md: 6,
+        lg: 3
       }
     ]
   },
   {
     row: [
       {
-        icon: "/resources/icons/waxing/face.png",
+        icon: "/resources/services/massages/waxing-face.jpg",
         title: "Face Waxing",
         price: "$50.00",
-        desc: ""
+        desc: "",
+        sm: 12,
+        md: 6,
+        lg: 3
       },
       {
-        icon: "/resources/icons/waxing/leg.png",
+        icon: "/resources/services/massages/waxing-full-leg.jpg",
         title: "Full Leg Waxing",
         price: "$70.00",
-        desc: ""
-      }
-    ]
-  },
-  {
-    row: [
+        desc: "",
+        sm: 12,
+        md: 6,
+        lg: 3
+      },
       {
-        icon: "/resources/icons/waxing/lip.png",
+        icon: "/resources/services/massages/waxing-lip.jpg",
         title: "Lip Waxing",
         price: "$20.00",
-        desc: ""
+        desc: "",
+        sm: 12,
+        md: 6,
+        lg: 3
       },
       {
-        icon: "/resources/icons/waxing/lowerlegs.png",
+        icon: "/resources/services/massages/waxing-lower-leg.jpg",
         title: "Lower Leg Waxing",
         price: "$40.00",
-        desc: ""
+        desc: "",
+        sm: 12,
+        md: 6,
+        lg: 3
       }
     ]
   },
   {
     row: [
       {
-        icon: "/resources/icons/waxing/underarm.png",
+        icon: "/resources/services/massages/waxing-armpit.jpg",
         title: "Underarm Waxing",
         price: "$28.00",
-        desc: ""
+        desc: "",
+        sm: 12,
+        md: 6,
+        lg: 3
       },
       {
-        icon: "/resources/icons/waxing/upperleg.png",
+        icon: "/resources/services/massages/waxing-upper-leg.jpg",
         title: "Upper Leg Waxing",
         price: "$40.00",
-        desc: ""
+        desc: "",
+        sm: 12,
+        md: 6,
+        lg: 3
       }
     ]
   }
@@ -143,20 +150,6 @@ const waxes = [
 
 export default class Waxes extends Component {
   render() {
-    return (
-      <MainContainer fluid>
-        <ParagraphsCol xs={12} className="mt-5">
-          <ServiceTitle>Full Waxing Services</ServiceTitle>
-        </ParagraphsCol>
-        <ServiceRows rows={waxes} />
-        <Row>
-          <ParagraphsCol xs={12}>
-            <Disclaimer>
-              NOTICE: Prices Are Subject To Change Without Prior Notice
-            </Disclaimer>
-          </ParagraphsCol>
-        </Row>
-      </MainContainer>
-    );
+    return <ServicePage background={background} title={title} rows={waxes} />;
   }
 }
