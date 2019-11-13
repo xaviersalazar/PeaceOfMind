@@ -7,7 +7,7 @@ const expandHr = keyframes`
   from {
     width: 0%;
   } to {
-    width: 80%
+    width: 50%
   }
 `;
 
@@ -48,14 +48,18 @@ const Title = styled.div`
   top: 25%;
   right: 50%;
   transform: translateX(50%);
-  font-size: 4.5rem;
   color: #fff !important;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: auto;
+  }
 `;
 
 const Hr = styled.hr`
   background: #fff;
   padding: 0;
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
   animation: ${expandHr} 3s linear;
 `;

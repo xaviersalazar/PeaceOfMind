@@ -165,6 +165,12 @@ export default class Navigation extends Component {
     });
   };
 
+  clickedLink = () => {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  };
+
   render() {
     return (
       <nav>
@@ -187,6 +193,7 @@ export default class Navigation extends Component {
                       : "top-level-nav-link-black"
                   }`}
                   to="/about"
+                  onClick={() => this.clickedLink()}
                 >
                   About
                 </AboutRouterLink>
@@ -205,22 +212,38 @@ export default class Navigation extends Component {
                 </DropdownToggle>
                 <StyleDropdownMenu right>
                   <StyleDropdownItem>
-                    <RouterNavLink className="link-item" to="/besame/about">
+                    <RouterNavLink
+                      className="link-item"
+                      to="/besame/about"
+                      onClick={() => this.clickedLink()}
+                    >
                       ABOUT BESAME
                     </RouterNavLink>
                   </StyleDropdownItem>
                   <StyleDropdownItem>
-                    <RouterNavLink className="link-item" to="/besame/lipstick">
+                    <RouterNavLink
+                      className="link-item"
+                      to="/besame/lipstick"
+                      onClick={() => this.clickedLink()}
+                    >
                       LIPSTICK
                     </RouterNavLink>
                   </StyleDropdownItem>
                   <StyleDropdownItem>
-                    <RouterNavLink className="link-item" to="/besame/face">
+                    <RouterNavLink
+                      className="link-item"
+                      to="/besame/face"
+                      onClick={() => this.clickedLink()}
+                    >
                       FACE
                     </RouterNavLink>
                   </StyleDropdownItem>
                   <StyleDropdownItem>
-                    <RouterNavLink className="link-item" to="/besame/eyes">
+                    <RouterNavLink
+                      className="link-item"
+                      to="/besame/eyes"
+                      onClick={() => this.clickedLink()}
+                    >
                       EYES
                     </RouterNavLink>
                   </StyleDropdownItem>
@@ -240,12 +263,20 @@ export default class Navigation extends Component {
                 </DropdownToggle>
                 <StyleDropdownMenu right>
                   <StyleDropdownItem>
-                    <RouterNavLink className="link-item" to="/salon/about">
+                    <RouterNavLink
+                      className="link-item"
+                      to="/salon/about"
+                      onClick={() => this.clickedLink()}
+                    >
                       ABOUT OUR SALON
                     </RouterNavLink>
                   </StyleDropdownItem>
                   <StyleDropdownItem>
-                    <RouterNavLink className="link-item" to="/salon/haircuts">
+                    <RouterNavLink
+                      className="link-item"
+                      to="/salon/haircuts"
+                      onClick={() => this.clickedLink()}
+                    >
                       HAIRCUTS
                     </RouterNavLink>
                   </StyleDropdownItem>
@@ -253,6 +284,7 @@ export default class Navigation extends Component {
                     <RouterNavLink
                       className="link-item"
                       to="/salon/hair-coloring"
+                      onClick={() => this.clickedLink()}
                     >
                       HAIR COLORING
                     </RouterNavLink>
@@ -261,6 +293,7 @@ export default class Navigation extends Component {
                     <RouterNavLink
                       className="link-item"
                       to="/salon/hair-extensions"
+                      onClick={() => this.clickedLink()}
                     >
                       HAIR EXTENSIONS
                     </RouterNavLink>
@@ -269,6 +302,7 @@ export default class Navigation extends Component {
                     <RouterNavLink
                       className="link-item"
                       to="/salon/hair-highlights"
+                      onClick={() => this.clickedLink()}
                     >
                       HAIR HIGHLIGHTS
                     </RouterNavLink>
@@ -277,6 +311,7 @@ export default class Navigation extends Component {
                     <RouterNavLink
                       className="link-item"
                       to="/salon/hair-treatments"
+                      onClick={() => this.clickedLink()}
                     >
                       HAIR TREATMENTS
                     </RouterNavLink>
@@ -285,12 +320,17 @@ export default class Navigation extends Component {
                     <RouterNavLink
                       className="link-item"
                       to="/salon/mens-services"
+                      onClick={() => this.clickedLink()}
                     >
                       MENS SERVICES
                     </RouterNavLink>
                   </StyleDropdownItem>
                   <StyleDropdownItem>
-                    <RouterNavLink className="link-item" to="/salon/perms">
+                    <RouterNavLink
+                      className="link-item"
+                      to="/salon/perms"
+                      onClick={() => this.clickedLink()}
+                    >
                       PERMS
                     </RouterNavLink>
                   </StyleDropdownItem>
@@ -298,17 +338,26 @@ export default class Navigation extends Component {
                     <RouterNavLink
                       className="link-item"
                       to="/salon/sets-twists"
+                      onClick={() => this.clickedLink()}
                     >
                       SETS &amp; TWISTS
                     </RouterNavLink>
                   </StyleDropdownItem>
                   <StyleDropdownItem>
-                    <RouterNavLink className="link-item" to="/salon/locs">
+                    <RouterNavLink
+                      className="link-item"
+                      to="/salon/locs"
+                      onClick={() => this.clickedLink()}
+                    >
                       LOCS
                     </RouterNavLink>
                   </StyleDropdownItem>
                   <StyleDropdownItem>
-                    <RouterNavLink className="link-item" to="/salon/relaxer">
+                    <RouterNavLink
+                      className="link-item"
+                      to="/salon/relaxer"
+                      onClick={() => this.clickedLink()}
+                    >
                       RELAXER
                     </RouterNavLink>
                   </StyleDropdownItem>
@@ -316,6 +365,7 @@ export default class Navigation extends Component {
                     <RouterNavLink
                       className="link-item"
                       to="/salon/straightening-services"
+                      onClick={() => this.clickedLink()}
                     >
                       STRAIGHTENING SERVICES
                     </RouterNavLink>
@@ -324,6 +374,7 @@ export default class Navigation extends Component {
                     <RouterNavLink
                       className="link-item"
                       to="/salon/natural-styling"
+                      onClick={() => this.clickedLink()}
                     >
                       NATURAL STYLING
                     </RouterNavLink>
@@ -332,6 +383,7 @@ export default class Navigation extends Component {
                     <RouterNavLink
                       className="link-item"
                       to="/salon/specialty-extensions"
+                      onClick={() => this.clickedLink()}
                     >
                       SPECIALTY w/ EXTENSIONS
                     </RouterNavLink>
@@ -340,6 +392,7 @@ export default class Navigation extends Component {
                     <RouterNavLink
                       className="link-item"
                       to="/salon/finishing-touches"
+                      onClick={() => this.clickedLink()}
                     >
                       FINISHING TOUCHES
                     </RouterNavLink>
@@ -360,7 +413,11 @@ export default class Navigation extends Component {
                 </DropdownToggle>
                 <StyleDropdownMenu right>
                   <StyleDropdownItem>
-                    <RouterNavLink className="link-item" to="/services/about">
+                    <RouterNavLink
+                      className="link-item"
+                      to="/services/about"
+                      onClick={() => this.clickedLink()}
+                    >
                       ABOUT MASSAGES
                     </RouterNavLink>
                   </StyleDropdownItem>
@@ -368,6 +425,7 @@ export default class Navigation extends Component {
                     <RouterNavLink
                       className="link-item"
                       to="/services/massages"
+                      onClick={() => this.clickedLink()}
                     >
                       MASSAGES
                     </RouterNavLink>
@@ -376,17 +434,26 @@ export default class Navigation extends Component {
                     <RouterNavLink
                       className="link-item"
                       to="/services/deluxe-couples"
+                      onClick={() => this.clickedLink()}
                     >
                       DELUXE/COUPLES MASSAGES
                     </RouterNavLink>
                   </StyleDropdownItem>
                   <StyleDropdownItem>
-                    <RouterNavLink className="link-item" to="/services/facials">
+                    <RouterNavLink
+                      className="link-item"
+                      to="/services/facials"
+                      onClick={() => this.clickedLink()}
+                    >
                       FACIALS
                     </RouterNavLink>
                   </StyleDropdownItem>
                   <StyleDropdownItem>
-                    <RouterNavLink className="link-item" to="/services/waxes">
+                    <RouterNavLink
+                      className="link-item"
+                      to="/services/waxes"
+                      onClick={() => this.clickedLink()}
+                    >
                       WAXES
                     </RouterNavLink>
                   </StyleDropdownItem>
@@ -394,6 +461,7 @@ export default class Navigation extends Component {
                     <RouterNavLink
                       className="link-item"
                       to="/services/scrubs-weightloss"
+                      onClick={() => this.clickedLink()}
                     >
                       SCRUBS/WEIGHTLOSS
                     </RouterNavLink>
@@ -402,6 +470,7 @@ export default class Navigation extends Component {
                     <RouterNavLink
                       className="link-item"
                       to="/services/infrared-sauna"
+                      onClick={() => this.clickedLink()}
                     >
                       INFRARED SAUNA
                     </RouterNavLink>
@@ -410,6 +479,7 @@ export default class Navigation extends Component {
                     <RouterNavLink
                       className="link-item"
                       to="/services/oxygen-bar"
+                      onClick={() => this.clickedLink()}
                     >
                       OXYGEN BAR
                     </RouterNavLink>
@@ -418,12 +488,17 @@ export default class Navigation extends Component {
                     <RouterNavLink
                       className="link-item"
                       to="/services/oxygen-foot-soak"
+                      onClick={() => this.clickedLink()}
                     >
                       OXYGEN FOOT SOAK
                     </RouterNavLink>
                   </StyleDropdownItem>
                   <StyleDropdownItem>
-                    <RouterNavLink className="link-item" to="/services/addons">
+                    <RouterNavLink
+                      className="link-item"
+                      to="/services/addons"
+                      onClick={() => this.clickedLink()}
+                    >
                       ADD ON'S
                     </RouterNavLink>
                   </StyleDropdownItem>
@@ -437,6 +512,7 @@ export default class Navigation extends Component {
                       : "top-level-nav-link-black"
                   }`}
                   href="#contact"
+                  onClick={() => this.clickedLink()}
                 >
                   CONTACT US
                 </NavLink>
