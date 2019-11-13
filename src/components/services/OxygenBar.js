@@ -1,37 +1,87 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import ServiceCardRow from "../common/ServiceCardRow";
 
+// Keyframes
+const expandHr = keyframes`
+  from {
+    width: 0%;
+  } to {
+    width: 50%
+  }
+`;
+
+// Styles
 const MainContainer = styled(Container)`
-  padding-top: 5rem;
+  padding: 5rem 2.5rem 0 2.5rem !important;
   background: #f3eff5;
-`;
 
-const ServiceTitle = styled.h1`
-  text-align: center;
-  padding: 5rem 0 0 0;
-`;
-
-const ServiceSubTitle = styled.p`
-  text-align: center;
-  padding: 0 0 5rem 0;
-`;
-
-const ServiceIcon = styled.img`
-  position: relative;
-  margin: 25px 0 0 0;
-  border-radius: 50%;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
-  width: 35%;
-  left: 50%;
-  transform: translateX(-50%);
-
-  @media (min-width: 576px) {
-    width: 20%;
+  @media (min-width: 768px) {
+    background-attachment: fixed;
+    padding: 5rem 5rem 0 5rem !important;
   }
 
   @media (min-width: 992px) {
-    width: 8%;
+    padding: 5rem 8rem 0 8rem !important;
+  }
+`;
+
+const Background = styled.div`
+  background-image: url("${props => props.background}");
+  height: 50vh;
+  width: 100vw;
+  min-width: 100vw;
+  background-attachment: scroll;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    background-attachment: fixed;
+  }
+`;
+
+const Title = styled.div`
+  position: absolute;
+  top: 25%;
+  right: 50%;
+  transform: translateX(50%);
+  color: #fff !important;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: auto;
+  }
+`;
+
+const Hr = styled.hr`
+  background: #fff;
+  padding: 0;
+  width: 50%;
+  margin: 0 auto;
+  animation: ${expandHr} 3s linear;
+`;
+
+const ParagraphsCol = styled(Col)`
+  padding: 0;
+`;
+
+const ServiceTitle = styled.h1`
+  color: #fff !important;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+`;
+
+const HeadingHr = styled.hr`
+  width: 50%;
+
+  @media (min-width: 768px) {
+    width: 25%;
   }
 `;
 
@@ -40,67 +90,62 @@ const Disclaimer = styled.p`
   margin-top: 50px;
 `;
 
-const ParagraphsCol = styled(Col)`
-  padding: 0 3rem;
-
-  @media (min-width: 1440px) {
-    padding: 0 10rem !important;
+const benefits = [
+  {
+    row: [
+      {
+        icon: "/resources/services/massages/oxygen-benefits.jpg",
+        title: "Benefits of Oxygen",
+        price: "$1.50 per minute",
+        desc:
+          "Oxygen is an element of vitality for the body, asthenia, chronic headache and lethargy, increases concentration, thinking power, memory, intellectual development, reduces fatigue, alcohol detoxification and skin care, and strengthens immune system against virus and influenza. Oxygen supports breathing of air in cases of asthma and allergies. Oxygen helps in cases of depression.Oxygen improves physical performance by up to 25%.",
+        sm: 12,
+        md: 6,
+        lg: 3
+      }
+    ]
   }
-`;
-
-const SectionTitle = styled.h4`
-  text-align: center;
-  margin-top: 3rem;
-`;
+];
 
 export default class OxygenBar extends Component {
   render() {
     return (
-      <MainContainer fluid>
-        <ParagraphsCol xs={12} className="mt-5">
-          <ServiceTitle>Rejuvinate with our Oxygen Bar</ServiceTitle>
-          <ServiceSubTitle style={{ textAlign: "center", margin: "0" }}>
-            $1.50 per minute
-          </ServiceSubTitle>
-        </ParagraphsCol>
-        <Row>
-          <ParagraphsCol xs={12} className="mb-3">
-            <p style={{ textAlign: "center" }}>
-              A high purity way to get oxygen for recreation and relaxation.
-              Indulge in Aroma O2 oxygen giving you a mild safe euphoric
-              feeling. Oxygen is nutrient for the brain, The brain of an adult
-              accounts for 2 to 3 percent of the whole body in terms of weight
-              but consumes 20% of oxygen absorbed into the body. Brain cells
-              need 200 liters of oxygen a day for proper operation.
-            </p>
-          </ParagraphsCol>
-        </Row>
-        <Row>
-          <ParagraphsCol xs={12}>
-            <ServiceIcon
-              src="/resources/icons/oxygen/brain.png"
-              className="img-fluid"
-            />
-            <SectionTitle>Benefits of Oxygen</SectionTitle>
-            <p style={{ textAlign: "center" }}>
-              Oxygen is an element of vitality for the body, asthenia, chronic
-              headache and lethargy, increases concentration, thinking power,
-              memory, intellectual development, reduces fatigue, alcohol
-              detoxification and skin care, and strengthens immune system
-              against virus and influenza. Oxygen supports breathing of air in
-              cases of asthma and allergies. Oxygen helps in cases of
-              depression.Oxygen improves physical performance by up to 25%.
-            </p>
-          </ParagraphsCol>
-        </Row>
-        <Row>
-          <ParagraphsCol xs={12}>
-            <Disclaimer>
-              NOTICE: Prices Are Subject To Change Without Prior Notice
-            </Disclaimer>
-          </ParagraphsCol>
-        </Row>
-      </MainContainer>
+      <div>
+        <Title>
+          <ServiceTitle>Oxygen Bar</ServiceTitle>
+          <Hr />
+        </Title>
+        <Background
+          background={"/resources/services/massages/oxygen-main.jpg"}
+        />
+        <MainContainer fluid>
+          <Row className="mb-5">
+            <ParagraphsCol xs={12} className="text-center">
+              <h1 className="text-center">Rejuvinate with our Oxygen Bar</h1>
+              <HeadingHr />
+              <ParagraphsCol xs={12} className="text-center">
+                <p>
+                  A high purity way to get oxygen for recreation and relaxation.
+                  Indulge in Aroma O2 oxygen giving you a mild safe euphoric
+                  feeling. Oxygen is nutrient for the brain, The brain of an
+                  adult accounts for 2 to 3 percent of the whole body in terms
+                  of weight but consumes 20% of oxygen absorbed into the body.
+                  Brain cells need 200 liters of oxygen a day for proper
+                  operation.
+                </p>
+              </ParagraphsCol>
+            </ParagraphsCol>
+          </Row>
+          <ServiceCardRow rows={benefits} />
+          <Row>
+            <ParagraphsCol xs={12}>
+              <Disclaimer>
+                NOTICE: Prices Are Subject To Change Without Prior Notice
+              </Disclaimer>
+            </ParagraphsCol>
+          </Row>
+        </MainContainer>
+      </div>
     );
   }
 }
