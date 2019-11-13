@@ -360,6 +360,11 @@ export default class Navigation extends Component {
                 </DropdownToggle>
                 <StyleDropdownMenu right>
                   <StyleDropdownItem>
+                    <RouterNavLink className="link-item" to="/services/about">
+                      ABOUT MASSAGES
+                    </RouterNavLink>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
                     <RouterNavLink
                       className="link-item"
                       to="/services/massages"

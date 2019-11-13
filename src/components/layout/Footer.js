@@ -5,6 +5,16 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 import styled from "styled-components";
 
+const FormCol = styled(Col)`
+  && {
+    padding: 2.75rem;
+
+    @media (min-width: 768px) {
+      padding: 1rem 3rem 1rem 1rem;
+    }
+  }
+`;
+
 const FormInput = styled(Input)`
   && {
     border-top: none;
@@ -131,7 +141,7 @@ export default class Footer extends Component {
           <p>10% discount for all military!</p>
         </Col>
 
-        <Col xs={12} md={6} className="p-3">
+        <FormCol xs={12} md={6}>
           <NetlifyForm
             name="Contact Form"
             onSuccess={() => this.onSuccess()}
@@ -191,7 +201,7 @@ export default class Footer extends Component {
               </div>
             )}
           </NetlifyForm>
-        </Col>
+        </FormCol>
       </Row>
     );
   }

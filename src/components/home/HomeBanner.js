@@ -12,7 +12,7 @@ const ColoredCol = styled(Col)`
 const BookButton = styled(NavLink)`
   && {
     border-radius: 8px;
-    padding: 1rem 4rem;
+    padding: 1rem 1rem;
     position: relative;
     top: 15px;
     box-shadow: rgba(0, 0, 0, 0.12) 0 3px 13px 1px;
@@ -37,6 +37,10 @@ const BookButton = styled(NavLink)`
 
 const Hr = styled.hr`
   width: 50%;
+
+  @media (min-width: 768px) {
+    width: 25%;
+  }
 `;
 
 export default class HomeBanner extends Component {
@@ -55,7 +59,7 @@ export default class HomeBanner extends Component {
             Peace Of Mind.
           </p>
 
-          <h1 className="text-center">Salon</h1>
+          <h1 className="text-center mt-5">Salon</h1>
           <Hr />
           <p className="text-center px-5">
             We are a Dyson inspired Salon and we are sticking to our organic

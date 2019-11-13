@@ -12,6 +12,10 @@ const ColoredRow = styled(Row)`
 
 const Hr = styled.hr`
   width: 50%;
+
+  @media (min-width: 768px) {
+    width: 25%;
+  }
 `;
 
 export default class Home extends Component {

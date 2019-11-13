@@ -13,16 +13,16 @@ const expandHr = keyframes`
 
 // Styles
 const MainContainer = styled(Container)`
-  padding: 5rem 2.5rem 0 2.5rem !important;
+  padding: 5rem 3rem !important;
   background: #f3eff5;
 
   @media (min-width: 768px) {
     background-attachment: fixed;
-    padding: 5rem 3.5rem 3.5rem 3.5rem !important;
+    padding: 5rem 5rem !important;
   }
 
   @media (min-width: 992px) {
-    padding: 5rem 5rem 5rem 5rem !important;
+    padding: 5rem 8rem !important;
   }
 `;
 
@@ -61,11 +61,7 @@ const Hr = styled.hr`
 `;
 
 const ParagraphsCol = styled(Col)`
-  padding: 0 3rem;
-
-  @media (min-width: 1440px) {
-    padding: 0 10rem !important;
-  }
+  padding: 0;
 `;
 
 const ServiceTitle = styled.h1`
@@ -74,6 +70,14 @@ const ServiceTitle = styled.h1`
   margin: 0;
   padding: 0;
   text-align: center;
+`;
+
+const HeadingHr = styled.hr`
+  width: 50%;
+
+  @media (min-width: 768px) {
+    width: 25%;
+  }
 `;
 
 export default class About extends Component {
@@ -89,6 +93,7 @@ export default class About extends Component {
           <Row>
             <ParagraphsCol xs={12} className="text-center">
               <h1 className="text-center">Our Story</h1>
+              <HeadingHr />
               <ParagraphsCol xs={12} className="text-center">
                 <p>
                   Peace of Mind Massage Therapy &amp; Natural Healing is a Woman

@@ -30,6 +30,7 @@ import NaturalStyling from "./salon/NaturalStyling";
 import SpecialtyExtensions from "./salon/SpecialtyExtensions";
 import FinishingTouches from "./salon/FinishingTouches";
 import StraighteningServices from "./salon/StraighteningServices";
+import AboutMassage from "./services/AboutMassage";
 
 export default class Main extends Component {
   render() {
@@ -62,6 +63,7 @@ export default class Main extends Component {
           component={SpecialtyExtensions}
         />
         <Route path="/salon/finishing-touches" component={FinishingTouches} />
+        <Route path="/services/about" component={AboutMassage} />
         <Route path="/services/addons" component={AddOns} />
         <Route
           path="/services/deluxe-couples"
