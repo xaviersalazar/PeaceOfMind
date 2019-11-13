@@ -96,12 +96,11 @@ const benefits = [
       {
         icon: "/resources/services/massages/oxygen-benefits.jpg",
         title: "Benefits of Oxygen",
-        price: "$1.50 per minute",
         desc:
           "Oxygen is an element of vitality for the body, asthenia, chronic headache and lethargy, increases concentration, thinking power, memory, intellectual development, reduces fatigue, alcohol detoxification and skin care, and strengthens immune system against virus and influenza. Oxygen supports breathing of air in cases of asthma and allergies. Oxygen helps in cases of depression.Oxygen improves physical performance by up to 25%.",
         sm: 12,
-        md: 6,
-        lg: 3
+        md: 12,
+        lg: 6
       }
     ]
   }
@@ -122,6 +121,7 @@ export default class OxygenBar extends Component {
           <Row className="mb-5">
             <ParagraphsCol xs={12} className="text-center">
               <h1 className="text-center">Rejuvinate with our Oxygen Bar</h1>
+              <small className="m-0 p-0">$1.50 per minute</small>
               <HeadingHr />
               <ParagraphsCol xs={12} className="text-center">
                 <p>
