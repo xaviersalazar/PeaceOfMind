@@ -13,8 +13,7 @@ const hairExtensions = [
         desc:
           "Preliminary consultation required. Cost of hair extensions additional. Price and time quoted at consultation. ong hair pricing may apply. Additional charge of $15 or $20",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       }
     ]
   }

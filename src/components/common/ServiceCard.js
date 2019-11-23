@@ -45,13 +45,7 @@ const ServiceCardPrice = styled(CardSubtitle)`
 
 const ServiceCard = ({ ...props }) => {
   return (
-    <Col
-      key={props.title}
-      xs={props.xs}
-      md={props.md}
-      lg={props.lg}
-      className="mb-4"
-    >
+    <Col key={props.title} xs={props.xs} xl={props.xl} className="mb-4">
       <ServiceCardMain>
         <CardImg top width="100%" src={props.icon} alt={props.title} />
         <ServiceCardBody>

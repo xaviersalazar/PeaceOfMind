@@ -47,6 +47,7 @@ const ServiceCard = ({ ...props }) => {
       xs={props.xs}
       md={props.md}
       lg={props.lg}
+      xl={props.xl}
       className="mb-4"
     >
       <BenefitsCardMain>

@@ -73,8 +73,7 @@ const serviceColumn1 = [
     message: "You will leave completely rejuvenated",
     hrefLink: "/services/massages",
     sm: 12,
-    md: 6,
-    lg: 3
+    xl: 4
   },
   {
     icon: "/resources/services/salon.jpg",
@@ -82,8 +81,7 @@ const serviceColumn1 = [
     message: "Salon services of the highest quality",
     hrefLink: "/salon/about",
     sm: 12,
-    md: 6,
-    lg: 3
+    xl: 4
   },
   {
     icon: "/resources/services/deluxe-couples.jpg",
@@ -91,29 +89,26 @@ const serviceColumn1 = [
     message: "Stimulating massages for the couples",
     hrefLink: "/services/deluxe-couples",
     sm: 12,
-    md: 6,
-    lg: 3
-  },
+    xl: 4
+  }
+];
+
+const serviceColumn2 = [
   {
     icon: "/resources/services/facials.jpg",
     service: "Facials",
     message: "Treatments surely to make your face radiate",
     hrefLink: "/services/facials",
     sm: 12,
-    md: 6,
-    lg: 3
-  }
-];
-
-const serviceColumn2 = [
+    xl: 4
+  },
   {
     icon: "/resources/services/waxes.jpg",
     service: "Waxes",
     message: "Full service waxing",
     hrefLink: "/services/waxes",
     sm: 12,
-    md: 6,
-    lg: 3
+    xl: 4
   },
   {
     icon: "/resources/services/weight-scrubs.jpg",
@@ -121,17 +116,18 @@ const serviceColumn2 = [
     message: "Our deep scrubs and weight loss treatments",
     hrefLink: "/services/scrubs-weightloss",
     sm: 12,
-    md: 6,
-    lg: 3
-  },
+    xl: 4
+  }
+];
+
+const serviceColumn3 = [
   {
     icon: "/resources/services/sauna.jpg",
     service: "Infrared Sauna",
     message: "Infrared light therapy to help you heal",
     hrefLink: "/services/infrared-sauna",
     sm: 12,
-    md: 6,
-    lg: 3
+    xl: 4
   },
   {
     icon: "/resources/services/oxygen-bar.jpg",
@@ -139,29 +135,26 @@ const serviceColumn2 = [
     message: "Oxygen rejuvenation for the brain",
     hrefLink: "/services/oxygen-bar",
     sm: 12,
-    md: 6,
-    lg: 3
-  }
-];
-
-const serviceColumn3 = [
+    xl: 4
+  },
   {
     icon: "/resources/services/oxygen-foot-soak.jpg",
     service: "Oxygen Foot Soak",
     message: "Detox the impurities from your body",
     hrefLink: "/services/oxygen-foot-soak",
     sm: 12,
-    md: 6,
-    lg: 3
-  },
+    xl: 4
+  }
+];
+
+const serviceColumn4 = [
   {
     icon: "/resources/services/addons.jpg",
     service: "Add On Services",
     message: "Services to add onto your massages",
     hrefLink: "/services/addons",
     sm: 12,
-    md: 6,
-    lg: 3
+    xl: 4
   }
 ];
 
@@ -171,8 +164,7 @@ const createServiceColumn = props => {
       <Col
         key={service.service}
         xs={service.xs}
-        md={service.md}
-        lg={service.lg}
+        xl={service.xl}
         className="mb-4"
       >
         <ServiceCard>
@@ -193,8 +185,9 @@ export default class HomeService extends Component {
       <ServicesContainer>
         <Row>{createServiceColumn(serviceColumn1)}</Row>
         <Row>{createServiceColumn(serviceColumn2)}</Row>
+        <Row>{createServiceColumn(serviceColumn3)}</Row>
         <Row className="justify-content-center">
-          {createServiceColumn(serviceColumn3)}
+          {createServiceColumn(serviceColumn4)}
         </Row>
       </ServicesContainer>
     );

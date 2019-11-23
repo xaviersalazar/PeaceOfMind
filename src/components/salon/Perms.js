@@ -12,8 +12,7 @@ const perms = [
         price: "$90.00 - $120.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/salon/perm-basic-haircut.jpg",
@@ -21,8 +20,7 @@ const perms = [
         price: "$95.00 - $130.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/salon/perm-specialty.jpg",
@@ -30,17 +28,19 @@ const perms = [
         price: "$95.00 - $140.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
-      },
+        xl: 4
+      }
+    ]
+  },
+  {
+    row: [
       {
         icon: "/resources/services/salon/perm-specialty-haircut.jpg",
         title: "Specialty Wave w/ Haircut",
         price: "$110.00 - $150.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       }
     ]
   }

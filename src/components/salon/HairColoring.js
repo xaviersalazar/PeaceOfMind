@@ -14,8 +14,7 @@ const hairColoring = [
         desc:
           "The ultimate in hair coloring, providing smoothness, protection and brilliant shine for long-lasting color",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/salon/haircolor-premium-haircut.jpg",
@@ -23,8 +22,7 @@ const hairColoring = [
         price: "$85.00 - $110.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/salon/haircolor-single.jpg",
@@ -32,30 +30,27 @@ const hairColoring = [
         price: "$65.00+",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
-      },
-      {
-        icon: "/resources/services/salon/haircolor-single-haircut.jpg",
-        title: "Single-Process w/ Haircut",
-        price: "$85.00 - $95.00",
-        desc: "",
-        sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       }
     ]
   },
   {
     row: [
       {
+        icon: "/resources/services/salon/haircolor-single-haircut.jpg",
+        title: "Single-Process w/ Haircut",
+        price: "$85.00 - $95.00",
+        desc: "",
+        sm: 12,
+        xl: 4
+      },
+      {
         icon: "/resources/services/salon/haircolor-double.jpg",
         title: "Double-Process+",
         price: "$90.00 - $120.00",
         desc: "Bleach & tone or high lift color & tone",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/salon/haircolor-double-haircut.jpg",
@@ -63,17 +58,19 @@ const hairColoring = [
         price: "$105.00 - $120.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
-      },
+        xl: 4
+      }
+    ]
+  },
+  {
+    row: [
       {
         icon: "/resources/services/salon/haircolor-gloss.jpg",
         title: "Glossing+",
         price: "$20.00",
         desc: "Performed following chemical service to add intense shine",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/salon/haircolor-rinse.jpg",
@@ -81,21 +78,15 @@ const hairColoring = [
         price: "$15.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
-      }
-    ]
-  },
-  {
-    row: [
+        xl: 4
+      },
       {
         icon: "/resources/services/salon/haircolor-corrective.jpg",
         title: "Corrective Color",
         price: "$90.00 - $120.00+",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       }
     ]
   }

@@ -99,8 +99,7 @@ const benefits = [
         desc:
           "Oxygen is an element of vitality for the body, asthenia, chronic headache and lethargy, increases concentration, thinking power, memory, intellectual development, reduces fatigue, alcohol detoxification and skin care, and strengthens immune system against virus and influenza. Oxygen supports breathing of air in cases of asthma and allergies. Oxygen helps in cases of depression.Oxygen improves physical performance by up to 25%.",
         sm: 12,
-        md: 12,
-        lg: 6
+        xl: 4
       }
     ]
   }

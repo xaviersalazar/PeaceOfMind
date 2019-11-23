@@ -12,8 +12,7 @@ const specialtyExtensions = [
         price: "$150.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/salon/specialty-rope.jpg",
@@ -21,8 +20,7 @@ const specialtyExtensions = [
         price: "$170.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/salon/specialty-micro.jpg",
@@ -30,8 +28,7 @@ const specialtyExtensions = [
         price: "$300.00 - $450.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       }
     ]
   }

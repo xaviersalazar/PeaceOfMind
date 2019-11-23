@@ -12,8 +12,7 @@ const haircuts = [
         price: "$72.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/salon/haircut-express.jpg",
@@ -21,8 +20,7 @@ const haircuts = [
         price: "$35.00 - $45.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/salon/haircut-kids.jpg",
@@ -30,17 +28,19 @@ const haircuts = [
         price: "$15.00 - $20.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
-      },
+        xl: 4
+      }
+    ]
+  },
+  {
+    row: [
       {
         icon: "/resources/services/salon/haircut-band-trim.jpg",
         title: "Complimentary Band Trim",
         price: "FREE (Service not required)",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       }
     ]
   }

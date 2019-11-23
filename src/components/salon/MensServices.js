@@ -12,8 +12,7 @@ const mensServices = [
         price: "$30.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/salon/mens-gray.jpg",
@@ -21,8 +20,7 @@ const mensServices = [
         price: "$45.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/salon/mens-signature.jpg",
@@ -31,8 +29,7 @@ const mensServices = [
         desc:
           "Includes scalp massage, hot towel, haircut, and facial hair trim",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       }
     ]
   }

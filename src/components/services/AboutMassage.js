@@ -99,8 +99,7 @@ const benefits = [
           "Replenishes Nutritive Materials"
         ],
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/massages/massage-about-lymph.jpg",
@@ -113,8 +112,7 @@ const benefits = [
           "Increases Lymphocyte Count"
         ],
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/massages/massage-about-nervous.jpg",
@@ -127,9 +125,12 @@ const benefits = [
           "Decreases Pain"
         ],
         sm: 12,
-        md: 6,
-        lg: 3
-      },
+        xl: 4
+      }
+    ]
+  },
+  {
+    row: [
       {
         icon: "/resources/services/massages/massage-about-skin.jpg",
         title: "Skin & Related Structures",
@@ -141,13 +142,8 @@ const benefits = [
           "Stimulates Sebaceous Glands"
         ],
         sm: 12,
-        md: 6,
-        lg: 3
-      }
-    ]
-  },
-  {
-    row: [
+        xl: 4
+      },
       {
         icon: "/resources/services/massages/massage-about-muscles.jpg",
         title: "On The Muscles",
@@ -159,8 +155,7 @@ const benefits = [
           "Improves Balance & Posture"
         ],
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       }
     ]
   }

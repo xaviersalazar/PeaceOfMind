@@ -99,8 +99,7 @@ const benefits = [
         desc:
           "To relieve the strains on the kidneys and liver it is more important than ever to maintain a detoxification regimen. The ion foot bath is designed to relieve these strains and help the body re-balance its energy fields allowing organs to function better. After using ionic foot bath  machine healthy individuals and users can feel lighter and experience a greater feeling of well being from each session. More energy and youth is felt as well. Some people with pain, edema, swollen, and deteriorating joints have also reported symptomatic relief from the sessions. Many doctors, nurses, professionals and the likes have also recommended this machine for their patients. We also found many excerpts stating that the machine has helped individuals break free from addiction problems.",
         sm: 12,
-        md: 12,
-        lg: 6
+        xl: 4
       }
     ]
   }

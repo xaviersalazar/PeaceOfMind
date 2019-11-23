@@ -12,8 +12,7 @@ const waxes = [
         price: "$25.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/massages/waxing-back.jpg",
@@ -21,8 +20,7 @@ const waxes = [
         price: "$70.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/massages/waxing-bikini.jpg",
@@ -30,17 +28,35 @@ const waxes = [
         price: "$35.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
-      },
+        xl: 4
+      }
+    ]
+  },
+  {
+    row: [
       {
         icon: "/resources/services/massages/waxing-brazilian.jpg",
         title: "Brazilian Bikini Waxing",
         price: "$80.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
+      },
+      {
+        icon: "/resources/services/massages/waxing-face.jpg",
+        title: "Face Waxing",
+        price: "$50.00",
+        desc: "",
+        sm: 12,
+        xl: 4
+      },
+      {
+        icon: "/resources/services/massages/waxing-full-leg.jpg",
+        title: "Full Leg Waxing",
+        price: "$70.00",
+        desc: "",
+        sm: 12,
+        xl: 4
       }
     ]
   },
@@ -52,8 +68,7 @@ const waxes = [
         price: "$50.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/massages/waxing-chin.jpg",
@@ -61,8 +76,7 @@ const waxes = [
         price: "$18.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/massages/waxing-extended-bikini.jpg",
@@ -70,39 +84,19 @@ const waxes = [
         price: "$55.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
-      },
-      {
-        icon: "/resources/services/massages/waxing-eyebrow.jpg",
-        title: "Eyebrow Waxing",
-        price: "$25.00",
-        desc: "",
-        sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       }
     ]
   },
   {
     row: [
       {
-        icon: "/resources/services/massages/waxing-face.jpg",
-        title: "Face Waxing",
-        price: "$50.00",
+        icon: "/resources/services/massages/waxing-eyebrow.jpg",
+        title: "Eyebrow Waxing",
+        price: "$25.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
-      },
-      {
-        icon: "/resources/services/massages/waxing-full-leg.jpg",
-        title: "Full Leg Waxing",
-        price: "$70.00",
-        desc: "",
-        sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/massages/waxing-lip.jpg",
@@ -110,8 +104,7 @@ const waxes = [
         price: "$20.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/massages/waxing-lower-leg.jpg",
@@ -119,8 +112,7 @@ const waxes = [
         price: "$40.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       }
     ]
   },
@@ -132,8 +124,7 @@ const waxes = [
         price: "$28.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/massages/waxing-upper-leg.jpg",
@@ -141,8 +132,7 @@ const waxes = [
         price: "$40.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       }
     ]
   }

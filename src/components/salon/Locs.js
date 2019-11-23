@@ -12,8 +12,7 @@ const locs = [
         price: "$100.00 - $200.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/salon/locs-styling.jpg",
@@ -21,8 +20,7 @@ const locs = [
         price: "$100.00 - $230.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       }
     ]
   }

@@ -12,8 +12,7 @@ const finishingTouches = [
         price: "$25.00 - $45.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/salon/finishing-touches-formal.jpg",
@@ -21,8 +20,7 @@ const finishingTouches = [
         price: "$80.00 - $100.00",
         desc: "Braiding, up-styles and curls",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon:
@@ -31,8 +29,7 @@ const finishingTouches = [
         price: "$25.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       }
     ]
   }

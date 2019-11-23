@@ -12,8 +12,7 @@ const straighteningServices = [
         price: "$150.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon:
@@ -22,8 +21,7 @@ const straighteningServices = [
         price: "$170.00 - $180.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon:
@@ -32,9 +30,12 @@ const straighteningServices = [
         price: "$300.00 - $350.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
-      },
+        xl: 4
+      }
+    ]
+  },
+  {
+    row: [
       {
         icon:
           "/resources/services/salon/straightening-organic-thermal-straightening-haircut.jpg",
@@ -42,21 +43,15 @@ const straighteningServices = [
         price: "$325.00 - $350.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
-      }
-    ]
-  },
-  {
-    row: [
+        xl: 4
+      },
       {
         icon: "/resources/services/salon/straightening-retouch.jpg",
         title: "Retouch",
         price: "$245.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/salon/straightening-retouch-haircut.jpg",
@@ -64,8 +59,7 @@ const straighteningServices = [
         price: "$260.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       }
     ]
   }

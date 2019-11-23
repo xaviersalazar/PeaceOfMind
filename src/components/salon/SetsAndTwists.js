@@ -12,8 +12,7 @@ const setsAndTwists = [
         price: "$100.00 - $150.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/salon/sets-shampoo-rinse.jpg",
@@ -21,8 +20,7 @@ const setsAndTwists = [
         price: "$95.00 - $110.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/salon/sets-shampoo-rinse-flat.jpg",
@@ -30,30 +28,27 @@ const setsAndTwists = [
         price: "$95.00 - $110.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
-      },
-      {
-        icon: "/resources/services/salon/sets-single-twist.jpg",
-        title: "Single Twist Comb Twist",
-        price: "$90.00 - $200.00",
-        desc: "",
-        sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       }
     ]
   },
   {
     row: [
       {
+        icon: "/resources/services/salon/sets-single-twist.jpg",
+        title: "Single Twist Comb Twist",
+        price: "$90.00 - $200.00",
+        desc: "",
+        sm: 12,
+        xl: 4
+      },
+      {
         icon: "/resources/services/salon/sets-double-twist.jpg",
         title: "Double Twist Two Strand",
         price: "$90.00 - $200.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/salon/sets-straw.jpg",
@@ -61,17 +56,19 @@ const setsAndTwists = [
         price: "$90.00 - $150.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
-      },
+        xl: 4
+      }
+    ]
+  },
+  {
+    row: [
       {
         icon: "/resources/services/salon/sets-rod.jpg",
         title: "Rod Set",
         price: "$90.00 - $150.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       }
     ]
   }

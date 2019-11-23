@@ -11,8 +11,7 @@ const ServiceCardRow = ({ rows }) => {
             <ServiceCard
               key={s.title}
               xs={s.xs}
-              md={s.md}
-              lg={s.lg}
+              xl={s.xl}
               icon={s.icon}
               title={s.title}
               price={s.price}

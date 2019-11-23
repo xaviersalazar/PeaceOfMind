@@ -12,8 +12,7 @@ const naturalStyling = [
         price: "$35.00 - $60.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/salon/natural-basic-corn-row.jpg",
@@ -21,8 +20,7 @@ const naturalStyling = [
         price: "$50.00 - $100.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/salon/natural-corn-row-design.jpg",
@@ -30,17 +28,19 @@ const naturalStyling = [
         price: "$60.00 - $150.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
-      },
+        xl: 4
+      }
+    ]
+  },
+  {
+    row: [
       {
         icon: "/resources/services/salon/natural-bantu.jpg",
         title: "Bantu Knots",
         price: "$80.00 - $150.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       }
     ]
   }

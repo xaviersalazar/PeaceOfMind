@@ -12,8 +12,7 @@ const hairTreatment = [
         price: "$20.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/salon/hair-treatments-aqua-boost.jpg",
@@ -21,8 +20,7 @@ const hairTreatment = [
         price: "$20.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/salon/hair-treatments-breakage.jpg",
@@ -30,30 +28,27 @@ const hairTreatment = [
         price: "$20.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
-      },
-      {
-        icon: "/resources/services/salon/hair-treatments-organic-colour.jpg",
-        title: "Organic Colour Systems Smooth+ Treatment",
-        price: "$20.00",
-        desc: "",
-        sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       }
     ]
   },
   {
     row: [
       {
+        icon: "/resources/services/salon/hair-treatments-organic-colour.jpg",
+        title: "Organic Colour Systems Smooth+ Treatment",
+        price: "$20.00",
+        desc: "",
+        sm: 12,
+        xl: 4
+      },
+      {
         icon: "/resources/services/salon/hair-treatments-organic-scalp.jpg",
         title: "Dry Scalp & Dandruff",
         price: "$45.00",
         desc: "Organic Custom Blend & Scalp Tonic",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       },
       {
         icon: "/resources/services/salon/hair-treatments-scalp.jpg",
@@ -61,17 +56,19 @@ const hairTreatment = [
         price: "$20.00",
         desc: "Dry Scalp Tonic",
         sm: 12,
-        md: 6,
-        lg: 3
-      },
+        xl: 4
+      }
+    ]
+  },
+  {
+    row: [
       {
         icon: "/resources/services/salon/hair-treatments-clarifying.jpg",
         title: "Organic Colour Systems Intensive Clarifying",
         price: "$20.00",
         desc: "",
         sm: 12,
-        md: 6,
-        lg: 3
+        xl: 4
       }
     ]
   }

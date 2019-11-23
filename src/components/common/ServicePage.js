@@ -101,11 +101,9 @@ const ServicePage = ({ ...props }) => {
             <Disclaimer>
               NOTICE: Prices Are Subject To Change Without Prior Notice
               {props.smallNotice ? (
-                <div>
-                  <small style={{ fontWeight: "inherit" }}>
-                    {props.smallNotice}
-                  </small>
-                </div>
+                <small style={{ fontWeight: "inherit" }}>
+                  {props.smallNotice}
+                </small>
               ) : (
                 ""
               )}
