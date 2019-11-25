@@ -99,7 +99,7 @@ const ServicePage = ({ ...props }) => {
         <Row>
           <ParagraphsCol xs={12}>
             <Disclaimer>
-              NOTICE: Prices Are Subject To Change Without Prior Notice
+              {props.otherNotice ? props.otherNotice : "NOTICE: Prices Are Subject To Change Without Prior Notice"}
               {props.smallNotice ? (
                 <small style={{ fontWeight: "inherit" }}>
                   {props.smallNotice}
