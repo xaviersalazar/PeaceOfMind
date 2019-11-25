@@ -226,7 +226,7 @@ export default class Navigation extends Component {
                       to="/besame/lipstick"
                       onClick={() => this.clickedLink()}
                     >
-                      LIPSTICK
+                      LIPS
                     </RouterNavLink>
                   </StyleDropdownItem>
                   <StyleDropdownItem>

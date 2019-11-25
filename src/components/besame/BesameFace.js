@@ -1,187 +1,176 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "reactstrap";
-import styled from "styled-components";
+import ServicePage from "../common/ServicePage";
 
-const MainContainer = styled(Container)`
-  background: #f3eff5;
-  padding-top: 5rem;
-`;
-
-const BesameTitle = styled.h1`
-  text-align: center;
-  padding: 5rem 0;
-`;
-
-const FaceProduct = styled.img`
-  margin: 10px 0;
-  border-radius: 50%;
-  width: 50%;
-`;
-
-const FaceProductLastRow = styled.img`
-  margin: 10px 0;
-  border-radius: 50%;
-  width: 50%;
-
-  @media (min-width: 767px) {
-    width: 25%;
+const background = "/resources/services/massages/massage-about-main.jpg";
+const title = "Face";
+const otherNotice = "All products sold in store only";
+const faceProducts = [
+  {
+    row: [
+      {
+        icon: "/resources/face/apricot-cream-rouge.jpg",
+        title: "Apricot Cream Rogue",
+        sm: 12,
+        md: 6,
+        lg: 4,
+        xl: 2
+      },
+      {
+        icon: "/resources/face/bisque-souffle-foundation.jpg",
+        title: "Bisque Souffle Foundation",
+        sm: 12,
+        md: 6,
+        lg: 4,
+        xl: 2
+      },
+      {
+        icon: "/resources/face/brightening-violet-powder.jpg",
+        title: "Brightening Violet Powder",
+        sm: 12,
+        md: 6,
+        lg: 4,
+        xl: 2
+      },
+      {
+        icon: "/resources/face/crimson-cream-rouge.jpg",
+        title: "Crimson Cream Rouge",
+        sm: 12,
+        md: 6,
+        lg: 4,
+        xl: 2
+      },
+      {
+        icon: "/resources/face/dark-cashmere-powder-compact.jpg",
+        title: "Dark Cashmere Powder Compact",
+        sm: 12,
+        md: 6,
+        lg: 4,
+        xl: 2
+      },
+      {
+        icon: "/resources/face/honey-souffle-foundation.jpg",
+        title: "Honey Souffle Foundation",
+        sm: 12,
+        md: 6,
+        lg: 4,
+        xl: 2
+      }
+    ]
+  },
+  {
+    row: [
+      {
+        icon: "/resources/face/light-cashmere-powder-compact.jpg",
+        title: "Light Cashmere Powder Compact",
+        sm: 12,
+        md: 6,
+        lg: 4,
+        xl: 2
+      },
+      {
+        icon: "/resources/face/medium-beige-souffle-foundation.jpg",
+        title: "Medium Beige Souffle Foundation",
+        sm: 12,
+        md: 6,
+        lg: 4,
+        xl: 2
+      },
+      {
+        icon: "/resources/face/medium-cashmere-powder-compact.jpg",
+        title: "Medium Cashmere Powder Compact",
+        sm: 12,
+        md: 6,
+        lg: 4,
+        xl: 2
+      },
+      {
+        icon: "/resources/face/porcelain-cashmere-powder-compact.jpg",
+        title: "Porcelain Cashmere Powder Compact",
+        sm: 12,
+        md: 6,
+        lg: 4,
+        xl: 2
+      },
+      {
+        icon: "/resources/face/refill-dark.jpg",
+        title: "Cashmere Powder Dark Refill",
+        sm: 12,
+        md: 6,
+        lg: 4,
+        xl: 2
+      },
+      {
+        icon: "/resources/face/refill-light.jpg",
+        title: "Cashmere Powder Light Refill",
+        sm: 12,
+        md: 6,
+        lg: 4,
+        xl: 2
+      }
+    ]
+  },
+  {
+    row: [
+      {
+        icon: "/resources/face/refill-medium.jpg",
+        title: "Cashmere Powder Medium Refill",
+        sm: 12,
+        md: 6,
+        lg: 4,
+        xl: 2
+      },
+      {
+        icon: "/resources/face/refill-porcelain.jpg",
+        title: "Cashmere Powder Porcelain Refill",
+        sm: 12,
+        md: 6,
+        lg: 4,
+        xl: 2
+      },
+      {
+        icon: "/resources/face/refill-violet.jpg",
+        title: "Cashmere Powder Violet Refill",
+        sm: 12,
+        md: 6,
+        lg: 4,
+        xl: 2
+      },
+      {
+        icon: "/resources/face/true-beige-souffle-foundation.jpg",
+        title: "True Beige Souffle Foundation",
+        sm: 12,
+        md: 6,
+        lg: 4,
+        xl: 2
+      },
+      {
+        icon: "/resources/face/violet-brightening-powder-compacts.jpg",
+        title: "Violet Brightening Powder Compact",
+        sm: 12,
+        md: 6,
+        lg: 4,
+        xl: 2
+      },
+      {
+        icon: "/resources/face/yellow-cameo-souffle-foundation.jpg",
+        title: "Yellow Cameo Souffle Foundation",
+        sm: 12,
+        md: 6,
+        lg: 4,
+        xl: 2
+      }
+    ]
   }
-`;
-
-const Disclaimer = styled.p`
-  text-align: center;
-  margin-top: 50px;
-`;
-
+];
 export default class BesameFace extends Component {
   render() {
     return (
-      <MainContainer fluid>
-        <Col xs={12} className="mt-5">
-          <BesameTitle>Face</BesameTitle>
-        </Col>
-        <Row className="text-center">
-          <Col xs={12} md={3}>
-            <FaceProduct
-              src="/resources/face/apricot-cream-rouge.jpg"
-              className="img-fluid"
-            />
-            <p>Apricot Cream Rouge</p>
-          </Col>
-          <Col xs={12} md={3}>
-            <FaceProduct
-              src="/resources/face/bisque-souffle-foundation.jpg"
-              className="img-fluid"
-            />
-            <p>Bisque Souffle Foundation</p>
-          </Col>
-          <Col xs={12} md={3}>
-            <FaceProduct
-              src="/resources/face/brightening-violet-powder.jpg"
-              className="img-fluid"
-            />
-            <p>Brigthening Violet Powder</p>
-          </Col>
-          <Col xs={12} md={3}>
-            <FaceProduct
-              src="/resources/face/crimson-cream-rouge.jpg"
-              className="img-fluid"
-            />
-            <p>Crimson Cream Rouge</p>
-          </Col>
-        </Row>
-        <Row className="text-center">
-          <Col xs={12} md={3}>
-            <FaceProduct
-              src="/resources/face/dark-cashmere-powder-compact.jpg"
-              className="img-fluid"
-            />
-            <p>Dark Cashmere Powder Compact</p>
-          </Col>
-          <Col xs={12} md={3}>
-            <FaceProduct
-              src="/resources/face/honey-souffle-foundation.jpg"
-              className="img-fluid"
-            />
-            <p>Honey Souffle Foundation</p>
-          </Col>
-          <Col xs={12} md={3}>
-            <FaceProduct
-              src="/resources/face/light-cashmere-powder-compact.jpg"
-              className="img-fluid"
-            />
-            <p>Light Cashmere Powder Compact</p>
-          </Col>
-          <Col xs={12} md={3}>
-            <FaceProduct
-              src="/resources/face/medium-beige-souffle-foundation.jpg"
-              className="img-fluid"
-            />
-            <p>Medium Beige Souffle Foundation</p>
-          </Col>
-        </Row>
-        <Row className="text-center">
-          <Col xs={12} md={3}>
-            <FaceProduct
-              src="/resources/face/medium-cashmere-powder-compact.jpg"
-              className="img-fluid"
-            />
-            <p>Medium Cashmere Powder Compact</p>
-          </Col>
-          <Col xs={12} md={3}>
-            <FaceProduct
-              src="/resources/face/porcelain-cashmere-powder-compact.jpg"
-              className="img-fluid"
-            />
-            <p>Porcelain Cashmere Powder Compact</p>
-          </Col>
-          <Col xs={12} md={3}>
-            <FaceProduct
-              src="/resources/face/refill-dark.jpg"
-              className="img-fluid"
-            />
-            <p>Cashmere Powder Dark Refill</p>
-          </Col>
-          <Col xs={12} md={3}>
-            <FaceProduct
-              src="/resources/face/refill-light.jpg"
-              className="img-fluid"
-            />
-            <p>Cashmere Powder Light Refill</p>
-          </Col>
-        </Row>
-        <Row className="text-center">
-          <Col xs={12} md={3}>
-            <FaceProduct
-              src="/resources/face/refill-medium.jpg"
-              className="img-fluid"
-            />
-            <p>Cashmere Powder Medium Refill</p>
-          </Col>
-          <Col xs={12} md={3}>
-            <FaceProduct
-              src="/resources/face/refill-porcelain.jpg"
-              className="img-fluid"
-            />
-            <p>Cashmere Powder Porcelain Refill</p>
-          </Col>
-          <Col xs={12} md={3}>
-            <FaceProduct
-              src="/resources/face/refill-violet.jpg"
-              className="img-fluid"
-            />
-            <p>Cashmere Powder Violet Refill</p>
-          </Col>
-          <Col xs={12} md={3}>
-            <FaceProduct
-              src="/resources/face/true-beige-souffle-foundation.jpg"
-              className="img-fluid"
-            />
-            <p>True Beige Souffle Foundation</p>
-          </Col>
-        </Row>
-        <Row className="text-center">
-          <Col xs={12} md={6}>
-            <FaceProductLastRow
-              src="/resources/face/violet-brightening-powder-compacts.jpg"
-              className="img-fluid"
-            />
-            <p>Violet Brightening Powder Compact</p>
-          </Col>
-          <Col xs={12} md={6}>
-            <FaceProductLastRow
-              src="/resources/face/yellow-cameo-souffle-foundation.jpg"
-              className="img-fluid"
-            />
-            <p>Yellow Cameo Souffle Foundation</p>
-          </Col>
-        </Row>
-        <Row>
-          <Col xs={12}>
-            <Disclaimer>All products sold in store only</Disclaimer>
-          </Col>
-        </Row>
-      </MainContainer>
+      <ServicePage
+        background={background}
+        title={title}
+        rows={faceProducts}
+        otherNotice={otherNotice}
+      />
     );
   }
 }

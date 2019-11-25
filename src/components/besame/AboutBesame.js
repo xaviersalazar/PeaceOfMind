@@ -104,7 +104,7 @@ export default class AboutBesame extends Component {
     return (
       <div>
         <Title>
-          <ServiceTitle>Besame Cosmetic</ServiceTitle>
+          <ServiceTitle>Besame Cosmetics</ServiceTitle>
           <Hr />
         </Title>
         <Background background={"/resources/about-us-main.jpg"} />
