@@ -162,6 +162,8 @@ const faceProducts = [
     ]
   }
 ];
+
+// TODO: Change background of main pic
 export default class BesameFace extends Component {
   render() {
     return (
