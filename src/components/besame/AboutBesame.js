@@ -98,7 +98,6 @@ const BesameLogo = styled.img`
   }
 `;
 
-// TODO: Change background of main pic
 export default class AboutBesame extends Component {
   render() {
     return (
@@ -107,7 +106,7 @@ export default class AboutBesame extends Component {
           <ServiceTitle>Besame Cosmetics</ServiceTitle>
           <Hr />
         </Title>
-        <Background background={"/resources/about-us-main.jpg"} />
+        <Background background={"/resources/about-besame-main.jpg"} />
         <MainContainer fluid>
           <Row>
             <ParagraphsCol xs={12} className="text-center">

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ServicePage from "../common/ServicePage";
 
-const background = "/resources/services/massages/massage-about-main.jpg";
+const background = "/resources/lipsticks/lips-main.jpg";
 const title = "Lips";
 const otherNotice = "All products sold in store only";
 const lipsticks = [
@@ -131,7 +131,6 @@ const lipsticks = [
   }
 ];
 
-// TODO: Change background of main pic
 export default class BesameLipstick extends Component {
   render() {
     return (

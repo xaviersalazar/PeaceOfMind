@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "reactstrap";
 import ServicePage from "../common/ServicePage";
 
-const background = "/resources/services/massages/massage-about-main.jpg";
+const background = "/resources/eyes/eyes-main.jpg";
 const title = "Eyes";
 const otherNotice = "All products sold in store only";
 const eyeProducts = [
@@ -36,7 +35,6 @@ const eyeProducts = [
   }
 ];
 
-// TODO: Change background of main pic
 export default class BesameEyes extends Component {
   render() {
     return (

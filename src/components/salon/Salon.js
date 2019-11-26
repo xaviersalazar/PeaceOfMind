@@ -85,12 +85,11 @@ const HeadingHr = styled.hr`
   }
 `;
 
-// TODO: Change picture of benfits
 const benefits = [
   {
     row: [
       {
-        icon: "/resources/services/salon/hair-ext.jpg",
+        icon: "/resources/services/salon/about-salon-benefits.jpg",
         title: "Organic Hair Colour Systems® Benefits ",
         items: [
           "No nasty chemical smell",
@@ -111,7 +110,6 @@ const benefits = [
   }
 ];
 
-// TODO: Change background of main
 export default class Salon extends Component {
   render() {
     return (
@@ -121,7 +119,7 @@ export default class Salon extends Component {
           <Hr />
         </Title>
         <Background
-          background={"/resources/services/salon/finishing-touches-main.jpg"}
+          background={"/resources/services/salon/about-salon-main.jpg"}
         />
         <MainContainer fluid>
           <Row className="mb-5">
