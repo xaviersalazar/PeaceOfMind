@@ -3,6 +3,7 @@ import { Container, Row, Col } from "reactstrap";
 import HomeJumbotron from "./HomeJumbotron";
 import HomeBanner from "./HomeBanner";
 import HomeServices from "./HomeServices";
+import InstagramFeed from "./InstagramFeed";
 import styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -35,6 +36,9 @@ export default class Home extends Component {
             <Col xs={12}>
               <HomeServices />
             </Col>
+          </ColoredRow>
+          <ColoredRow>
+            <InstagramFeed />
           </ColoredRow>
         </Container>
       </Container>
