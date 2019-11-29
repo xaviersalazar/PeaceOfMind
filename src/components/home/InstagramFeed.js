@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Col, NavLink } from "reactstrap";
+import { Row, Col, NavLink } from "reactstrap";
 import InstagramCardRow from "../common/InstagramCardRow";
 import styled from "styled-components";
 import axios from "axios";
@@ -33,6 +33,42 @@ const InstaLink = styled(NavLink)`
   && {
     padding: 0 1rem;
     color: #0984e3;
+  }
+`;
+
+const SkeletonCard = styled.div`
+  display: inline-block;
+  height: 300px;
+  width: 100%;
+  border-radius: 5px;
+  background: linear-gradient(-90deg, #f0f0f0 0%, #f8f8f8 50%, #f0f0f0 100%);
+  background-size: 400% 400%;
+  animation: pulse 1.2s ease-in-out infinite;
+
+  @media (min-width: 768px) {
+    height: 250px;
+  }
+
+  @media (min-width: 992px) {
+    height: 200px;
+  }
+
+  @keyframes pulse {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: -135% 0%;
+    }
+  }
+`;
+
+const SkeletonLine = styled(SkeletonCard)`
+  width: 75%;
+  border-radius: 5px;
+
+  &::before {
+    content: "\00a0";
   }
 `;
 
@@ -103,8 +139,6 @@ export default class InstagramFeed extends Component {
         }
       })
       .catch(error => {
-        console.log("An error occurred fetching the posts!" + error);
-
         this.setState({
           hasError: true
         });
@@ -112,16 +146,54 @@ export default class InstagramFeed extends Component {
   };
 
   render() {
-    const { isLoadingPosts, posts } = this.state;
+    const { isLoadingPosts, posts, hasError } = this.state;
 
     return (
       <MainContainer className="w-100">
         <ColoredCol xs={12} className="text-center">
           <h1 className="text-center">Follow us on Instagram!</h1>
           <Hr />
-
           {isLoadingPosts ? (
-            <h4>Loading @peaceofmindmassage posts...</h4>
+            hasError ? (
+              <p className="mt-5">
+                <InstaLink
+                  className="d-inline p-0"
+                  href="https://www.instagram.com/peaceofmindmassage/"
+                  target="_blank"
+                >
+                  @peaceofmindmassage
+                </InstaLink>
+              </p>
+            ) : (
+              <div className="mt-5">
+                <p className="d-inline">
+                  Some of the latest from{" "}
+                  <InstaLink
+                    className="d-inline p-0"
+                    href="https://www.instagram.com/peaceofmindmassage/"
+                    target="_blank"
+                  >
+                    @peaceofmindmassage
+                  </InstaLink>
+                </p>
+                <Row className="justify-content-center mt-3">
+                  {[1, 2, 3, 4, 5, 6].map(x => {
+                    return (
+                      <Col
+                        key={x}
+                        xs={12}
+                        md={6}
+                        lg={4}
+                        xl={2}
+                        className="mb-4"
+                      >
+                        <SkeletonLine />
+                      </Col>
+                    );
+                  })}
+                </Row>
+              </div>
+            )
           ) : (
             <div className="mt-5">
               <p className="d-inline">
