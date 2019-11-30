@@ -6,6 +6,7 @@ import HomeServices from "./HomeServices";
 import InstagramFeed from "./InstagramFeed";
 import styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Reviews from "./Reviews";
 
 const ColoredRow = styled(Row)`
   background: ${props => (props.odd === "true" ? "#f3eff5" : "#fff")};
@@ -39,6 +40,9 @@ export default class Home extends Component {
           </ColoredRow>
           <ColoredRow>
             <InstagramFeed />
+          </ColoredRow>
+          <ColoredRow odd={"true"}>
+            <Reviews />
           </ColoredRow>
         </Container>
       </Container>
