@@ -35,9 +35,9 @@ const haircuts = [
   {
     row: [
       {
-        icon: "/resources/services/salon/haircut-band-trim.jpg",
-        title: "Complimentary Band Trim",
-        price: "FREE (Service not required)",
+        icon: "/resources/services/salon/haircut-bangs.jpg",
+        title: "Bangs",
+        price: "$17.00",
         desc: "",
         sm: 12,
         xl: 4
