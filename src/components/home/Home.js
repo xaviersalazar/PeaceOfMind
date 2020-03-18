@@ -5,8 +5,9 @@ import HomeBanner from "./HomeBanner";
 import HomeServices from "./HomeServices";
 import InstagramFeed from "./InstagramFeed";
 import styled from "styled-components";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Reviews from "./Reviews";
+import { HomeSupportLocal } from "./HomeSupportLocal";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const ColoredRow = styled(Row)`
   background: ${props => (props.odd === "true" ? "#f3eff5" : "#fff")};
@@ -26,6 +27,9 @@ export default class Home extends Component {
       <Container className="p-0 m-0" fluid>
         <HomeJumbotron />
         <Container fluid>
+          <ColoredRow odd={"true"}>
+            <HomeSupportLocal />
+          </ColoredRow>
           <ColoredRow>
             <HomeBanner />
           </ColoredRow>
