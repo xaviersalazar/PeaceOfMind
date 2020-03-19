@@ -47,6 +47,15 @@
       <textarea name="message"></textarea>
     </form>
 
+    <!-- A little help for the Netlify post-processing bots -->
+    <form name="Gift Card Form" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="phone" />
+      <input type="text" name="giftName" />
+      <input type="text" name="giftAmount" />
+    </form>
+
     <div id="root"></div>
     <!--
       This HTML file is a template.
