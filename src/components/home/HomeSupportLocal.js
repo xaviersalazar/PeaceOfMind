@@ -62,9 +62,7 @@ export const HomeSupportLocal = () => {
           this in peace and unity. We love you all, you are not only friends but
           our family.
         </p>
-        <GiftCardButton onClick={toggle}>
-          Purchase about a gift card
-        </GiftCardButton>
+        <GiftCardButton onClick={toggle}>Purchase a gift card</GiftCardButton>
         <GiftCardMoal modal={modal} toggle={toggle} />
       </ColoredCol>
     </div>
