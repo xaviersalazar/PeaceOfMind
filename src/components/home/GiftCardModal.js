@@ -217,7 +217,10 @@ export const GiftCardMoal = ({ ...props }) => {
                           </SendButton>
                         </Col>
                         <Col xs={12} md={6}>
-                          <CancelButton onClick={props.toggle}>
+                          <CancelButton
+                            type="button"
+                            onClick={() => props.toggle()}
+                          >
                             Cancel
                           </CancelButton>
                         </Col>

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Col, Button } from "reactstrap";
-import styled from "styled-components";
 import { GiftCardMoal } from "./GiftCardModal";
+import styled from "styled-components";
 
 const ColoredCol = styled(Col)`
-  background: #f3eff5;
+  background: #ffffff;
   padding-top: 3rem;
   padding-bottom: 3rem;
   text-align: center;
@@ -62,7 +62,9 @@ export const HomeSupportLocal = () => {
           this in peace and unity. We love you all, you are not only friends but
           our family.
         </p>
-        <GiftCardButton onClick={toggle}>Purchase a gift card</GiftCardButton>
+        <GiftCardButton onClick={toggle}>
+          Inquire about a gift card
+        </GiftCardButton>
         <GiftCardMoal modal={modal} toggle={toggle} />
       </ColoredCol>
     </div>

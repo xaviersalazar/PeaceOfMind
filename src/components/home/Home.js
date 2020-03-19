@@ -7,6 +7,7 @@ import InstagramFeed from "./InstagramFeed";
 import styled from "styled-components";
 import Reviews from "./Reviews";
 import { HomeSupportLocal } from "./HomeSupportLocal";
+import { HomeSpaBox } from "./HomeSpaBox";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const ColoredRow = styled(Row)`
@@ -27,8 +28,11 @@ export default class Home extends Component {
       <Container className="p-0 m-0" fluid>
         <HomeJumbotron />
         <Container fluid>
-          <ColoredRow odd={"true"}>
+          <ColoredRow>
             <HomeSupportLocal />
+          </ColoredRow>
+          <ColoredRow odd={"true"}>
+            <HomeSpaBox />
           </ColoredRow>
           <ColoredRow>
             <HomeBanner />

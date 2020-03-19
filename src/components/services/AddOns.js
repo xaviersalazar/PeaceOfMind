@@ -101,8 +101,9 @@ const addons = [
       {
         icon: "/resources/services/massages/addons-micro-facial.jpg",
         title: "Microdermabrasion Facial",
-        price: "",
-        desc: "Coming Soon",
+        price: "Contact us for a price",
+        desc:
+          "A non-invasive procedure that uses tiny crystals or other exfoliating surfaces to help remove the superficial layer of dead skin cells",
         sm: 12,
         xl: 4
       },

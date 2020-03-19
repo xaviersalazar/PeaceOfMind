@@ -133,7 +133,8 @@ export default class Footer extends Component {
             isn’t always easy!
           </TagLine>
           <p className="mb-0">Our Hours:</p>
-          <p className="p-0">Everyday @ 8:30AM - 9:00PM</p>
+          <p className="p-0 mb-0">Everyday @ 8:30AM - 9:00PM</p>
+          <p className="p-0">We also travel to you if needed!</p>
           <p className="p-0 m-0">
             602 N Lower Broadway St Corpus Christi, TX 78401
           </p>
