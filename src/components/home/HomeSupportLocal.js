@@ -63,7 +63,7 @@ export const HomeSupportLocal = () => {
           our family.
         </p>
         <GiftCardButton onClick={toggle}>
-          Inquire about a gift card
+          Purchase about a gift card
         </GiftCardButton>
         <GiftCardMoal modal={modal} toggle={toggle} />
       </ColoredCol>
