@@ -71,7 +71,7 @@ const massages = [
       {
         icon: "/resources/services/massages/massage-medical.jpg",
         title: "Medical Massage",
-        price: "25 Minutes: $75.00",
+        price: "30 Minutes: $87.00 | 1 Hour: $177.00 | 1 hour ½: $267.00",
         desc:
           "Medical massage involves therapeutic assessment, manipulation, and movement of the locomotor soft tissues to reduce or eliminate pain or dysfunction. A unique multidisciplinary approach is utilized to restore structural balance throughout the body, which allows focus on prevention and rehabilitation of musculoskeletal dysfunctions, chronic pain and sports injuries. Primary modalities include functional assessment, myofascial release, neuromuscular therapy,scar tissue mobilization techniques, neuromuscular re-education, PNF stretching, strengthening, and  specific client home-care protocols.",
         sm: 12,
@@ -102,7 +102,7 @@ const massages = [
       {
         icon: "/resources/services/massages/massage-lymph.jpg",
         title: "Lymph Drainage",
-        price: "30 Minutes: $70.00 | 1 Hour: $130.00 | 1 Hour ½: $200.00",
+        price: "30 Minutes: $87.00 | 1 Hour: $177.00 | 1 Hour ½: $267.00",
         desc:
           "Manual Lymphatic Drainage is a form of massage that stimulates the lymphatic system with gentle massaging strokes. The light rhythmical massage encourages the lymphatic system to eliminate metabolic waste products, excess fluid and bacteria, promotes detoxification, facilitates healing and supports the immune system. Studies have shown that it helps stop and reduce the production of cellulite after a series of treatments along with a healthy diet and exercise.",
         sm: 12,
@@ -111,7 +111,7 @@ const massages = [
       {
         icon: "/resources/services/massages/massage-pregnancy.jpg",
         title: "Pregnancy Massage",
-        price: "30 Minutes: $60.00 | 1 Hour: $120.00 | 1 Hour ½: $160.00",
+        price: "30 Minutes: $77.00 | 1 Hour: $137.00 | 1 Hour ½: $217.00",
         desc:
           "(Please consult with your doctor during your first trimester to get approval for massage.) Enhance your special time with massage therapy. Massage can help alleviate tension, fluid retention, fatigue and stress and improve circulation in the feet, legs, lower back, hips and neck. You will be lying comfortably on your side for a relaxing Swedish massage. Before making an appointment, please check with your physician to make sure that massage is right for you.",
         sm: 12,
