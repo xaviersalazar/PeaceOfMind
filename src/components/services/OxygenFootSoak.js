@@ -28,7 +28,7 @@ const MainContainer = styled(Container)`
 `;
 
 const Background = styled.div`
-  background-image: url("${props => props.background}");
+  background-image: url("${(props) => props.background}");
   height: 50vh;
   width: 100vw;
   min-width: 100vw;
@@ -99,10 +99,10 @@ const benefits = [
         desc:
           "To relieve the strains on the kidneys and liver it is more important than ever to maintain a detoxification regimen. The ion foot bath is designed to relieve these strains and help the body re-balance its energy fields allowing organs to function better. After using ionic foot bath  machine healthy individuals and users can feel lighter and experience a greater feeling of well being from each session. More energy and youth is felt as well. Some people with pain, edema, swollen, and deteriorating joints have also reported symptomatic relief from the sessions. Many doctors, nurses, professionals and the likes have also recommended this machine for their patients. We also found many excerpts stating that the machine has helped individuals break free from addiction problems.",
         sm: 12,
-        xl: 4
-      }
-    ]
-  }
+        xl: 4,
+      },
+    ],
+  },
 ];
 
 export default class OxygenFootSoak extends Component {
@@ -120,7 +120,9 @@ export default class OxygenFootSoak extends Component {
           <Row className="mb-5">
             <ParagraphsCol xs={12} className="text-center">
               <h1 className="text-center">Purify your body</h1>
-              <small className="m-0 p-0">$135 per hour</small>
+              <small className="m-0 p-0">
+                30 minutes: $87.00 | $137.00 per hour
+              </small>
               <HeadingHr />
             </ParagraphsCol>
             <ParagraphsCol xs={12} className="text-center">

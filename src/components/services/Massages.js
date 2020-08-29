@@ -101,7 +101,7 @@ const massages = [
     row: [
       {
         icon: "/resources/services/massages/massage-lymph.jpg",
-        title: "Lymph Drainage",
+        title: "Lymphatic Drainage Massage",
         price: "30 Minutes: $87.00 | 1 Hour: $177.00 | 1 Hour ½: $267.00",
         desc:
           "Manual Lymphatic Drainage is a form of massage that stimulates the lymphatic system with gentle massaging strokes. The light rhythmical massage encourages the lymphatic system to eliminate metabolic waste products, excess fluid and bacteria, promotes detoxification, facilitates healing and supports the immune system. Studies have shown that it helps stop and reduce the production of cellulite after a series of treatments along with a healthy diet and exercise.",

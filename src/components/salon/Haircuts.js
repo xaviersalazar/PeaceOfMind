@@ -12,7 +12,7 @@ const haircuts = [
         price: "$72.00",
         desc: "",
         sm: 12,
-        xl: 4
+        xl: 4,
       },
       {
         icon: "/resources/services/salon/haircut-express.jpg",
@@ -20,17 +20,17 @@ const haircuts = [
         price: "$35.00 - $45.00",
         desc: "",
         sm: 12,
-        xl: 4
+        xl: 4,
       },
       {
         icon: "/resources/services/salon/haircut-kids.jpg",
         title: "Kid's Haircut (12 & under)",
-        price: "$15.00 - $20.00",
+        price: "$17.00 - $22.00",
         desc: "",
         sm: 12,
-        xl: 4
-      }
-    ]
+        xl: 4,
+      },
+    ],
   },
   {
     row: [
@@ -40,10 +40,18 @@ const haircuts = [
         price: "$17.00",
         desc: "",
         sm: 12,
-        xl: 4
-      }
-    ]
-  }
+        xl: 4,
+      },
+      {
+        icon: "/resources/services/salon/haircut-drycut.jpg",
+        title: "Dry Cut",
+        price: "$47.00",
+        desc: "",
+        sm: 12,
+        xl: 4,
+      },
+    ],
+  },
 ];
 
 export default class Haircuts extends Component {

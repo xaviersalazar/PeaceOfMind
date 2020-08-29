@@ -9,30 +9,42 @@ const mensServices = [
       {
         icon: "/resources/services/salon/mens-haircut.jpg",
         title: "Haircut",
-        price: "$30.00",
+        price: "$37.00+",
         desc: "",
         sm: 12,
-        xl: 4
+        xl: 4,
       },
       {
         icon: "/resources/services/salon/mens-gray.jpg",
         title: "Gray Blending",
-        price: "$45.00",
+        price: "$82.00",
         desc: "",
         sm: 12,
-        xl: 4
+        xl: 4,
       },
       {
         icon: "/resources/services/salon/mens-signature.jpg",
         title: "Signature Experience",
-        price: "$65.00",
+        price: "$87.00+",
         desc:
           "Includes scalp massage, hot towel, haircut, and facial hair trim",
         sm: 12,
-        xl: 4
-      }
-    ]
-  }
+        xl: 4,
+      },
+    ],
+  },
+  {
+    row: [
+      {
+        icon: "/resources/services/salon/mens-beardtrims.jpg",
+        title: "Beard Trimmings",
+        price: "$17.00 - $27.00",
+        desc: "",
+        sm: 12,
+        xl: 4,
+      },
+    ],
+  },
 ];
 
 export default class MensServices extends Component {

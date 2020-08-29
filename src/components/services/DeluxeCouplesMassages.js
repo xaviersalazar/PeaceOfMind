@@ -51,7 +51,7 @@ const deluxeCouplesMassages = [
         title: "Silk Spine Massage",
         price: "10 Minutes: $30.00",
         desc:
-          "Gliding around spine very gently pushing tired knotted up muscles away from the spine gently caressing the nerves in the surrounding are to relive and relax your central nervous system. Allowing your central nervous system to flow freely and unblocked. Better sleep and fewer headaches along with lowered anxiety. Overall mood improver!",
+          "Gliding around spine very gently pushing tired knotted up muscles away from the spine gently caressing the nerves in the surrounding are to relive and relax your central nervous system. Allowing your central nervous system to flow freely and unblocked. Better sleep and fewer headaches along with lowered anxiety. Overall mood improvement!",
         sm: 12,
         xl: 4,
       },
