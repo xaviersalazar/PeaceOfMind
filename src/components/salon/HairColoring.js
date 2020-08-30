@@ -82,8 +82,8 @@ const hairColoring = [
       },
       {
         icon: "/resources/services/salon/haircolor-corrective.jpg",
-        title: "Corrective Color",
-        price: "$90.00 - $120.00+",
+        title: "Colour Correction",
+        price: "$252.00+",
         desc: "",
         sm: 12,
         xl: 4,
@@ -95,7 +95,7 @@ const hairColoring = [
       {
         icon: "/resources/services/salon/haircolor-allover.jpg",
         title: "All Over Colour",
-        price: "$137.00",
+        price: "$137.00+",
         desc: "",
         sm: 12,
         xl: 4,
@@ -104,15 +104,15 @@ const hairColoring = [
         icon: "/resources/services/salon/haircolor-allover-shampoo.jpg",
         title:
           "All Over Colour w/ Take Home Shampoo & Conditioner (Travel Size)",
-        price: "$147.00",
+        price: "$147.00+",
         desc: "",
         sm: 12,
         xl: 4,
       },
       {
-        icon: "/resources/services/salon/haircolor-correction.jpg",
-        title: "Colour Correction",
-        price: "$252.00",
+        icon: "/resources/services/salon/haircolor-allover-bleach.jpg",
+        title: "All Over Bleach+",
+        price: "$167.00",
         desc: "",
         sm: 12,
         xl: 4,
@@ -122,16 +122,8 @@ const hairColoring = [
   {
     row: [
       {
-        icon: "/resources/services/salon/haircolor-allover-bleach.jpg",
-        title: "All Over Bleach",
-        price: "$167.00",
-        desc: "",
-        sm: 12,
-        xl: 4,
-      },
-      {
         icon: "/resources/services/salon/haircolor-bleach-root.jpg",
-        title: "Bleach Root Touch-up",
+        title: "Bleach Root Touch-up+",
         price: "$112.00",
         desc: "",
         sm: 12,
@@ -139,16 +131,12 @@ const hairColoring = [
       },
       {
         icon: "/resources/services/salon/haircolor-root-touchup.jpg",
-        title: "Root Touch-up",
+        title: "Root Touch-up+",
         price: "$82.00",
         desc: "",
         sm: 12,
         xl: 4,
       },
-    ],
-  },
-  {
-    row: [
       {
         icon: "/resources/services/salon/haircolor-chemical.jpg",
         title: "Chemical Services",

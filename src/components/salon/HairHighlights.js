@@ -67,16 +67,16 @@ const hairHighlighting = [
       {
         icon: "/resources/services/salon/highlight-ombre.jpg",
         title: "Ombre Hair",
-        price: "$130.00 - $160.00",
+        price: "$200.00+",
         desc:
-          "Coloring technique where a gradual fading of color from dark to light, or vice-versa, is achieved",
+          "Coloring technique where a gradual fading of color from dark to light, or vice-versa, is achieved. Additional cost for add-on color",
         sm: 12,
         xl: 4,
       },
       {
         icon: "/resources/services/salon/highlight-ombre-haircut.jpg",
         title: "Ombre w/ Haircut",
-        price: "$150.00 - $180.00",
+        price: "$200.00+",
         desc: "",
         sm: 12,
         xl: 4,
@@ -84,7 +84,7 @@ const hairHighlighting = [
       {
         icon: "/resources/services/salon/highlight-balayage.jpg",
         title: "Balayage Freehand+",
-        price: "$120.00 - $160.00+",
+        price: "$200.00+",
         desc:
           "Technique of applying highlights, or lowlights, with select pieces of hair receiving the color enhancement",
         sm: 12,
@@ -97,7 +97,23 @@ const hairHighlighting = [
       {
         icon: "/resources/services/salon/highlight-balayage-haircut.jpg",
         title: "Balayage w/ Haircut+",
-        price: "$140.00 - $160.00+",
+        price: "$200.00+",
+        desc: "",
+        sm: 12,
+        xl: 4,
+      },
+      {
+        icon: "/resources/services/salon/highlight-highlights.jpg",
+        title: "Highlights+",
+        price: "$127.00+",
+        desc: "",
+        sm: 12,
+        xl: 4,
+      },
+      {
+        icon: "/resources/services/salon/highlight-partial-highlights.jpg",
+        title: "Partial Highlights+",
+        price: "$97.00+",
         desc: "",
         sm: 12,
         xl: 4,
