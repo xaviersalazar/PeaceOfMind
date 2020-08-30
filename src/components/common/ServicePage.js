@@ -28,7 +28,7 @@ const MainContainer = styled(Container)`
 `;
 
 const Background = styled.div`
-  background-image: url("${props => props.background}");
+  background-image: url("${(props) => props.background}");
   height: 50vh;
   width: 100vw;
   min-width: 100vw;
@@ -99,9 +99,11 @@ const ServicePage = ({ ...props }) => {
         <Row>
           <ParagraphsCol xs={12}>
             <Disclaimer>
-              {props.otherNotice ? props.otherNotice : "NOTICE: Prices Are Subject To Change Without Prior Notice"}
+              {props.otherNotice
+                ? props.otherNotice
+                : "NOTICE: Prices Are Subject To Change Without Prior Notice"}
               {props.smallNotice ? (
-                <small style={{ fontWeight: "inherit" }}>
+                <small style={{ fontWeight: "inherit", display: "block" }}>
                   {props.smallNotice}
                 </small>
               ) : (
