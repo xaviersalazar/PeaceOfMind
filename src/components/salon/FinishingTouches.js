@@ -12,15 +12,15 @@ const finishingTouches = [
         price: "$25.00 - $45.00",
         desc: "",
         sm: 12,
-        xl: 4
+        xl: 4,
       },
       {
-        icon: "/resources/services/salon/finishing-touches-formal.jpg",
-        title: "Formal Up-do",
-        price: "$80.00 - $100.00",
+        icon: "/resources/services/salon/finishing-touches-up-do.jpg",
+        title: "Up-do's",
+        price: "$57.00+",
         desc: "Braiding, up-styles and curls",
         sm: 12,
-        xl: 4
+        xl: 4,
       },
       {
         icon:
@@ -29,10 +29,30 @@ const finishingTouches = [
         price: "$25.00",
         desc: "",
         sm: 12,
-        xl: 4
-      }
-    ]
-  }
+        xl: 4,
+      },
+    ],
+  },
+  {
+    row: [
+      {
+        icon: "/resources/services/salon/finishing-touches-french-braid.jpg",
+        title: "French Braid",
+        price: "$37.00+",
+        desc: "",
+        sm: 12,
+        xl: 4,
+      },
+      {
+        icon: "/resources/services/salon/finishing-touches-dutch-braid.jpg",
+        title: "Dutch Braid",
+        price: "$37.00+",
+        desc: "",
+        sm: 12,
+        xl: 4,
+      },
+    ],
+  },
 ];
 
 export default class FinishingTouches extends Component {
