@@ -39,30 +39,30 @@ export default class Main extends Component {
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/besame/about" component={AboutBesame} />
-        <Route path="/besame/lipstick" component={BesameLipstick} />
         <Route path="/besame/eyes" component={BesameEyes} />
         <Route path="/besame/face" component={BesameFace} />
+        <Route path="/besame/lipstick" component={BesameLipstick} />
         <Route path="/salon/about" component={Salon} />
+        <Route path="/salon/finishing-touches" component={FinishingTouches} />
         <Route path="/salon/haircuts" component={Haircuts} />
         <Route path="/salon/hair-coloring" component={HairColoring} />
         <Route path="/salon/hair-extensions" component={HairExtensions} />
         <Route path="/salon/hair-highlights" component={HairHighlights} />
         <Route path="/salon/hair-treatments" component={HairTreatments} />
-        <Route path="/salon/mens-services" component={MensServices} />
-        <Route path="/salon/perms" component={Perms} />
-        <Route path="/salon/sets-twists" component={SetsAndTwists} />
         <Route path="/salon/locs" component={Locs} />
-        <Route path="/salon/relaxer" component={Relaxer} />
+        <Route path="/salon/mens-services" component={MensServices} />
         <Route path="/salon/natural-styling" component={NaturalStyling} />
-        <Route
-          path="/salon/straightening-services"
-          component={StraighteningServices}
-        />
+        <Route path="/salon/perms" component={Perms} />
+        <Route path="/salon/relaxer" component={Relaxer} />
+        <Route path="/salon/sets-twists" component={SetsAndTwists} />
         <Route
           path="/salon/specialty-extensions"
           component={SpecialtyExtensions}
         />
-        <Route path="/salon/finishing-touches" component={FinishingTouches} />
+        <Route
+          path="/salon/straightening-services"
+          component={StraighteningServices}
+        />
         <Route path="/services/about" component={AboutMassage} />
         <Route path="/services/addons" component={AddOns} />
         <Route
