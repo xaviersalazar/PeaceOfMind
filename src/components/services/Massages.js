@@ -170,6 +170,15 @@ const massages = [
         sm: 12,
         xl: 4,
       },
+      {
+        icon: "/resources/services/massages/massage-barefoot.jpg",
+        title: "Barefoot Massage: Deepest Deep Tissue Massage Possible",
+        price: "30 Minutes: $87.00 | 1 Hour: $167.00 | 1 Hour ½: $237.00",
+        desc:
+          "Reduces Chronic Pain. This Deep Tissue massage works further into the fascia. It also will release trigger points and connective tissues. It is a slow and more forceful in the application. Not only adds more pressure but it also adds compression. And it throws myofascial stretching into the mix. Compression massage squeezes the entire body from above and below. It also affects internal organs. It is a soft structural integration that realigns the body. Skeletal adjustments often occur during a session. It also has myofascial benefits that relax and stretch contracted muscles. This unique modality combines three therapies into one. It also Improves Flexibility, No Residual Soreness, Reduces Stress, Effects Last Longer.",
+        sm: 12,
+        xl: 4,
+      },
     ],
   },
 ];
