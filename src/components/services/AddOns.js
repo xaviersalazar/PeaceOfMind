@@ -138,6 +138,37 @@ const addons = [
         sm: 12,
         xl: 4,
       },
+      {
+        icon: "/resources/services/massages/addons-lightstim.jpg",
+        title: "LightStim Therapy",
+        price: "$47.00",
+        desc:
+          "Temporarily relieves arthritic pain, muscle and joint pain, and stiffness. Increases blood circulation, speed healing, and diminishes bruising. Also is a natural solution to help achieve clear and healthy skin by treating existing blemishes, minimizing breakouts, and recapturing your radiant glow. It is the most effective and affordable technology for achieving healthy and youthful skin.",
+        sm: 12,
+        xl: 4,
+      },
+      {
+        icon: "/resources/services/massages/addons-lava-shell.jpg",
+        title: "Lava Shells",
+        price: "$47.00",
+        desc:
+          "When filled with the patented self-heating technology of Lava Gel, Lava Shells heat for up to 45-minutes, depending on the method of application, giving you the same heat as a full hot stone massage with just two shells – no electricity of equipment needed",
+        sm: 12,
+        xl: 4,
+      },
+    ],
+  },
+  {
+    row: [
+      {
+        icon: "/resources/services/massages/addons-glacier-shell.jpg",
+        title: "Glacier Shells",
+        price: "$47.00",
+        desc:
+          "Enhancement to any facial to reduces dark circles & puffiness around the eyes, help to suppress acne flare-ups, help to firm and tighten skin prior to a makeup application, increase circulation, diminish the appearance of wrinkles, suppress hair growth, help to rejuvenate the skin and reduce skin inflammation.",
+        sm: 12,
+        xl: 4,
+      },
     ],
   },
 ];

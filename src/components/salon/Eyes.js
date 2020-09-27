@@ -35,6 +35,14 @@ const eyes = [
   {
     row: [
       {
+        icon: "/resources/services/salon/eyes-lash-perm.jpg",
+        title: "Eyelash Perm",
+        price: "$77.00",
+        desc: "",
+        sm: 12,
+        xl: 4,
+      },
+      {
         icon: "/resources/services/salon/eyes-lash-ext.jpg",
         title: "Eyelash Extensions",
         price: "$202.00",
