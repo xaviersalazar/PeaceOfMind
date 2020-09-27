@@ -31,6 +31,7 @@ import SpecialtyExtensions from "./salon/SpecialtyExtensions";
 import FinishingTouches from "./salon/FinishingTouches";
 import StraighteningServices from "./salon/StraighteningServices";
 import AboutMassage from "./services/AboutMassage";
+import { Eyes } from "./salon/Eyes";
 
 export default class Main extends Component {
   render() {
@@ -43,6 +44,7 @@ export default class Main extends Component {
         <Route path="/besame/face" component={BesameFace} />
         <Route path="/besame/lipstick" component={BesameLipstick} />
         <Route path="/salon/about" component={Salon} />
+        <Route path="/salon/eyes" component={Eyes} />
         <Route path="/salon/finishing-touches" component={FinishingTouches} />
         <Route path="/salon/haircuts" component={Haircuts} />
         <Route path="/salon/hair-coloring" component={HairColoring} />
