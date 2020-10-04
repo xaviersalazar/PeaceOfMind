@@ -169,6 +169,15 @@ const addons = [
         sm: 12,
         xl: 4,
       },
+      {
+        icon: "/resources/services/massages/addons-cbd.jpg",
+        title: "CBD Infused Massage",
+        price: "$57.00",
+        desc:
+          "CBD oil reduces inflammation, is a potent pain reliever. It alleviates stress and anxiety, may help with skin cancer and other skin stresses. Also helps clear toxins' ultimate skin protector and moisturizer.",
+        sm: 12,
+        xl: 4,
+      },
     ],
   },
 ];
