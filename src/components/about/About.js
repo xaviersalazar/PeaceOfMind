@@ -99,7 +99,7 @@ export default class About extends Component {
               <h1 className="text-center">Our Story</h1>
               <HeadingHr />
               <ParagraphsCol xs={12} className="text-center">
-                <p class="light-text">
+                <p className="light-text">
                   Peace of Mind Massage Therapy &amp; Natural Healing is a Woman
                   Owned Business based on mother nature's common grounds,
                   located at 602 N Lower Broadway were Peoples St meets the wall
@@ -107,7 +107,7 @@ export default class About extends Component {
                 </p>
               </ParagraphsCol>
               <ParagraphsCol xs={12} className="text-center">
-                <p class="light-text">
+                <p className="light-text">
                   Peace of mind will transform all of your aches and pains
                   internal and external into comfort, by giving you ease and
                   relief with massage therapy and natural healing. LMT: Jynelle
@@ -118,7 +118,7 @@ export default class About extends Component {
                 </p>
               </ParagraphsCol>
               <ParagraphsCol xs={12} className="text-center">
-                <p class="light-text">
+                <p className="light-text">
                   Peace of Mind Promises to Corpus Christi is to help, encourage
                   and beautify our sparkling city through community service
                   volunteering while informing people about natural healing and
@@ -131,7 +131,7 @@ export default class About extends Component {
                 </p>
               </ParagraphsCol>
               <ParagraphsCol xs={12} className="text-center">
-                <p class="light-text">
+                <p className="light-text">
                   We invite you to come in anytime or call to schedule your
                   massage to get your kick start in your wellness plan. We offer
                   chair massage, table massage, weight loss wraps and cellulite

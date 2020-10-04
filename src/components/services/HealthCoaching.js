@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import styled, { keyframes } from "styled-components";
-import ServiceCardRow from "../common/ServiceCardRow";
 
 // Keyframes
 const expandHr = keyframes`
@@ -23,7 +22,7 @@ const MainContainer = styled(Container)`
   }
 
   @media (min-width: 992px) {
-    padding: 5rem 8rem !important;
+    padding: 5rem 8rem 0 8rem !important;
   }
 `;
 
@@ -86,6 +85,11 @@ const HeadingHr = styled.hr`
   }
 `;
 
+const Disclaimer = styled.p`
+  text-align: center;
+  margin-top: 50px;
+`;
+
 export const HealthCoaching = () => {
   return (
     <React.Fragment>
@@ -104,6 +108,13 @@ export const HealthCoaching = () => {
               1 Hour: $97.00 | 1 Month: $347.00 | 6 Months: $2,000.00
             </small>
             <HeadingHr />
+          </ParagraphsCol>
+        </Row>
+        <Row>
+          <ParagraphsCol xs={12}>
+            <Disclaimer>
+              NOTICE: Prices Are Subject To Change Without Prior Notice
+            </Disclaimer>
           </ParagraphsCol>
         </Row>
       </MainContainer>

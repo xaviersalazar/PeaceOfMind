@@ -184,7 +184,7 @@ export const KidsYoga = () => {
           <ParagraphsCol xs={12} className="text-center mt-5">
             <h3 className="text-center">Yoga Helps Kids</h3>
             <HeadingHr />
-            <p class="light-text">
+            <p className="light-text">
               The kids develop body awareness and learn how to use their bodies
               in a healthy way. It helps them manage stress through breathing,
               awareness, meditation, and healthy movement. They are able to
@@ -199,7 +199,7 @@ export const KidsYoga = () => {
               Yoga For Kids Also Benefits Teachers
             </h3>
             <HeadingHr />
-            <p class="light-text">
+            <p className="light-text">
               The teachers can have an alternative way to handle challenges they
               may face in the classroom. It also gives the teachers a healthy
               activity to integrate into the daily lesson plan while benefiting

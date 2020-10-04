@@ -451,6 +451,15 @@ export default class Navigation extends Component {
                   <StyleDropdownItem>
                     <RouterNavLink
                       className="link-item"
+                      to="/services/breast-buttlift-fat-eliminator"
+                      onClick={() => this.clickedLink()}
+                    >
+                      BREAST AND BUTT LIFT, AND FAT ELIMINATOR
+                    </RouterNavLink>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
+                    <RouterNavLink
+                      className="link-item"
                       to="/services/deluxe-couples"
                       onClick={() => this.clickedLink()}
                     >
