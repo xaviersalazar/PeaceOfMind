@@ -126,7 +126,7 @@ export default class OxygenFootSoak extends Component {
               <HeadingHr />
             </ParagraphsCol>
             <ParagraphsCol xs={12} className="text-center">
-              <p>
+              <p className="light-text">
                 Is the ionic foot bath machine right for me? With the increase
                 in the number of chemicals and hazardous materials introduced in
                 the last few decades, there has been a dramatic increase in
@@ -142,7 +142,7 @@ export default class OxygenFootSoak extends Component {
               </p>
             </ParagraphsCol>
             <ParagraphsCol xs={12} className="text-center">
-              <p>
+              <p className="light-text">
                 Chemicals can act as toxins that can block receptor sites on
                 cells, and cause changes in calcium homeostasis selectively
                 killing cells, and alter expression of gene products. Metals and

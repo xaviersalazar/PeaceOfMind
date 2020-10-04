@@ -27,7 +27,7 @@ const MainContainer = styled(Container)`
 `;
 
 const Background = styled.div`
-  background-image: url("${props => props.background}");
+  background-image: url("${(props) => props.background}");
   height: 50vh;
   width: 100vw;
   min-width: 100vw;
@@ -117,7 +117,7 @@ export default class AboutBesame extends Component {
               <h1 className="text-center mt-3">About Besame Cosmetics</h1>
               <HeadingHr />
               <ParagraphsCol xs={12} className="text-center">
-                <p>
+                <p className="light-text">
                   Bésame Cosmetics was founded in 2004 out of a fascination with
                   art, history, and beauty; a vintage makeup brand which honors
                   the style, spirit, and sensibility of female beauty. Through a

@@ -123,7 +123,7 @@ export default class OxygenBar extends Component {
               <small className="m-0 p-0">$1.50 per minute</small>
               <HeadingHr />
               <ParagraphsCol xs={12} className="text-center">
-                <p>
+                <p className="light-text">
                   A high purity way to get oxygen for recreation and relaxation.
                   Indulge in Aroma O2 oxygen giving you a mild safe euphoric
                   feeling. Oxygen is nutrient for the brain, The brain of an

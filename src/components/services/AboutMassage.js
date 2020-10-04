@@ -28,7 +28,7 @@ const MainContainer = styled(Container)`
 `;
 
 const Background = styled.div`
-  background-image: url("${props => props.background}");
+  background-image: url("${(props) => props.background}");
   height: 50vh;
   width: 100vw;
   min-width: 100vw;
@@ -96,10 +96,10 @@ const benefits = [
           "Decrease Blood Pressure",
           "Reduces Heart Rate",
           "Increases White Blood Cell Count",
-          "Replenishes Nutritive Materials"
+          "Replenishes Nutritive Materials",
         ],
         sm: 12,
-        xl: 4
+        xl: 4,
       },
       {
         icon: "/resources/services/massages/massage-about-lymph.jpg",
@@ -109,10 +109,10 @@ const benefits = [
           "Promotes Lymph Circulation",
           "Decreases Weight In Patients With Lymph Edema",
           "Reduces Lymph Edema",
-          "Increases Lymphocyte Count"
+          "Increases Lymphocyte Count",
         ],
         sm: 12,
-        xl: 4
+        xl: 4,
       },
       {
         icon: "/resources/services/massages/massage-about-nervous.jpg",
@@ -122,12 +122,12 @@ const benefits = [
           "Reduces Anxiety",
           "Promotes Relaxation",
           "Reduces Feelings of Depression",
-          "Decreases Pain"
+          "Decreases Pain",
         ],
         sm: 12,
-        xl: 4
-      }
-    ]
+        xl: 4,
+      },
+    ],
   },
   {
     row: [
@@ -139,10 +139,10 @@ const benefits = [
           "Improves Skin Condition",
           "Improves Skin Pathologies",
           "Reduces Superficial Skin Formation",
-          "Stimulates Sebaceous Glands"
+          "Stimulates Sebaceous Glands",
         ],
         sm: 12,
-        xl: 4
+        xl: 4,
       },
       {
         icon: "/resources/services/massages/massage-about-muscles.jpg",
@@ -152,13 +152,13 @@ const benefits = [
           "Relaxes Muscles",
           "Reduces Muscle Soreness & Fatigue",
           "Tones Weak Muscles",
-          "Improves Balance & Posture"
+          "Improves Balance & Posture",
         ],
         sm: 12,
-        xl: 4
-      }
-    ]
-  }
+        xl: 4,
+      },
+    ],
+  },
 ];
 
 export default class AboutMassage extends Component {
@@ -178,7 +178,7 @@ export default class AboutMassage extends Component {
               <h1 className="text-center">Why a Massage?</h1>
               <HeadingHr />
               <ParagraphsCol xs={12} className="text-center">
-                <p>
+                <p className="light-text">
                   We all have stress, tension, aches and pains that we
                   experience and need to give attention to, in order to take
                   care of our bodies, we only get one body. Everyone experiences
@@ -192,7 +192,7 @@ export default class AboutMassage extends Component {
                 </p>
               </ParagraphsCol>
               <ParagraphsCol xs={12} className="text-center">
-                <p>
+                <p className="light-text">
                   Human touch increases the production of endorphins, growth
                   hormone, along with DHEA, all of which lengthen your life span
                   and lower the negative impact of stress. Studies have found
@@ -202,7 +202,7 @@ export default class AboutMassage extends Component {
                 </p>
               </ParagraphsCol>
               <ParagraphsCol xs={12} className="text-center">
-                <p>
+                <p className="light-text">
                   We have heard many people complain of being over medicated,
                   tired and stressed. With every massage we give the option to
                   mankind’s first medicine which consists of 100% natural oils

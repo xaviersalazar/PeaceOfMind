@@ -6,7 +6,7 @@ import {
   CardBody,
   CardTitle,
   ListGroup,
-  ListGroupItem
+  ListGroupItem,
 } from "reactstrap";
 import styled from "styled-components";
 
@@ -33,6 +33,7 @@ const BenefitsCardItem = styled(ListGroupItem)`
   && {
     border-left: 0;
     border-right: 0;
+    font-weight: 300;
 
     :first-child {
       border-top: 0;
@@ -55,7 +56,7 @@ const ServiceCard = ({ ...props }) => {
         <BenefitsCardBody>
           <CardTitle>{props.title}</CardTitle>
           <ListGroup>
-            {props.items.map(item => {
+            {props.items.map((item) => {
               return <BenefitsCardItem key={item}>{item}</BenefitsCardItem>;
             })}
           </ListGroup>

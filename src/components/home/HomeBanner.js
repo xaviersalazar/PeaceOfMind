@@ -3,7 +3,7 @@ import { Col, NavLink } from "reactstrap";
 import styled from "styled-components";
 
 const ColoredCol = styled(Col)`
-  background: ${props => (props.odd ? "#f3eff5" : "#fff")};
+  background: ${(props) => (props.odd ? "#f3eff5" : "#fff")};
   padding-top: 3rem;
   padding-bottom: 3rem;
   text-align: center;
@@ -50,7 +50,7 @@ export default class HomeBanner extends Component {
         <ColoredCol xs={12}>
           <h1 className="text-center">Massage Therapy &amp; Natural Healing</h1>
           <Hr />
-          <p className="text-center px-5">
+          <p className="text-center px-5 light-text">
             Come in today for a Singles Massage Session or a Couples Discounted
             Massage Packet. We use all organic massage products using plants,
             fresh herbs and oils. We are unlike your everyday Day Spa. We are a
@@ -61,7 +61,7 @@ export default class HomeBanner extends Component {
 
           <h1 className="text-center mt-5">Salon</h1>
           <Hr />
-          <p className="text-center px-5">
+          <p className="text-center px-5 light-text">
             We are a Dyson inspired Salon and we are sticking to our organic
             concept in every aspect. We strongly believe in being green and an
             environmentally conscious business. In saying that, we are bringing

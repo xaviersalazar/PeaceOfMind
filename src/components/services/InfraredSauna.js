@@ -123,6 +123,7 @@ const ColorsCardText = styled(CardText)`
   && {
     margin-bottom: 2rem;
     color: #3d3d3d;
+    font-weight: 300;
   }
 `;
 
@@ -271,7 +272,7 @@ export default class InfraredSauna extends Component {
             <ParagraphsCol xs={12} className="text-center mt-5">
               <h3 className="text-center">Medical Benefits</h3>
               <HeadingHr />
-              <p>
+              <p className="light-text">
                 Light Therapy has been reported to reduce swelling, relieve
                 pain, decrease inflammation, accelerate open wound healing and
                 greatly reduce overall recovery after medical/surgical
@@ -279,7 +280,7 @@ export default class InfraredSauna extends Component {
                 motion, decreased muscle tension and spasm, and improved
                 circulation.
               </p>
-              <p>
+              <p className="light-text">
                 Rejuvenating LED light therapy can be used pain management such
                 as joint and back pain, sore or torn muscles, sprains,
                 arthritis, post-surgical scars, burns, wounds and more. When
@@ -287,7 +288,7 @@ export default class InfraredSauna extends Component {
                 one of the most effective and non-invasive ways to repair the
                 body.
               </p>
-              <p>
+              <p className="light-text">
                 Light therapy is also used to relieve Seasonal Affective
                 Disorder (SAD). SAD effects individuals when the lack of
                 sunlight results in seasonal depression. Phototherapy helps with
@@ -300,12 +301,12 @@ export default class InfraredSauna extends Component {
             <ParagraphsCol xs={12} className="text-center mt-5">
               <h3 className="text-center">Cosmetic Benefits</h3>
               <HeadingHr />
-              <p>
+              <p className="light-text">
                 Light therapy is also a growing treatment for anti-aging. Many
                 individuals have seen a reduction in the appearance of fine
                 lines, wrinkles, crow's feet, and age spots.
               </p>
-              <p>
+              <p className="light-text">
                 Light therapy is "effective at improving the appearance of the
                 face, neck, and chest by reducing the signs of aging, wrinkles,
                 and age spots", says Web M.D. Combined with infrared therapy,
@@ -317,7 +318,7 @@ export default class InfraredSauna extends Component {
             <ParagraphsCol xs={12} className="text-center mt-5">
               <h3 className="text-center">Healing with Color</h3>
               <HeadingHr />
-              <p>
+              <p className="light-text">
                 Color is light; split into different wavelength vibrating at
                 different speeds and at different frequencies. Objects that
                 ABSORB all wavelengths adn DO NOT reflect are black in nature.
@@ -327,7 +328,7 @@ export default class InfraredSauna extends Component {
                 the potential and capabilities of the object to either absorb or
                 reflect the energy.
               </p>
-              <p>
+              <p className="light-text">
                 Light therapy uses colors for their proposed healing abilities
                 in treating emotional and physical disturbances. Light therapy
                 is based on the premise that different colors evoke different

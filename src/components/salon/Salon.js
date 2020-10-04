@@ -28,7 +28,7 @@ const MainContainer = styled(Container)`
 `;
 
 const Background = styled.div`
-  background-image: url("${props => props.background}");
+  background-image: url("${(props) => props.background}");
   height: 50vh;
   width: 100vw;
   min-width: 100vw;
@@ -101,13 +101,13 @@ const benefits = [
           "An ethical product range which you can use ‘guilt free’",
           "Offer a personalised service for each and every client",
           "Stand out from the competition",
-          "Attract new audiences of clients"
+          "Attract new audiences of clients",
         ],
         sm: 12,
-        xl: 4
-      }
-    ]
-  }
+        xl: 4,
+      },
+    ],
+  },
 ];
 
 export default class Salon extends Component {
@@ -127,7 +127,7 @@ export default class Salon extends Component {
               <h1 className="text-center">We use trusted organic products</h1>
               <HeadingHr />
               <ParagraphsCol xs={12} className="text-center">
-                <p>
+                <p className="light-text">
                   That trusted product is Organic Hair Colour Systems®. This
                   color system gives hairdressers a less toxic and more
                   naturally based salon professional color, care and styling
@@ -140,8 +140,8 @@ export default class Salon extends Component {
                 </p>
               </ParagraphsCol>
               <ParagraphsCol xs={12} className="text-center">
-                <p>
-                  Our dermatologically tested and patented permanent hair color
+                <p className="light-text">
+                  Our dermatological tested and patented permanent hair color
                   formula, contains the lowest possible levels of oxidative
                   pigment (PPD/PTD) and is packed full of high grade, natural
                   and certified organic ingredients. Uniquely, our permanent
@@ -154,9 +154,9 @@ export default class Salon extends Component {
                 </p>
               </ParagraphsCol>
               <ParagraphsCol>
-                <p>
+                <p className="light-text">
                   This system also offers a follicle strengthening system called
-                  Rep-Hair®. Our dermatologically tested and patented permanent
+                  Rep-Hair®. Our dermatological tested and patented permanent
                   hair color formula, contains the lowest possible levels of
                   oxidative pigment (PPD/PTD) and is packed full of high grade,
                   natural and certified organic ingredients. Uniquely, our
@@ -169,7 +169,7 @@ export default class Salon extends Component {
                 </p>
               </ParagraphsCol>
               <ParagraphsCol>
-                <p>
+                <p className="light-text">
                   Rep-Hair® Follicle Strengthening System is a natural and
                   scientifically formulated daily scalp and hair care regime,
                   designed to improve the strength and condition of the scalp
@@ -187,14 +187,14 @@ export default class Salon extends Component {
                 </p>
               </ParagraphsCol>
               <ParagraphsCol>
-                <p>
+                <p className="light-text">
                   Our unique system &amp; green science is revolutionary, high
                   performance and unlike any other professional line. Organic
                   Colour Systems® is exactly that, a ‘System’. Our range of high
                   performance, professional salon products, have been designed
                   to work harmoniously with one another to give you and your
                   clients outstanding results in the most natural way possible.
-                  Our dermatologically tested and patented permanent hair colour
+                  Our dermatological tested and patented permanent hair colour
                   formula, contains the lowest possible levels of oxidative
                   pigment (PPD/PTD) and is packed full of high grade, natural
                   and certified organic ingredients. Uniquely, our permanent

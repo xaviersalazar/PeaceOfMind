@@ -54,7 +54,7 @@ export const HomeSupportLocal = () => {
       <ColoredCol xs={12}>
         <h1 className="text-center">Support your local businesses</h1>
         <Hr />
-        <p className="text-center px-5">
+        <p className="text-center px-5 light-text">
           If you want, and are able to, to support them right now, buy a gift
           certificate from them, shop in their online stores, pre book your
           future appointments and check in on them from time to time. Not only

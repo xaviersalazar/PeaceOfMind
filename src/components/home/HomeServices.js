@@ -6,7 +6,7 @@ import {
   CardImg,
   CardText,
   CardBody,
-  CardTitle
+  CardTitle,
 } from "reactstrap";
 import { NavLink as RouterNavLink } from "react-router-dom";
 import styled from "styled-components";
@@ -43,6 +43,7 @@ const ServiceCardBody = styled(CardBody)`
 const ServiceCardText = styled(CardText)`
   && {
     margin-bottom: 2rem;
+    font-weight: 300;
   }
 `;
 
@@ -73,7 +74,7 @@ const serviceColumn1 = [
     message: "You will leave completely rejuvenated",
     hrefLink: "/services/massages",
     sm: 12,
-    xl: 4
+    xl: 4,
   },
   {
     icon: "/resources/services/salon.jpg",
@@ -81,7 +82,7 @@ const serviceColumn1 = [
     message: "Salon services of the highest quality",
     hrefLink: "/salon/about",
     sm: 12,
-    xl: 4
+    xl: 4,
   },
   {
     icon: "/resources/services/deluxe-couples.jpg",
@@ -89,8 +90,8 @@ const serviceColumn1 = [
     message: "Stimulating massages for the couples",
     hrefLink: "/services/deluxe-couples",
     sm: 12,
-    xl: 4
-  }
+    xl: 4,
+  },
 ];
 
 const serviceColumn2 = [
@@ -100,7 +101,7 @@ const serviceColumn2 = [
     message: "Treatments surely to make your face radiate",
     hrefLink: "/services/facials",
     sm: 12,
-    xl: 4
+    xl: 4,
   },
   {
     icon: "/resources/services/waxes.jpg",
@@ -108,7 +109,7 @@ const serviceColumn2 = [
     message: "Full service waxing",
     hrefLink: "/services/waxes",
     sm: 12,
-    xl: 4
+    xl: 4,
   },
   {
     icon: "/resources/services/weight-scrubs.jpg",
@@ -116,8 +117,8 @@ const serviceColumn2 = [
     message: "Our deep scrubs and weight loss treatments",
     hrefLink: "/services/scrubs-weightloss",
     sm: 12,
-    xl: 4
-  }
+    xl: 4,
+  },
 ];
 
 const serviceColumn3 = [
@@ -127,7 +128,7 @@ const serviceColumn3 = [
     message: "Infrared light therapy to help you heal",
     hrefLink: "/services/infrared-sauna",
     sm: 12,
-    xl: 4
+    xl: 4,
   },
   {
     icon: "/resources/services/oxygen-bar.jpg",
@@ -135,7 +136,7 @@ const serviceColumn3 = [
     message: "Oxygen rejuvenation for the brain",
     hrefLink: "/services/oxygen-bar",
     sm: 12,
-    xl: 4
+    xl: 4,
   },
   {
     icon: "/resources/services/oxygen-foot-soak.jpg",
@@ -143,8 +144,8 @@ const serviceColumn3 = [
     message: "Detox the impurities from your body",
     hrefLink: "/services/oxygen-foot-soak",
     sm: 12,
-    xl: 4
-  }
+    xl: 4,
+  },
 ];
 
 const serviceColumn4 = [
@@ -154,12 +155,12 @@ const serviceColumn4 = [
     message: "Services to add onto your massages",
     hrefLink: "/services/addons",
     sm: 12,
-    xl: 4
-  }
+    xl: 4,
+  },
 ];
 
-const createServiceColumn = props => {
-  return props.map(service => {
+const createServiceColumn = (props) => {
+  return props.map((service) => {
     return (
       <Col
         key={service.service}

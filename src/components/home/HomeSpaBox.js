@@ -57,7 +57,7 @@ export const HomeSpaBox = () => {
 
         <h3 className="text-center mt-5">Large Spa Box</h3>
         <PriceText className="text-center mb-3">$162.00</PriceText>
-        <p className="text-center px-5">
+        <p className="text-center px-5 light-text">
           Peace of Mind Spa Box! The contents include a medical grade hand
           sanitizer, all-in-one organic hand manufactured lotion to use as a
           shaving cream, deodorant, or lotion, CBD bar of soap from Leef
@@ -68,7 +68,7 @@ export const HomeSpaBox = () => {
 
         <h3 className="text-center mt-5">Small Spa Box</h3>
         <PriceText className="text-center mb-3">$102.00</PriceText>
-        <p className="text-center px-5">
+        <p className="text-center px-5 light-text">
           We also have a smaller option that comes with the medical grade hand
           sanitizer spray, Organic Body Detox Breathing Treatment Spray,
           all-in-one organic hand manufactured lotion to use a shaving cream,
