@@ -152,7 +152,7 @@ const yogaExpectations = [
     row: [
       {
         icon: "/resources/services/massages/kids-yoga-meditation.jpg",
-        title: "Improved Circulation",
+        title: "Meditation and Relaxation",
         desc:
           "Yoga is meditative by nature. So whether a child is holding a balancing posture, sitting in meditation, or moving through a series of poses, there's going to be a calming, soothing quality. Giving younger kids something to do as they rest on their mats will help with their attention, such as suggesting they think of a favorite color or toy. Older kids will find it easier to rest longer with less structure.",
         sm: 12,
