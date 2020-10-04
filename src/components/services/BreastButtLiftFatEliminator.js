@@ -94,7 +94,9 @@ export const BreastButtLiftFatEliminator = () => {
   return (
     <React.Fragment>
       <Title>
-        <ServiceTitle>Breast and Butt Lift, and Fat Eliminator</ServiceTitle>
+        <ServiceTitle>
+          Non-surgical Breast/Butt Lift and Fat Eliminator
+        </ServiceTitle>
         <Hr />
       </Title>
       <Background
@@ -103,9 +105,7 @@ export const BreastButtLiftFatEliminator = () => {
       <MainContainer fluid>
         <Row className="mb-5">
           <ParagraphsCol xs={12} className="text-center">
-            <h1 className="text-center">
-              Non-surgical Breast and Butt Lift, and Fat Eliminator Treatments
-            </h1>
+            <h1 className="text-center">Prices</h1>
             <small className="m-0 p-0">
               30 Minutes: $102.00 | 1 Hour: $202.00
             </small>

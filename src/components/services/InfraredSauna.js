@@ -251,7 +251,7 @@ export default class InfraredSauna extends Component {
     return (
       <div>
         <Title>
-          <ServiceTitle>Infrared Sauna</ServiceTitle>
+          <ServiceTitle>Infrared Sauna Color Light Therapy</ServiceTitle>
           <Hr />
         </Title>
         <Background
@@ -260,9 +260,7 @@ export default class InfraredSauna extends Component {
         <MainContainer fluid>
           <Row className="mb-5">
             <ParagraphsCol xs={12} className="text-center">
-              <h1 className="text-center">
-                Infrared Sauna Color Light Therapy
-              </h1>
+              <h1 className="text-center">Prices</h1>
               <small className="m-0 p-0">
                 15 minutes: $17.00 | 30 minutes: $32.00 | 45 minutes: $47.00 |
                 60 minutes: $62.00

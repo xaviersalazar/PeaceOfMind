@@ -36,6 +36,7 @@ import { Makeup } from "./salon/Makeup";
 import { KidsYoga } from "./services/KidsYoga";
 import { HealthCoaching } from "./services/HealthCoaching";
 import { BreastButtLiftFatEliminator } from "./services/BreastButtLiftFatEliminator";
+import { FacialEnhancements } from "./services/FacialEnhancements";
 
 export default class Main extends Component {
   render() {
@@ -81,6 +82,10 @@ export default class Main extends Component {
           component={DeluxeCouplesMassages}
         />
         <Route path="/services/facials" component={Facials} />
+        <Route
+          path="/services/facial-enhancements"
+          component={FacialEnhancements}
+        />
         <Route path="/services/health-coaching" component={HealthCoaching} />
         <Route path="/services/infrared-sauna" component={InfraredSauna} />
         <Route path="/services/kids-yoga" component={KidsYoga} />

@@ -119,7 +119,7 @@ export default class OxygenBar extends Component {
         <MainContainer fluid>
           <Row className="mb-5">
             <ParagraphsCol xs={12} className="text-center">
-              <h1 className="text-center">Rejuvenate with our Oxygen Bar</h1>
+              <h1 className="text-center">Price</h1>
               <small className="m-0 p-0">$1.50 per minute</small>
               <HeadingHr />
               <ParagraphsCol xs={12} className="text-center">

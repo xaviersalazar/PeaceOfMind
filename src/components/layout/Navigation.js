@@ -454,7 +454,7 @@ export default class Navigation extends Component {
                       to="/services/breast-buttlift-fat-eliminator"
                       onClick={() => this.clickedLink()}
                     >
-                      BREAST AND BUTT LIFT, AND FAT ELIMINATOR
+                      BREAST/BUTT LIFT & FAT ELIMINATOR
                     </RouterNavLink>
                   </StyleDropdownItem>
                   <StyleDropdownItem>
@@ -473,6 +473,15 @@ export default class Navigation extends Component {
                       onClick={() => this.clickedLink()}
                     >
                       FACIALS
+                    </RouterNavLink>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
+                    <RouterNavLink
+                      className="link-item"
+                      to="/services/facial-enhancements"
+                      onClick={() => this.clickedLink()}
+                    >
+                      FACIAL ENHANCEMENTS
                     </RouterNavLink>
                   </StyleDropdownItem>
                   <StyleDropdownItem>

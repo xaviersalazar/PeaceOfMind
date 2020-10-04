@@ -175,7 +175,7 @@ export const KidsYoga = () => {
       <MainContainer fluid>
         <Row className="mb-5">
           <ParagraphsCol xs={12} className="text-center">
-            <h1 className="text-center">Kids Yoga</h1>
+            <h1 className="text-center">Prices</h1>
             <small className="m-0 p-0">
               Class Session: $27.00 | Private Session: $67.00
             </small>

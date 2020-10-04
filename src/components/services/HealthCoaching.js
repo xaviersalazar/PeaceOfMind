@@ -103,7 +103,7 @@ export const HealthCoaching = () => {
       <MainContainer fluid>
         <Row className="mb-5">
           <ParagraphsCol xs={12} className="text-center">
-            <h1 className="text-center">Health Coaching</h1>
+            <h1 className="text-center">Prices</h1>
             <small className="m-0 p-0">
               1 Hour: $97.00 | 1 Month: $347.00 | 6 Months: $2,000.00
             </small>
