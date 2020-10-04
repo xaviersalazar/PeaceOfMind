@@ -6,7 +6,7 @@ import {
   CardText,
   CardBody,
   CardTitle,
-  CardSubtitle
+  CardSubtitle,
 } from "reactstrap";
 import styled from "styled-components";
 
@@ -32,6 +32,7 @@ const ServiceCardBody = styled(CardBody)`
 const ServiceCardText = styled(CardText)`
   && {
     margin-bottom: 2rem;
+    font-weight: 300;
   }
 `;
 

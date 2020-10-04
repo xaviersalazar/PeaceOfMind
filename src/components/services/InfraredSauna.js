@@ -101,7 +101,7 @@ const Disclaimer = styled.p`
 const ColorsCards = styled(Card)`
   && {
     height: 100%;
-    background-color: ${(props) => props.background}
+    background-color: ${(props) => props.background};
     color: #fff;
     border-radius: 8px;
     border: 0;
@@ -133,19 +133,19 @@ const colors = [
         title: "Red",
         color: "#ff7675",
         desc:
-          'Red is called "The Great Energizer." It loosens, releases stiffnes and constrictons. It is excellent for areas that have become stiffened. Red is the first visible color we see after the infrared ban is passed. It poromotes cellular growth, stimulating the will aspect, or the circulatory system. It is therefore indicated for all colds, sluggish or dormant conditions, such as pmeumonia, arthritis, anemia, as a liver stimulant, an energy builder, and for increasing circulation. Red links with and stimulates the base of the spine, causing the adrenal glands to release adrenalin. This results in greater strength. Red causes hemoglobin to multiply, thus increasing energy raising body temperature conditions as it stimulates sensory nerves such as hearing, taste, smell and activates metabolism. It is exellecent for anemia or blood-related conditions.',
+          'Red is called "The Great Energizer." It loosens, releases stiffness and constrictions. It is excellent for areas that have become stiffened. Red is the first visible color we see after the infrared ban is passed. It promotes cellular growth, stimulating the will aspect, or the circulatory system. It is therefore indicated for all colds, sluggish or dormant conditions, such as pneumonia, arthritis, anemia, as a liver stimulant, an energy builder, and for increasing circulation. Red links with and stimulates the base of the spine, causing the adrenal glands to release adrenalin. This results in greater strength. Red causes hemoglobin to multiply, thus increasing energy raising body temperature conditions as it stimulates sensory nerves such as hearing, taste, smell and activates metabolism. It is excellent for anemia or blood-related conditions.',
       },
       {
         title: "Blue",
         color: "#74b9ff",
         desc:
-          "Blue on other hand, is at the opposite end of the visible spectrum. Blue can be used for any type of ailments associated with speec, communication, or the throat. This is a mentally relaxing color. Blue has pacifying effect on the nervous system encouraging great relaxtion. It is ideal for sleep problems. Blue light connects us to holistic thought, and gives us wisdom and calrity enhancing communication and speech. Relaxing, soothing blue rays bring great calm and peace to the mind this worried, excited, or in a constant nervous state. It is a very positive color, indicating loyalty and reliability, as expressed in the sentiment of being true blue.",
+          "Blue on other hand, is at the opposite end of the visible spectrum. Blue can be used for any type of ailments associated with speech, communication, or the throat. This is a mentally relaxing color. Blue has pacifying effect on the nervous system encouraging great relaxation. It is ideal for sleep problems. Blue light connects us to holistic thought, and gives us wisdom and clarity enhancing communication and speech. Relaxing, soothing blue rays bring great calm and peace to the mind this worried, excited, or in a constant nervous state. It is a very positive color, indicating loyalty and reliability, as expressed in the sentiment of being true blue.",
       },
       {
         title: "Yellow",
         color: "#ffeaa7",
         desc:
-          "Yellow helps awaken mental inspiration arousing higher mentality. Thus, it is an excellent color for nervous or nerve-related conditions or ailments; fueling the solor plexus. Yellow has very enriching effect upon the intellect. Yellow can be sued for conditions of the stomach, liver, and intestines. It can help the pores of the skin by reparing scarred tissue. These rays have an alkalizing effect whiche strengthens the nerves. Awakening, inspiring and vitally stimulating the higher mind promoting self-control. Typical diseases are treated by yellow are constipation, has, liver troubles, diabetes, eczema, and nervous exhaustion. Providing clarity of thought, increasing awareness, stimulatin interest and curiosity yellow energy is related the ability to perceive or understand. The yellow energy connects us to our mental self.",
+          "Yellow helps awaken mental inspiration arousing higher mentality. Thus, it is an excellent color for nervous or nerve-related conditions or ailments; fueling the solar plexus. Yellow has very enriching effect upon the intellect. Yellow can be sued for conditions of the stomach, liver, and intestines. It can help the pores of the skin by repairing scarred tissue. These rays have an alkalizing effect which strengthens the nerves. Awakening, inspiring and vitally stimulating the higher mind promoting self-control. Typical diseases are treated by yellow are constipation, has, liver troubles, diabetes, eczema, and nervous exhaustion. Providing clarity of thought, increasing awareness, stimulating interest and curiosity yellow energy is related the ability to perceive or understand. The yellow energy connects us to our mental self.",
       },
     ],
   },
@@ -155,19 +155,19 @@ const colors = [
         title: "Orange",
         color: "#fab1a0",
         desc:
-          'Orange has a freeing action upon the mind, relieving repression. Because orange is a blend of red and yellow, it combines physcial energy with mental wisdom, inducing a transformation between lower physical reaction and higher mental response. Thus, it is often referred to as "The Wisdom Ray." Orange is warm, cherring, and con-constricting. Through orange, we are able to heal the physical body (red) and, at the same time, indcue within the mind (yellow) greater understanding. Orange helps assimilate new ideas Orange is the best emotional stimulant helping to remove inhibitions paving independent social behavior. Bring joy to your workday and strengthen your appeitie for life. ORagne aids in repairing inflammation of kineys, gallstones, menstrual cramps, epilepsy, wet cough and all sinus conditions.',
+          'Orange has a freeing action upon the mind, relieving repression. Because orange is a blend of red and yellow, it combines physical energy with mental wisdom, inducing a transformation between lower physical reaction and higher mental response. Thus, it is often referred to as "The Wisdom Ray." Orange is warm, cheering, and con-constricting. Through orange, we are able to heal the physical body (red) and, at the same time, induce within the mind (yellow) greater understanding. Orange helps assimilate new ideas Orange is the best emotional stimulant helping to remove inhibitions paving independent social behavior. Bring joy to your workday and strengthen your appetite for life. Orange aids in repairing inflammation of kidneys, gallstones, menstrual cramps, epilepsy, wet cough and all sinus conditions.',
       },
       {
         title: "Green",
         color: "#55efc4",
         desc:
-          "Green is the universal healing color. Green is midway in the color spectrum; therefore, it contains both a physical nature and a spiritual nature, in equal balance and in harmony. Thus, green can be used for just about any condition in need of healing. When in doubt, green will always work. Help relaxexmuscles, nervers, and thoughts. The color green cleanses and balances our energy, to give a feeling of renewal, peace and harmony. Used primarily for balancing our whole being it is neither relaxing nor astringent in its impact. In a more practical snese, green affects blood pressure and all conditions of the heart. Having both an energizing effect, moderating, or soothing effect. Green can help heal many illnesses of this nature, specifically including heart troubles, decreasing and stabillizing blood pressure, ulcers, cancer, headaches, nervous disorders and influenza, and acts a general tonic.",
+          "Green is the universal healing color. Green is midway in the color spectrum; therefore, it contains both a physical nature and a spiritual nature, in equal balance and in harmony. Thus, green can be used for just about any condition in need of healing. When in doubt, green will always work. Help relax muscles, nerves, and thoughts. The color green cleanses and balances our energy, to give a feeling of renewal, peace and harmony. Used primarily for balancing our whole being it is neither relaxing nor astringent in its impact. In a more practical sense, green affects blood pressure and all conditions of the heart. Having both an energizing effect, moderating, or soothing effect. Green can help heal many illnesses of this nature, specifically including heart troubles, decreasing and stabilizing blood pressure, ulcers, cancer, headaches, nervous disorders and influenza, and acts a general tonic.",
       },
       {
         title: "Violet",
         color: "#a29bfe",
         desc:
-          "Violet is the last color we can see before light onto ultra-violet. This color is an excellent remedy for neurosis, diseases of the scalp, sciatica, tumors, rheumatism, cerebral-spinal meningitis, concusssion, cramps epilepsy. Violet animates and clean the venous blood. It is generally not used for physical conditions; however, some color experts believe that it does provide nourishment to the cells i the upper brain. Violet pruifies our thoughts and feelings giving us inspiration in all undertakings. The violet energy connects us to our spiritual self bringing guidance, wisdom and inner strength, and enhances artistic talent and creativity. Leonardo da Vinci proclaimed that you cna increase the power of meditation ten fold by meditating under the gentle rays of violet, as found in church windows.",
+          "Violet is the last color we can see before light onto ultra-violet. This color is an excellent remedy for neurosis, diseases of the scalp, sciatica, tumors, rheumatism, cerebral-spinal meningitis, concussion, cramps epilepsy. Violet animates and clean the venous blood. It is generally not used for physical conditions; however, some color experts believe that it does provide nourishment to the cells i the upper brain. Violet purifies our thoughts and feelings giving us inspiration in all undertakings. The violet energy connects us to our spiritual self bringing guidance, wisdom and inner strength, and enhances artistic talent and creativity. Leonardo da Vinci proclaimed that you cna increase the power of meditation ten fold by meditating under the gentle rays of violet, as found in church windows.",
       },
     ],
   },
@@ -214,9 +214,9 @@ const advantages = [
       },
       {
         icon: "/resources/services/massages/infrared-sauna-relaxation.jpg",
-        title: "Relaxtion",
+        title: "Relaxation",
         desc:
-          "Infrared sauna therapy promotes relaxtion by helping to balance your body's level of cortisol, your body's primary stress hormone. The heat generated by the sauna will also help to relax muscles and relieve tension throughout the body, allowing you to relax and de-stress.",
+          "Infrared sauna therapy promotes relaxation by helping to balance your body's level of cortisol, your body's primary stress hormone. The heat generated by the sauna will also help to relax muscles and relieve tension throughout the body, allowing you to relax and de-stress.",
         sm: 12,
         xl: 4,
       },
@@ -275,7 +275,7 @@ export default class InfraredSauna extends Component {
                 Light Therapy has been reported to reduce swelling, relieve
                 pain, decrease inflammation, accelerate open wound healing and
                 greatly reduce overall recovery after medical/surgical
-                preocedures. Patients have demonstrated increased range of
+                procedures. Patients have demonstrated increased range of
                 motion, decreased muscle tension and spasm, and improved
                 circulation.
               </p>
@@ -321,19 +321,19 @@ export default class InfraredSauna extends Component {
                 Color is light; split into different wavelength vibrating at
                 different speeds and at different frequencies. Objects that
                 ABSORB all wavelengths adn DO NOT reflect are black in nature.
-                Objects that RELFLECT all wavelengths and DO reflect are white
-                in nature. Between black and white lies COLOR. Colors are
-                wavelenghts of energy that, to us, appear as color because of
+                Objects that REFLECT all wavelengths and DO reflect are white in
+                nature. Between black and white lies COLOR. Colors are
+                wavelengths of energy that, to us, appear as color because of
                 the potential and capabilities of the object to either absorb or
                 reflect the energy.
               </p>
               <p>
-                Light therapy uses colors for their proposed healing abilites in
-                treating emotional and physical disturbances. Light therapy is
-                based on the premise that different colors evoke different
-                respones in poeple. For example, some colors are considered to
-                be stimulating, whereas others may be soothin. Color therapy has
-                been suggested for many uses, based on tradition or on
+                Light therapy uses colors for their proposed healing abilities
+                in treating emotional and physical disturbances. Light therapy
+                is based on the premise that different colors evoke different
+                response in people. For example, some colors are considered to
+                be stimulating, whereas others may be soothing. Color therapy
+                has been suggested for many uses, based on tradition or on
                 scientific theories. Consult with a health care provider before
                 using color therapy for any use.
               </p>

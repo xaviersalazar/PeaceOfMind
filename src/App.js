@@ -30,6 +30,10 @@ const GlobalStyle = createGlobalStyle`
       color: #3d3d3d !important;
       text-transform: uppercase;
     }
+
+    .light-text {
+      font-weight: 300 !important;
+    }
   }
 `;
 

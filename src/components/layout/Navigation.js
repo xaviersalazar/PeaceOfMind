@@ -478,6 +478,15 @@ export default class Navigation extends Component {
                   <StyleDropdownItem>
                     <RouterNavLink
                       className="link-item"
+                      to="/services/kids-yoga"
+                      onClick={() => this.clickedLink()}
+                    >
+                      KIDS YOGA
+                    </RouterNavLink>
+                  </StyleDropdownItem>
+                  <StyleDropdownItem>
+                    <RouterNavLink
+                      className="link-item"
                       to="/services/massages"
                       onClick={() => this.clickedLink()}
                     >
