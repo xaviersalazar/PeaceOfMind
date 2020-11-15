@@ -103,7 +103,7 @@ export default class About extends Component {
                   Peace of Mind Massage Therapy &amp; Natural Healing is a Woman
                   Owned Business based on mother nature's common grounds,
                   located at 602 N Lower Broadway were Peoples St meets the wall
-                  to Upper downtown , Opened July 10, 2010.
+                  to Upper downtown, Opened July 10, 2010.
                 </p>
               </ParagraphsCol>
               <ParagraphsCol xs={12} className="text-center">
