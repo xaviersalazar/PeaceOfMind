@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^4.3.0",
     "@ciar4n/izmir": "^1.0.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
     "@fortawesome/react-fontawesome": "^0.1.9",
+    "antd": "^4.8.5",
     "axios": "^0.20.0",
     "bootstrap": "^4.4.1",
     "i": "^0.3.6",

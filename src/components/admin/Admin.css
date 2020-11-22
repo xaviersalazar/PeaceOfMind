@@ -1,0 +1,20 @@
+@import "~antd/dist/antd.css";
+
+.ant-form-item .ant-input-affix-wrapper {
+  border-radius: 12px;
+}
+
+.ant-form-item .ant-input-affix-wrapper-focused {
+  border-color: #b3ffab;
+  box-shadow: none;
+}
+
+.ant-form-item .ant-input-affix-wrapper:focus {
+  border-color: #b3ffab;
+  box-shadow: none;
+}
+
+.ant-form-item .ant-input-affix-wrapper:hover {
+  border-color: #b3ffab;
+  box-shadow: none;
+}

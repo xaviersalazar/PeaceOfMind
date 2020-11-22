@@ -37,6 +37,7 @@ import { KidsYoga } from "./services/KidsYoga";
 import { HealthCoaching } from "./services/HealthCoaching";
 import { BreastButtLiftFatEliminator } from "./services/BreastButtLiftFatEliminator";
 import { FacialEnhancements } from "./services/FacialEnhancements";
+import { Login } from "./admin/login/Login";
 
 export default class Main extends Component {
   render() {
@@ -97,6 +98,7 @@ export default class Main extends Component {
           component={ScrubsWeightloss}
         />
         <Route path="/services/waxes" component={Waxes} />
+        <Route path="/admin" component={Login} />
       </Switch>
     );
   }

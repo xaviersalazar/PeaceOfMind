@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import Navigation from "./components/layout/Navigation";
 import Main from "./components/Main";
@@ -7,6 +7,7 @@ import ScrollToTop from "./components/common/ScrollToTop";
 import { createGlobalStyle } from "styled-components";
 import { ToastContainer } from "react-toastify";
 import "./App.css";
+import { Login } from "./components/admin/login/Login";
 
 const GlobalStyle = createGlobalStyle`
   && {
@@ -37,22 +38,28 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-class App extends Component {
-  render() {
-    return (
-      <Router>
-        <ScrollToTop>
-          <div>
-            <GlobalStyle />
-            <Navigation />
-            <Main />
-            <Footer />
-            <ToastContainer />
-          </div>
-        </ScrollToTop>
-      </Router>
+export const App = () => {
+  return (
+    <Router>
+      <ScrollToTop>
+        {window.location.pathname !== "/admin" ?
+          (
+            <React.Fragment>
+              <GlobalStyle />
+              <Navigation />
+              <Main />
+              <Footer />
+              <ToastContainer />
+            </React.Fragment>
+          ) : (
+            <React.Fragment>
+              <GlobalStyle />
+              <Login />
+            </React.Fragment>
+          )
+        }
+        
+      </ScrollToTop>
+    </Router>
     );
-  }
 }
-
-export default App;
