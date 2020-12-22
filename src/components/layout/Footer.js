@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import { Col, Row, FormGroup, Input, FormFeedback } from "reactstrap";
 import { NavLink } from "reactstrap";
 import NetlifyForm from "react-netlify-form";
@@ -67,159 +67,146 @@ const InstaLink = styled(NavLink)`
   }
 `;
 
-export default class Footer extends Component {
-  constructor(props) {
-    super(props);
+export const Footer = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [validate, setValidate] = useState("");
 
-    this.state = {
-      name: "",
-      email: "",
-      message: "",
-      validate: {
-        emailState: "",
-      },
-    };
-  }
-
-  validateEmail = (e) => {
+  const validateEmail = (e) => {
     const emailRex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    const { validate } = this.state;
 
     if (emailRex.test(e.target.value)) {
-      validate.emailState = "has-success";
+      setValidate("has-success");
     } else {
-      validate.emailState = "has-danger";
+      setValidate("has-danger");
     }
-
-    this.setState({ validate });
   };
 
-  handleChange = (e) => {
+  const handleChange = (e) => {
     e.persist();
 
     const { target } = e;
     const value = target.value;
     const { name } = target;
 
-    this.setState({
-      [name]: value,
-    });
+    if (name === "name") {
+      setName(value);
+    }
+
+    if (name === "email") {
+      setEmail(value);
+    }
+
+    if (name === "message") {
+      setMessage(value);
+    }
   };
 
-  onSuccess = () => {
+  const onSuccess = () => {
     toast("Thanks! We got your message. Someone will get back to you shortly", {
       type: toast.TYPE.SUCCESS,
     });
 
-    this.setState({
-      name: "",
-      email: "",
-      message: "",
-      validate: {
-        emailState: "",
-      },
-    });
+    setName("");
+    setEmail("");
+    setMessage("");
+    setValidate("");
   };
 
-  onError = () => {
+  const onError = () => {
     toast("Uh oh! Something went wrong. Please try again", {
       type: toast.TYPE.ERROR,
     });
   };
 
-  render() {
-    const { name, email, message } = this.state;
+  return (
+    <Row className="py-5" id="contact">
+      <Col xs={12}>
+        <h1 className="text-center pb-3">CONTACT US</h1>
+      </Col>
+      <Col xs={12} md={6} className="p-5">
+        <TagLine>
+          Open every day so we can work around your schedule because life isn’t
+          always easy!
+        </TagLine>
+        <p className="mb-0">Our Hours:</p>
+        <p className="p-0 mb-0">Everyday @ 8:30AM - 9:00PM</p>
+        <p className="p-0">We also travel to you if needed!</p>
+        <p className="p-0 m-0">
+          602 N Lower Broadway St Corpus Christi, TX 78401
+        </p>
+        <p className="p-0 mt-0">361-737-7813</p>
+        <p>10% discount for all military!</p>
+        <p className="d-inline">Follow us </p>
+        <InstaLink
+          className="d-inline p-0"
+          href="https://www.instagram.com/peaceofmindmassage/"
+          target="_blank"
+        >
+          @peaceofmindmassage
+        </InstaLink>
+      </Col>
 
-    return (
-      <Row className="py-5" id="contact">
-        <Col xs={12}>
-          <h1 className="text-center pb-3">CONTACT US</h1>
-        </Col>
-        <Col xs={12} md={6} className="p-5">
-          <TagLine>
-            Open every day so we can work around your schedule because life
-            isn’t always easy!
-          </TagLine>
-          <p className="mb-0">Our Hours:</p>
-          <p className="p-0 mb-0">Everyday @ 8:30AM - 9:00PM</p>
-          <p className="p-0">We also travel to you if needed!</p>
-          <p className="p-0 m-0">
-            602 N Lower Broadway St Corpus Christi, TX 78401
-          </p>
-          <p className="p-0 mt-0">361-737-7813</p>
-          <p>10% discount for all military!</p>
-          <p className="d-inline">Follow us </p>
-          <InstaLink
-            className="d-inline p-0"
-            href="https://www.instagram.com/peaceofmindmassage/"
-            target="_blank"
-          >
-            @peaceofmindmassage
-          </InstaLink>
-        </Col>
-
-        <FormCol xs={12} md={6}>
-          <NetlifyForm
-            name="Contact Form"
-            onSuccess={() => this.onSuccess()}
-            onError={() => this.onError()}
-          >
-            {({ loading, error, success }) => (
-              <>
-                {
-                  <>
-                    <FormGroup className="py-3">
-                      <FormInput
-                        type="text"
-                        name="name"
-                        id="name"
-                        value={name}
-                        onChange={(e) => this.handleChange(e)}
-                        placeholder="Your name"
-                      />
-                    </FormGroup>
-                    <FormGroup className="py-3">
-                      <FormInput
-                        type="email"
-                        name="email"
-                        id="email"
-                        value={email}
-                        valid={this.state.validate.emailState === "has-success"}
-                        invalid={
-                          this.state.validate.emailState === "has-danger"
-                        }
-                        onChange={(e) => {
-                          this.validateEmail(e);
-                          this.handleChange(e);
-                        }}
-                        placeholder="Your email"
-                      />
-                      <FormFeedback valid>That's a valid email</FormFeedback>
-                      <FormFeedback>
-                        Looks like there is an issue with your email. Please
-                        input a correct email.
-                      </FormFeedback>
-                    </FormGroup>
-                    <FormGroup className="py-3">
-                      <FormInput
-                        type="textarea"
-                        name="message"
-                        id="message"
-                        value={message}
-                        onChange={(e) => this.handleChange(e)}
-                        placeholder="Got a question? Need to book an appointment? "
-                      />
-                    </FormGroup>
-                    <SendButton type="submit" disabled={loading}>
-                      Send a message!
-                    </SendButton>
-                  </>
-                }
-              </>
-            )}
-          </NetlifyForm>
-        </FormCol>
-      </Row>
-    );
-  }
-}
+      <FormCol xs={12} md={6}>
+        <NetlifyForm
+          name="Contact Form"
+          onSuccess={onSuccess}
+          onError={onError}
+        >
+          {({ loading, error, success }) => (
+            <>
+              {
+                <>
+                  <FormGroup className="py-3">
+                    <FormInput
+                      type="text"
+                      name="name"
+                      id="name"
+                      value={name}
+                      onChange={(e) => handleChange(e)}
+                      placeholder="Your name"
+                    />
+                  </FormGroup>
+                  <FormGroup className="py-3">
+                    <FormInput
+                      type="email"
+                      name="email"
+                      id="email"
+                      value={email}
+                      valid={validate === "has-success"}
+                      invalid={validate === "has-danger"}
+                      onChange={(e) => {
+                        validateEmail(e);
+                        handleChange(e);
+                      }}
+                      placeholder="Your email"
+                    />
+                    <FormFeedback valid>That's a valid email</FormFeedback>
+                    <FormFeedback>
+                      Looks like there is an issue with your email. Please input
+                      a correct email.
+                    </FormFeedback>
+                  </FormGroup>
+                  <FormGroup className="py-3">
+                    <FormInput
+                      type="textarea"
+                      name="message"
+                      id="message"
+                      value={message}
+                      onChange={(e) => handleChange(e)}
+                      placeholder="Got a question? Need to book an appointment? "
+                    />
+                  </FormGroup>
+                  <SendButton type="submit" disabled={loading}>
+                    Send a message!
+                  </SendButton>
+                </>
+              }
+            </>
+          )}
+        </NetlifyForm>
+      </FormCol>
+    </Row>
+  );
+};

@@ -10,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styled from "styled-components";
 
 const ColoredRow = styled(Row)`
-  background: ${(props) => props.bgColor};
+  background: ${(props) => props.color};
 `;
 
 const Hr = styled.hr`
@@ -25,16 +25,16 @@ export const Home = () => (
   <Container className="p-0 m-0" fluid>
     <HomeJumbotron />
     <Container fluid>
-      <ColoredRow bgColor={"#f3eff5"}>
+      <ColoredRow color={"#f3eff5"}>
         <HomeSupportLocal />
       </ColoredRow>
-      <ColoredRow bgColor={"#ffffff"}>
+      <ColoredRow color={"#ffffff"}>
         <HomeSpaBox />
       </ColoredRow>
-      <ColoredRow bgColor={"#f3eff5"}>
+      <ColoredRow color={"#f3eff5"}>
         <HomeBanner />
       </ColoredRow>
-      <ColoredRow bgColor={"#ffffff"} style={{ padding: "3rem 0" }}>
+      <ColoredRow color={"#ffffff"} style={{ padding: "3rem 0" }}>
         <Col xs={12}>
           <h1 className="text-center px-5 mb-3">Services</h1>
           <Hr />
@@ -43,7 +43,7 @@ export const Home = () => (
           <HomeServices />
         </Col>
       </ColoredRow>
-      <ColoredRow bgColor={"#f3eff5"}>
+      <ColoredRow color={"#f3eff5"}>
         <Reviews />
       </ColoredRow>
     </Container>
