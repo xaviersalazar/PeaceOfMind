@@ -85,7 +85,7 @@ const HeadingHr = styled.hr`
 `;
 
 export const About = () => (
-  <div>
+  <>
     <Title>
       <ServiceTitle>About Us</ServiceTitle>
       <Hr />
@@ -145,5 +145,5 @@ export const About = () => (
         </ParagraphsCol>
       </Row>
     </MainContainer>
-  </div>
+  </>
 );

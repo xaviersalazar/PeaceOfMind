@@ -165,9 +165,9 @@ export default class Footer extends Component {
             onError={() => this.onError()}
           >
             {({ loading, error, success }) => (
-              <div>
+              <>
                 {
-                  <div>
+                  <>
                     <FormGroup className="py-3">
                       <FormInput
                         type="text"
@@ -213,9 +213,9 @@ export default class Footer extends Component {
                     <SendButton type="submit" disabled={loading}>
                       Send a message!
                     </SendButton>
-                  </div>
+                  </>
                 }
-              </div>
+              </>
             )}
           </NetlifyForm>
         </FormCol>

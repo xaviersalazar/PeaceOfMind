@@ -162,7 +162,7 @@ const benefits = [
 ];
 
 export const AboutMassage = () => (
-  <div>
+  <>
     <Title>
       <ServiceTitle>About Massages</ServiceTitle>
       <Hr />
@@ -210,5 +210,5 @@ export const AboutMassage = () => (
       </Row>
       <MassageBenefitsCardRow rows={benefits} />
     </MainContainer>
-  </div>
+  </>
 );

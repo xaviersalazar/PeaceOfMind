@@ -106,7 +106,7 @@ const benefits = [
 ];
 
 export const OxygenBar = () => (
-  <div>
+  <>
     <Title>
       <ServiceTitle>Oxygen Bar</ServiceTitle>
       <Hr />
@@ -139,5 +139,5 @@ export const OxygenBar = () => (
         </ParagraphsCol>
       </Row>
     </MainContainer>
-  </div>
+  </>
 );

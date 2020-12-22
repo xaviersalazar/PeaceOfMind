@@ -99,7 +99,7 @@ const BesameLogo = styled.img`
 `;
 
 export const AboutBesame = () => (
-  <div>
+  <>
     <Title>
       <ServiceTitle>Besame Cosmetics</ServiceTitle>
       <Hr />
@@ -140,5 +140,5 @@ export const AboutBesame = () => (
         </ParagraphsCol>
       </Row>
     </MainContainer>
-  </div>
+  </>
 );

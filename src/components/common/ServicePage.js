@@ -87,7 +87,7 @@ const Disclaimer = styled.p`
 `;
 
 export const ServicePage = ({ ...props }) => (
-  <div>
+  <>
     <Title>
       <ServiceTitle>{props.title}</ServiceTitle>
       <Hr />
@@ -112,5 +112,5 @@ export const ServicePage = ({ ...props }) => (
         </ParagraphsCol>
       </Row>
     </MainContainer>
-  </div>
+  </>
 );

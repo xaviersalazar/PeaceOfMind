@@ -247,7 +247,7 @@ const ColorsRow = ({ rows }) => {
 };
 
 export const InfraredSauna = () => (
-  <div>
+  <>
     <Title>
       <ServiceTitle>Infrared Sauna Color Light Therapy</ServiceTitle>
       <Hr />
@@ -348,5 +348,5 @@ export const InfraredSauna = () => (
         </ParagraphsCol>
       </Row>
     </MainContainer>
-  </div>
+  </>
 );

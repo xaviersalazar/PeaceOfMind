@@ -106,7 +106,7 @@ const benefits = [
 ];
 
 export const OxygenFootSoak = () => (
-  <div>
+  <>
     <Title>
       <ServiceTitle>Oxygen Foot Soak</ServiceTitle>
       <Hr />
@@ -162,5 +162,5 @@ export const OxygenFootSoak = () => (
         </ParagraphsCol>
       </Row>
     </MainContainer>
-  </div>
+  </>
 );
