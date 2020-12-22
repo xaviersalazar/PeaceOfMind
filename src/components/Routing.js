@@ -38,7 +38,7 @@ import { HealthCoaching } from "./services/HealthCoaching";
 import { BreastButtLiftFatEliminator } from "./services/BreastButtLiftFatEliminator";
 import { FacialEnhancements } from "./services/FacialEnhancements";
 
-export const Main = () => (
+export const Routing = () => (
   <Switch>
     <Route exact path="/" component={Home} />
     <Route path="/about" component={About} />

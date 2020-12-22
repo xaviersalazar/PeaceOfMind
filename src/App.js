@@ -1,11 +1,17 @@
 import React from "react";
+import { createStore, applyMiddleware } from "redux";
+import { Provider } from "react-redux";
+import thunk from "redux-thunk";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Navigation } from "./components/layout/Navigation";
-import { Main } from "./components/Main";
+import { Routing } from "./components/Routing";
 import { Footer } from "./components/layout/Footer";
 import ScrollToTop from "./components/common/ScrollToTop";
+import rootReducer from "./redux/reducers";
 import { ToastContainer } from "react-toastify";
 import { createGlobalStyle } from "styled-components";
+
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
 const GlobalStyle = createGlobalStyle`
   && {
@@ -69,15 +75,15 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export const App = () => (
-  <Router>
-    <ScrollToTop>
-      <>
+  <Provider store={store}>
+    <Router>
+      <ScrollToTop>
         <GlobalStyle />
         <Navigation />
-        <Main />
+        <Routing />
         <Footer />
         <ToastContainer />
-      </>
-    </ScrollToTop>
-  </Router>
+      </ScrollToTop>
+    </Router>
+  </Provider>
 );

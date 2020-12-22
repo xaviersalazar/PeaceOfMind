@@ -40,6 +40,6 @@ const Logo = styled.img`
 export const HomeJumbotron = () => (
   <HomeJumbotronStyled id="home-jumbotron">
     <Logo src="/resources/logo-main.png" className="img-fluid" />
-    <HomeJumbotronBackground id="home-jumbotron-bg" />s
+    <HomeJumbotronBackground id="home-jumbotron-bg" />
   </HomeJumbotronStyled>
 );

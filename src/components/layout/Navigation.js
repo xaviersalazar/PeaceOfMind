@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import {
   Collapse,
   Navbar,
@@ -13,9 +14,30 @@ import {
 } from "reactstrap";
 import $ from "jquery";
 import { NavLink as RouterNavLink } from "react-router-dom";
-import styled from "styled-components";
+import { setIsOpen } from "../../redux/actions/navigationActions";
+import styled, { keyframes } from "styled-components";
 
 const windowWidth = $(window).width();
+
+const scrollDownAnimation = keyframes`
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0;
+    transform: translate(0, 8px);
+  }
+
+  100% {
+    opacity: 0;
+  }
+`;
 
 const LogoImg = styled.img`
   width: 75px;
@@ -85,6 +107,13 @@ const StyleDropdownMenu = styled(DropdownMenu)`
   border: none !important;
   box-shadow: rgba(0, 0, 0, 0.12) 0 0 70px 6px;
   border-radius: 8px !important;
+  max-height: 250px;
+  overflow-y: scroll;
+
+  @media (min-width: 768px) {
+    max-height: initial;
+    overflow: hidden;
+  }
 `;
 
 const StyleDropdownItem = styled(DropdownItem)`
@@ -92,6 +121,7 @@ const StyleDropdownItem = styled(DropdownItem)`
     color: #3d3d3d !important;
     text-decoration: none !important;
     text-transform: uppercase;
+    font-size: 0.75rem;
   }
 
   & {
@@ -99,13 +129,66 @@ const StyleDropdownItem = styled(DropdownItem)`
       background: linear-gradient(-45deg, #b3ffab, #12fff7);
     }
   }
+
+  @media (min-width: 768px) {
+    font-size: 1.25rem;
+  }
+`;
+
+const ScrollDown = styled.div`
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  width: 20px;
+
+  &::before {
+    animation: ${scrollDownAnimation} 2s infinite;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    content: "";
+    height: 6px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 6px;
+  }
+
+  @media (min-width: 768px) {
+    .scroll-down {
+      display: none;
+    }
+  }
+`;
+
+const ScrollText = styled.p`
+  font-size: 0.5rem;
+  text-align: center;
+  margin: 8px 0 0 0;
+  position: relative;
+  top: 100%;
+  right: 2px;
+  color: rgba(0, 0, 0, 0.75);
 `;
 
 export const Navigation = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const dispatch = useDispatch();
+  const isOpen = useSelector((state) => state.navigation.isOpen);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+
+    $("#salon-menu").on("scroll", () => {
+      $("#salon-menu .scroll-down").fadeOut(1500);
+    });
+
+    $("#services-menu").on("scroll", () => {
+      $("#services-menu .scroll-down").fadeOut(1500);
+    });
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -155,11 +238,11 @@ export const Navigation = () => {
   const toggle = () => {
     $("navbar-toggler").toggleClass("active");
 
-    setIsOpen(!isOpen);
+    dispatch(setIsOpen(!isOpen));
   };
 
   const clickedLink = () => {
-    setIsOpen(!isOpen);
+    dispatch(setIsOpen(!isOpen));
   };
 
   return (
@@ -247,7 +330,10 @@ export const Navigation = () => {
               >
                 SALON
               </DropdownToggle>
-              <StyleDropdownMenu right>
+              <StyleDropdownMenu right id="salon-menu">
+                <ScrollDown className="scroll-down">
+                  <ScrollText>scroll</ScrollText>
+                </ScrollDown>
                 <StyleDropdownItem>
                   <RouterNavLink
                     className="link-item"
@@ -415,7 +501,10 @@ export const Navigation = () => {
               >
                 SERVICES
               </DropdownToggle>
-              <StyleDropdownMenu right>
+              <StyleDropdownMenu right id="services-menu">
+                <ScrollDown className="scroll-down">
+                  <ScrollText>scroll</ScrollText>
+                </ScrollDown>
                 <StyleDropdownItem>
                   <RouterNavLink
                     className="link-item"
@@ -440,7 +529,7 @@ export const Navigation = () => {
                     to="/services/breast-buttlift-fat-eliminator"
                     onClick={clickedLink}
                   >
-                    BREAST/BUTT LIFT & FAT ELIMINATOR
+                    BREAST/BUTT LIFT & FAT ELIM
                   </RouterNavLink>
                 </StyleDropdownItem>
                 <StyleDropdownItem>
