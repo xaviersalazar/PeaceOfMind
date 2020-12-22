@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import { Col, Row, FormGroup, Input, FormFeedback } from "reactstrap";
 import { NavLink } from "reactstrap";
 import NetlifyForm from "react-netlify-form";
