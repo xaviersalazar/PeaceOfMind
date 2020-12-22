@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Jumbotron } from "reactstrap";
 import styled from "styled-components";
 
@@ -37,13 +37,9 @@ const Logo = styled.img`
   }
 `;
 
-export default class HomeJumbotron extends Component {
-  render() {
-    return (
-      <HomeJumbotronStyled id="home-jumbotron">
-        <Logo src="/resources/logo-main.png" className="img-fluid" />
-        <HomeJumbotronBackground id="home-jumbotron-bg" />s
-      </HomeJumbotronStyled>
-    );
-  }
-}
+export const HomeJumbotron = () => (
+  <HomeJumbotronStyled id="home-jumbotron">
+    <Logo src="/resources/logo-main.png" className="img-fluid" />
+    <HomeJumbotronBackground id="home-jumbotron-bg" />s
+  </HomeJumbotronStyled>
+);

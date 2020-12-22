@@ -1,12 +1,12 @@
 import React from "react";
 import { Row } from "reactstrap";
-import MassageBenefitsCard from "./MassageBenefitsCard";
+import { MassageBenefitsCard } from "./MassageBenefitsCard";
 
-const MassageBenefitsCardRow = ({ rows }) => {
+export const MassageBenefitsCardRow = ({ rows }) => {
   return rows.map((row, i) => {
     return (
       <Row key={i} className="justify-content-center">
-        {row.row.map(s => {
+        {row.row.map((s) => {
           return (
             <MassageBenefitsCard
               key={s.title}
@@ -24,5 +24,3 @@ const MassageBenefitsCardRow = ({ rows }) => {
     );
   });
 };
-
-export default MassageBenefitsCardRow;

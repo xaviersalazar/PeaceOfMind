@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import ServicePage from "../common/ServicePage";
+import React from "react";
+import { ServicePage } from "../common/ServicePage";
 
 const background = "/resources/lipsticks/lips-main.jpg";
 const title = "Lips";
@@ -13,7 +13,7 @@ const lipsticks = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/lipsticks/1930-noirred-lipstick.jpg",
@@ -21,7 +21,7 @@ const lipsticks = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/lipsticks/1930-tangored-lipstick.jpg",
@@ -29,7 +29,7 @@ const lipsticks = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/lipsticks/1931-carmine-lipstick.jpg",
@@ -37,7 +37,7 @@ const lipsticks = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/lipsticks/1933-merlot-lipstick.jpg",
@@ -45,7 +45,7 @@ const lipsticks = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/lipsticks/1935-cherryred-lipstick.jpg",
@@ -53,9 +53,9 @@ const lipsticks = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
-      }
-    ]
+        xl: 2,
+      },
+    ],
   },
   {
     row: [
@@ -65,7 +65,7 @@ const lipsticks = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/lipsticks/1946-redvelvet-lipstick.jpg",
@@ -73,7 +73,7 @@ const lipsticks = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/lipsticks/1955-exoticpink-lipstick.jpg",
@@ -81,7 +81,7 @@ const lipsticks = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/lipsticks/1959-redhotred-lipstick.jpg",
@@ -89,7 +89,7 @@ const lipsticks = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/lipsticks/1963-portraitpink-lipstick.jpg",
@@ -97,7 +97,7 @@ const lipsticks = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/lipsticks/1967-debutantepink-lipstick.jpg",
@@ -105,9 +105,9 @@ const lipsticks = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
-      }
-    ]
+        xl: 2,
+      },
+    ],
   },
   {
     row: [
@@ -117,7 +117,7 @@ const lipsticks = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/lipsticks/1970-chocolatekiss-lipstick.jpg",
@@ -125,21 +125,17 @@ const lipsticks = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
-      }
-    ]
-  }
+        xl: 2,
+      },
+    ],
+  },
 ];
 
-export default class BesameLipstick extends Component {
-  render() {
-    return (
-      <ServicePage
-        background={background}
-        title={title}
-        rows={lipsticks}
-        otherNotice={otherNotice}
-      />
-    );
-  }
-}
+export const BesameLipstick = () => (
+  <ServicePage
+    background={background}
+    title={title}
+    rows={lipsticks}
+    otherNotice={otherNotice}
+  />
+);

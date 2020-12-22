@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import ServicePage from "../common/ServicePage";
+import React from "react";
+import { ServicePage } from "../common/ServicePage";
 
 const background = "/resources/services/salon/highlight-main.jpg";
 const title = "Hair Highlights";
@@ -122,15 +122,11 @@ const hairHighlighting = [
   },
 ];
 
-export default class HairHighlights extends Component {
-  render() {
-    return (
-      <ServicePage
-        background={background}
-        title={title}
-        rows={hairHighlighting}
-        smallNotice={smallNotice}
-      />
-    );
-  }
-}
+export const HairHighlights = () => (
+  <ServicePage
+    background={background}
+    title={title}
+    rows={hairHighlighting}
+    smallNotice={smallNotice}
+  />
+);

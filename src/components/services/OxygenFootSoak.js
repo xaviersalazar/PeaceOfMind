@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import { Container, Row, Col } from "reactstrap";
+import { ServiceCardRow } from "../common/ServiceCardRow";
 import styled, { keyframes } from "styled-components";
-import ServiceCardRow from "../common/ServiceCardRow";
 
 // Keyframes
 const expandHr = keyframes`
@@ -105,67 +105,62 @@ const benefits = [
   },
 ];
 
-export default class OxygenFootSoak extends Component {
-  render() {
-    return (
-      <div>
-        <Title>
-          <ServiceTitle>Oxygen Foot Soak</ServiceTitle>
-          <Hr />
-        </Title>
-        <Background
-          background={"/resources/services/massages/oxygen-foot-soak-main.jpg"}
-        />
-        <MainContainer fluid>
-          <Row className="mb-5">
-            <ParagraphsCol xs={12} className="text-center">
-              <h1 className="text-center">Purify your body</h1>
-              <small className="m-0 p-0">
-                30 minutes: $87.00 | $137.00 per hour
-              </small>
-              <HeadingHr />
-            </ParagraphsCol>
-            <ParagraphsCol xs={12} className="text-center">
-              <p className="light-text">
-                Is the ionic foot bath machine right for me? With the increase
-                in the number of chemicals and hazardous materials introduced in
-                the last few decades, there has been a dramatic increase in
-                incidences of auto-immune disease, allergies and common
-                infections. Although people are living longer, we face new types
-                of diseases and infections as we become immune to older ones.
-                There are tens of thousands of chemicals in use today and more
-                than a forth of these are known to be toxic and nothing is known
-                about their interactive effects. Body fat has been tested that
-                contains residue of hundreds of chemicals. Metals, such as
-                mercury and cadmium are everywhere and impossible to avoid. Lead
-                can block red blood cell formation.
-              </p>
-            </ParagraphsCol>
-            <ParagraphsCol xs={12} className="text-center">
-              <p className="light-text">
-                Chemicals can act as toxins that can block receptor sites on
-                cells, and cause changes in calcium homeostasis selectively
-                killing cells, and alter expression of gene products. Metals and
-                chemical toxins weaken the immune system and cause increased
-                vulnerability to virus, bacterial fungal and parasitic
-                infections. In an attempt to detoxify these substances, our
-                bowels, kidneys and liver are being overloaded. Our eliminative
-                channels have become blocked or dysfunctional, because, in
-                conjunction with these synthetic chemicals, and the western diet
-                that is so acid forming and de-vitalized.
-              </p>
-            </ParagraphsCol>
-          </Row>
-          <ServiceCardRow rows={benefits} />
-          <Row>
-            <ParagraphsCol xs={12}>
-              <Disclaimer>
-                NOTICE: Prices Are Subject To Change Without Prior Notice
-              </Disclaimer>
-            </ParagraphsCol>
-          </Row>
-        </MainContainer>
-      </div>
-    );
-  }
-}
+export const OxygenFootSoak = () => (
+  <div>
+    <Title>
+      <ServiceTitle>Oxygen Foot Soak</ServiceTitle>
+      <Hr />
+    </Title>
+    <Background
+      background={"/resources/services/massages/oxygen-foot-soak-main.jpg"}
+    />
+    <MainContainer fluid>
+      <Row className="mb-5">
+        <ParagraphsCol xs={12} className="text-center">
+          <h1 className="text-center">Purify your body</h1>
+          <small className="m-0 p-0">
+            30 minutes: $87.00 | $137.00 per hour
+          </small>
+          <HeadingHr />
+        </ParagraphsCol>
+        <ParagraphsCol xs={12} className="text-center">
+          <p className="light-text">
+            Is the ionic foot bath machine right for me? With the increase in
+            the number of chemicals and hazardous materials introduced in the
+            last few decades, there has been a dramatic increase in incidences
+            of auto-immune disease, allergies and common infections. Although
+            people are living longer, we face new types of diseases and
+            infections as we become immune to older ones. There are tens of
+            thousands of chemicals in use today and more than a forth of these
+            are known to be toxic and nothing is known about their interactive
+            effects. Body fat has been tested that contains residue of hundreds
+            of chemicals. Metals, such as mercury and cadmium are everywhere and
+            impossible to avoid. Lead can block red blood cell formation.
+          </p>
+        </ParagraphsCol>
+        <ParagraphsCol xs={12} className="text-center">
+          <p className="light-text">
+            Chemicals can act as toxins that can block receptor sites on cells,
+            and cause changes in calcium homeostasis selectively killing cells,
+            and alter expression of gene products. Metals and chemical toxins
+            weaken the immune system and cause increased vulnerability to virus,
+            bacterial fungal and parasitic infections. In an attempt to detoxify
+            these substances, our bowels, kidneys and liver are being
+            overloaded. Our eliminative channels have become blocked or
+            dysfunctional, because, in conjunction with these synthetic
+            chemicals, and the western diet that is so acid forming and
+            de-vitalized.
+          </p>
+        </ParagraphsCol>
+      </Row>
+      <ServiceCardRow rows={benefits} />
+      <Row>
+        <ParagraphsCol xs={12}>
+          <Disclaimer>
+            NOTICE: Prices Are Subject To Change Without Prior Notice
+          </Disclaimer>
+        </ParagraphsCol>
+      </Row>
+    </MainContainer>
+  </div>
+);

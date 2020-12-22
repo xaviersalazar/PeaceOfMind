@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { Col, Card, CardImg, CardImgOverlay } from "reactstrap";
 import styled from "styled-components";
 
@@ -35,74 +35,50 @@ const LikesText = styled.p`
   color: #fff;
 `;
 
-export default class InstagramCard extends Component {
-  constructor(props) {
-    super(props);
+export const InstagramCard = ({
+  id,
+  xs,
+  sm,
+  md,
+  lg,
+  xl,
+  image,
+  caption,
+  likes,
+  link,
+}) => {
+  const [hover, setHover] = useState(false);
 
-    this.state = {
-      ...props,
-      hover: false
-    };
-  }
-
-  onMouseEnter = () => {
-    this.setState({
-      hover: true
-    });
-  };
-
-  onMouseLeave = () => {
-    this.setState({
-      hover: false
-    });
-  };
-
-  render() {
-    const {
-      id,
-      xs,
-      sm,
-      md,
-      lg,
-      xl,
-      image,
-      caption,
-      likes,
-      link,
-      hover
-    } = this.state;
-
-    return (
-      <Col
-        xs={xs}
-        sm={sm}
-        md={md}
-        lg={lg}
-        xl={xl}
-        image={image}
-        caption={caption}
-        likes={likes}
-        link={link}
-        className="mb-4"
+  return (
+    <Col
+      xs={xs}
+      sm={sm}
+      md={md}
+      lg={lg}
+      xl={xl}
+      image={image}
+      caption={caption}
+      likes={likes}
+      link={link}
+      className="mb-4"
+    >
+      <InstagramCardMain
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
       >
-        <InstagramCardMain
-          onMouseEnter={() => this.onMouseEnter()}
-          onMouseLeave={() => this.onMouseLeave()}
-        >
-          <a href={link} target="_blank" rel="noopener noreferrer">
-            {hover ? <InstagramOverlay /> : null}
-            <InstagramCardImage top width="100%" src={image} alt={id} />
-            {hover ? (
-              <CardImgOverlay>
-                <LikesText>
-                  <i className="fas fa-heart"></i>
-                  {" " + likes}
-                </LikesText>
-              </CardImgOverlay>
-            ) : null}
-          </a>
-        </InstagramCardMain>
-      </Col>
-    );
-  }
-}
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          {hover ? <InstagramOverlay /> : null}
+          <InstagramCardImage top width="100%" src={image} alt={id} />
+          {hover ? (
+            <CardImgOverlay>
+              <LikesText>
+                <i className="fas fa-heart"></i>
+                {" " + likes}
+              </LikesText>
+            </CardImgOverlay>
+          ) : null}
+        </a>
+      </InstagramCardMain>
+    </Col>
+  );
+};

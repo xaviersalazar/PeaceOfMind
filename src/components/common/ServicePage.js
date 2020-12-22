@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
+import { ServiceCardRow } from "./ServiceCardRow";
 import styled, { keyframes } from "styled-components";
-import ServiceCardRow from "./ServiceCardRow";
 
 // Keyframes
 const expandHr = keyframes`
@@ -86,35 +86,31 @@ const Disclaimer = styled.p`
   margin-top: 50px;
 `;
 
-const ServicePage = ({ ...props }) => {
-  return (
-    <div>
-      <Title>
-        <ServiceTitle>{props.title}</ServiceTitle>
-        <Hr />
-      </Title>
-      <Background background={props.background} />
-      <MainContainer fluid>
-        <ServiceCardRow rows={props.rows} />
-        <Row>
-          <ParagraphsCol xs={12}>
-            <Disclaimer>
-              {props.otherNotice
-                ? props.otherNotice
-                : "NOTICE: Prices Are Subject To Change Without Prior Notice"}
-              {props.smallNotice ? (
-                <small style={{ fontWeight: "inherit", display: "block" }}>
-                  {props.smallNotice}
-                </small>
-              ) : (
-                ""
-              )}
-            </Disclaimer>
-          </ParagraphsCol>
-        </Row>
-      </MainContainer>
-    </div>
-  );
-};
-
-export default ServicePage;
+export const ServicePage = ({ ...props }) => (
+  <div>
+    <Title>
+      <ServiceTitle>{props.title}</ServiceTitle>
+      <Hr />
+    </Title>
+    <Background background={props.background} />
+    <MainContainer fluid>
+      <ServiceCardRow rows={props.rows} />
+      <Row>
+        <ParagraphsCol xs={12}>
+          <Disclaimer>
+            {props.otherNotice
+              ? props.otherNotice
+              : "NOTICE: Prices Are Subject To Change Without Prior Notice"}
+            {props.smallNotice ? (
+              <small style={{ fontWeight: "inherit", display: "block" }}>
+                {props.smallNotice}
+              </small>
+            ) : (
+              ""
+            )}
+          </Disclaimer>
+        </ParagraphsCol>
+      </Row>
+    </MainContainer>
+  </div>
+);

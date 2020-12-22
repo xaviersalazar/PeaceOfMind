@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import ServicePage from "../common/ServicePage";
+import React from "react";
+import { ServicePage } from "../common/ServicePage";
 
 const background = "/resources/services/salon/natural-main.jpg";
 const title = "Natural Styling";
@@ -12,7 +12,7 @@ const naturalStyling = [
         price: "$35.00 - $60.00",
         desc: "",
         sm: 12,
-        xl: 4
+        xl: 4,
       },
       {
         icon: "/resources/services/salon/natural-basic-corn-row.jpg",
@@ -20,7 +20,7 @@ const naturalStyling = [
         price: "$50.00 - $100.00",
         desc: "",
         sm: 12,
-        xl: 4
+        xl: 4,
       },
       {
         icon: "/resources/services/salon/natural-corn-row-design.jpg",
@@ -28,9 +28,9 @@ const naturalStyling = [
         price: "$60.00 - $150.00",
         desc: "",
         sm: 12,
-        xl: 4
-      }
-    ]
+        xl: 4,
+      },
+    ],
   },
   {
     row: [
@@ -40,20 +40,12 @@ const naturalStyling = [
         price: "$80.00 - $150.00",
         desc: "",
         sm: 12,
-        xl: 4
-      }
-    ]
-  }
+        xl: 4,
+      },
+    ],
+  },
 ];
 
-export default class NaturalStyling extends Component {
-  render() {
-    return (
-      <ServicePage
-        background={background}
-        title={title}
-        rows={naturalStyling}
-      />
-    );
-  }
-}
+export const NaturalStyling = () => (
+  <ServicePage background={background} title={title} rows={naturalStyling} />
+);

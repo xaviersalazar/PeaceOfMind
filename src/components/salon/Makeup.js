@@ -1,5 +1,5 @@
 import React from "react";
-import ServicePage from "../common/ServicePage";
+import { ServicePage } from "../common/ServicePage";
 
 const background = "/resources/services/salon/makeup-main.jpg";
 const title = "Makeup";

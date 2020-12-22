@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import {
   Row,
   Col,
@@ -180,17 +180,14 @@ const createServiceColumn = (props) => {
     );
   });
 };
-export default class HomeService extends Component {
-  render() {
-    return (
-      <ServicesContainer>
-        <Row>{createServiceColumn(serviceColumn1)}</Row>
-        <Row>{createServiceColumn(serviceColumn2)}</Row>
-        <Row>{createServiceColumn(serviceColumn3)}</Row>
-        <Row className="justify-content-center">
-          {createServiceColumn(serviceColumn4)}
-        </Row>
-      </ServicesContainer>
-    );
-  }
-}
+
+export const HomeServices = () => (
+  <ServicesContainer>
+    <Row>{createServiceColumn(serviceColumn1)}</Row>
+    <Row>{createServiceColumn(serviceColumn2)}</Row>
+    <Row>{createServiceColumn(serviceColumn3)}</Row>
+    <Row className="justify-content-center">
+      {createServiceColumn(serviceColumn4)}
+    </Row>
+  </ServicesContainer>
+);

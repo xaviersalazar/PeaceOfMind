@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import ServicePage from "../common/ServicePage";
+import React from "react";
+import { ServicePage } from "../common/ServicePage";
 
 const background = "/resources/services/salon/locs-main.jpg";
 const title = "Locs";
@@ -12,7 +12,7 @@ const locs = [
         price: "$100.00 - $200.00",
         desc: "",
         sm: 12,
-        xl: 4
+        xl: 4,
       },
       {
         icon: "/resources/services/salon/locs-styling.jpg",
@@ -20,14 +20,12 @@ const locs = [
         price: "$100.00 - $230.00",
         desc: "",
         sm: 12,
-        xl: 4
-      }
-    ]
-  }
+        xl: 4,
+      },
+    ],
+  },
 ];
 
-export default class Locs extends Component {
-  render() {
-    return <ServicePage background={background} title={title} rows={locs} />;
-  }
-}
+export const Locs = () => (
+  <ServicePage background={background} title={title} rows={locs} />
+);

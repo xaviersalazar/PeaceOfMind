@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import ServicePage from "../common/ServicePage";
+import React from "react";
+import { ServicePage } from "../common/ServicePage";
 
 const background = "/resources/services/massages/addons-main.jpg";
 const title = "Add On's";
@@ -182,8 +182,6 @@ const addons = [
   },
 ];
 
-export default class AddOns extends Component {
-  render() {
-    return <ServicePage background={background} title={title} rows={addons} />;
-  }
-}
+export const AddOns = () => (
+  <ServicePage background={background} title={title} rows={addons} />
+);

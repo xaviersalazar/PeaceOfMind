@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Col, Row, FormGroup, Input, FormFeedback } from "reactstrap";
+import { NavLink } from "reactstrap";
 import NetlifyForm from "react-netlify-form";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
@@ -59,6 +60,13 @@ const TagLine = styled.p`
   }
 `;
 
+const InstaLink = styled(NavLink)`
+  && {
+    padding: 0 1rem;
+    color: #0984e3;
+  }
+`;
+
 export default class Footer extends Component {
   constructor(props) {
     super(props);
@@ -68,12 +76,12 @@ export default class Footer extends Component {
       email: "",
       message: "",
       validate: {
-        emailState: ""
-      }
+        emailState: "",
+      },
     };
   }
 
-  validateEmail = e => {
+  validateEmail = (e) => {
     const emailRex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     const { validate } = this.state;
 
@@ -86,7 +94,7 @@ export default class Footer extends Component {
     this.setState({ validate });
   };
 
-  handleChange = e => {
+  handleChange = (e) => {
     e.persist();
 
     const { target } = e;
@@ -94,13 +102,13 @@ export default class Footer extends Component {
     const { name } = target;
 
     this.setState({
-      [name]: value
+      [name]: value,
     });
   };
 
   onSuccess = () => {
     toast("Thanks! We got your message. Someone will get back to you shortly", {
-      type: toast.TYPE.SUCCESS
+      type: toast.TYPE.SUCCESS,
     });
 
     this.setState({
@@ -108,14 +116,14 @@ export default class Footer extends Component {
       email: "",
       message: "",
       validate: {
-        emailState: ""
-      }
+        emailState: "",
+      },
     });
   };
 
   onError = () => {
     toast("Uh oh! Something went wrong. Please try again", {
-      type: toast.TYPE.ERROR
+      type: toast.TYPE.ERROR,
     });
   };
 
@@ -140,6 +148,14 @@ export default class Footer extends Component {
           </p>
           <p className="p-0 mt-0">361-737-7813</p>
           <p>10% discount for all military!</p>
+          <p className="d-inline">Follow us </p>
+          <InstaLink
+            className="d-inline p-0"
+            href="https://www.instagram.com/peaceofmindmassage/"
+            target="_blank"
+          >
+            @peaceofmindmassage
+          </InstaLink>
         </Col>
 
         <FormCol xs={12} md={6}>
@@ -158,7 +174,7 @@ export default class Footer extends Component {
                         name="name"
                         id="name"
                         value={name}
-                        onChange={e => this.handleChange(e)}
+                        onChange={(e) => this.handleChange(e)}
                         placeholder="Your name"
                       />
                     </FormGroup>
@@ -172,7 +188,7 @@ export default class Footer extends Component {
                         invalid={
                           this.state.validate.emailState === "has-danger"
                         }
-                        onChange={e => {
+                        onChange={(e) => {
                           this.validateEmail(e);
                           this.handleChange(e);
                         }}
@@ -190,7 +206,7 @@ export default class Footer extends Component {
                         name="message"
                         id="message"
                         value={message}
-                        onChange={e => this.handleChange(e)}
+                        onChange={(e) => this.handleChange(e)}
                         placeholder="Got a question? Need to book an appointment? "
                       />
                     </FormGroup>

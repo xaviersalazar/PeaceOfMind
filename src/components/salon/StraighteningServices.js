@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import ServicePage from "../common/ServicePage";
+import React from "react";
+import { ServicePage } from "../common/ServicePage";
 
 const background = "/resources/services/salon/straightening-main.jpg";
 const title = "Straightening Services";
@@ -12,7 +12,7 @@ const straighteningServices = [
         price: "$150.00",
         desc: "",
         sm: 12,
-        xl: 4
+        xl: 4,
       },
       {
         icon:
@@ -21,7 +21,7 @@ const straighteningServices = [
         price: "$170.00 - $180.00",
         desc: "",
         sm: 12,
-        xl: 4
+        xl: 4,
       },
       {
         icon:
@@ -30,9 +30,9 @@ const straighteningServices = [
         price: "$300.00 - $350.00",
         desc: "",
         sm: 12,
-        xl: 4
-      }
-    ]
+        xl: 4,
+      },
+    ],
   },
   {
     row: [
@@ -43,7 +43,7 @@ const straighteningServices = [
         price: "$325.00 - $350.00",
         desc: "",
         sm: 12,
-        xl: 4
+        xl: 4,
       },
       {
         icon: "/resources/services/salon/straightening-retouch.jpg",
@@ -51,7 +51,7 @@ const straighteningServices = [
         price: "$245.00",
         desc: "",
         sm: 12,
-        xl: 4
+        xl: 4,
       },
       {
         icon: "/resources/services/salon/straightening-retouch-haircut.jpg",
@@ -59,20 +59,16 @@ const straighteningServices = [
         price: "$260.00",
         desc: "",
         sm: 12,
-        xl: 4
-      }
-    ]
-  }
+        xl: 4,
+      },
+    ],
+  },
 ];
 
-export default class StraighteningServices extends Component {
-  render() {
-    return (
-      <ServicePage
-        background={background}
-        title={title}
-        rows={straighteningServices}
-      />
-    );
-  }
-}
+export const StraighteningServices = () => (
+  <ServicePage
+    background={background}
+    title={title}
+    rows={straighteningServices}
+  />
+);

@@ -90,83 +90,79 @@ const Disclaimer = styled.p`
   margin-top: 50px;
 `;
 
-export const BreastButtLiftFatEliminator = () => {
-  return (
-    <React.Fragment>
-      <Title>
-        <ServiceTitle>
-          Non-surgical Breast/Butt Lift and Fat Eliminator
-        </ServiceTitle>
-        <Hr />
-      </Title>
-      <Background
-        background={"/resources/services/massages/breast-buttlift-main.jpg"}
-      />
-      <MainContainer fluid>
-        <Row className="mb-5">
-          <ParagraphsCol xs={12} className="text-center">
-            <h1 className="text-center">Prices</h1>
-            <small className="m-0 p-0">
-              30 Minutes: $102.00 | 1 Hour: $202.00
-            </small>
-            <HeadingHr />
-          </ParagraphsCol>
-          <ParagraphsCol xs={12} className="text-center mt-5">
-            <h3 className="text-center">Breast Enhancement</h3>
-            <HeadingHr />
-            <p className="light-text">
-              The specially designed vacuum pump can improve size and shape or
-              breast safely and comfortably. The vacuum pulls fat toward the
-              breast tissue, permeating the breast cells, leaving them fuller.
-            </p>
-          </ParagraphsCol>
-          <ParagraphsCol xs={12} className="text-center mt-5">
-            <h3 className="text-center">Butt Lifting</h3>
-            <HeadingHr />
-            <p className="light-text">
-              Cupping is all the rage for lifting and enhancing the butt. 2
-              sessions per week for 10 weeks, and the results will be
-              noticeable.
-            </p>
-          </ParagraphsCol>
-          <ParagraphsCol xs={12} className="text-center mt-5">
-            <h3 className="text-center">Fat Eliminator Sculpting</h3>
-            <HeadingHr />
-            <p className="light-text">
-              Safely and effectively improve the shape of the belly, thighs,
-              butt, and back by using point percussion therapy with the scrub
-              cup to help eliminate fat on the body. Cupping has been used for
-              overall health by the negative pressure and suction causing the
-              nervous system to sedate, treating high blood pressure, relieving
-              pain in the back and neck, loosening stiff muscles, and treating
-              anxiety, fatigue, and even rheumatism.
-            </p>
-            <p className="light-text">
-              For <span style={{ fontWeight: 700 }}>cellulite</span>: It was
-              noticed during cupping treatments for other health issues that the
-              area was smoother in the appearance of cellulite. Smooth cellulite
-              and massage fat for easy lymphatic drainage by moving the cups
-              back and forth over an area.
-            </p>
-            <p className="light-text">
-              For the <span style={{ fontWeight: 700 }}>face</span>: Use cupping
-              for a facial massage to plump skin and increase cellular turnover.
-            </p>
-            <p className="light-text">
-              For the <span style={{ fontWeight: 700 }}>skin</span>: The
-              stimulation of the middle layers of the skin makes skin more
-              toned.
-            </p>
-          </ParagraphsCol>
-        </Row>
-        <Row>
-          <ParagraphsCol xs={12}>
-            <Disclaimer>
-              NOTICE: Prices Are Subject To Change Without Prior Notice
-            </Disclaimer>
-          </ParagraphsCol>
-        </Row>
-      </MainContainer>
-    </React.Fragment>
-  );
-};
+export const BreastButtLiftFatEliminator = () => (
+  <React.Fragment>
+    <Title>
+      <ServiceTitle>
+        Non-surgical Breast/Butt Lift and Fat Eliminator
+      </ServiceTitle>
+      <Hr />
+    </Title>
+    <Background
+      background={"/resources/services/massages/breast-buttlift-main.jpg"}
+    />
+    <MainContainer fluid>
+      <Row className="mb-5">
+        <ParagraphsCol xs={12} className="text-center">
+          <h1 className="text-center">Prices</h1>
+          <small className="m-0 p-0">
+            30 Minutes: $102.00 | 1 Hour: $202.00
+          </small>
+          <HeadingHr />
+        </ParagraphsCol>
+        <ParagraphsCol xs={12} className="text-center mt-5">
+          <h3 className="text-center">Breast Enhancement</h3>
+          <HeadingHr />
+          <p className="light-text">
+            The specially designed vacuum pump can improve size and shape or
+            breast safely and comfortably. The vacuum pulls fat toward the
+            breast tissue, permeating the breast cells, leaving them fuller.
+          </p>
+        </ParagraphsCol>
+        <ParagraphsCol xs={12} className="text-center mt-5">
+          <h3 className="text-center">Butt Lifting</h3>
+          <HeadingHr />
+          <p className="light-text">
+            Cupping is all the rage for lifting and enhancing the butt. 2
+            sessions per week for 10 weeks, and the results will be noticeable.
+          </p>
+        </ParagraphsCol>
+        <ParagraphsCol xs={12} className="text-center mt-5">
+          <h3 className="text-center">Fat Eliminator Sculpting</h3>
+          <HeadingHr />
+          <p className="light-text">
+            Safely and effectively improve the shape of the belly, thighs, butt,
+            and back by using point percussion therapy with the scrub cup to
+            help eliminate fat on the body. Cupping has been used for overall
+            health by the negative pressure and suction causing the nervous
+            system to sedate, treating high blood pressure, relieving pain in
+            the back and neck, loosening stiff muscles, and treating anxiety,
+            fatigue, and even rheumatism.
+          </p>
+          <p className="light-text">
+            For <span style={{ fontWeight: 700 }}>cellulite</span>: It was
+            noticed during cupping treatments for other health issues that the
+            area was smoother in the appearance of cellulite. Smooth cellulite
+            and massage fat for easy lymphatic drainage by moving the cups back
+            and forth over an area.
+          </p>
+          <p className="light-text">
+            For the <span style={{ fontWeight: 700 }}>face</span>: Use cupping
+            for a facial massage to plump skin and increase cellular turnover.
+          </p>
+          <p className="light-text">
+            For the <span style={{ fontWeight: 700 }}>skin</span>: The
+            stimulation of the middle layers of the skin makes skin more toned.
+          </p>
+        </ParagraphsCol>
+      </Row>
+      <Row>
+        <ParagraphsCol xs={12}>
+          <Disclaimer>
+            NOTICE: Prices Are Subject To Change Without Prior Notice
+          </Disclaimer>
+        </ParagraphsCol>
+      </Row>
+    </MainContainer>
+  </React.Fragment>
+);

@@ -90,34 +90,32 @@ const Disclaimer = styled.p`
   margin-top: 50px;
 `;
 
-export const HealthCoaching = () => {
-  return (
-    <React.Fragment>
-      <Title>
-        <ServiceTitle>HEALTH COACHING</ServiceTitle>
-        <Hr />
-      </Title>
-      <Background
-        background={"/resources/services/massages/health-coach-main.jpg"}
-      />
-      <MainContainer fluid>
-        <Row className="mb-5">
-          <ParagraphsCol xs={12} className="text-center">
-            <h1 className="text-center">Prices</h1>
-            <small className="m-0 p-0">
-              1 Hour: $97.00 | 1 Month: $347.00 | 6 Months: $2,000.00
-            </small>
-            <HeadingHr />
-          </ParagraphsCol>
-        </Row>
-        <Row>
-          <ParagraphsCol xs={12}>
-            <Disclaimer>
-              NOTICE: Prices Are Subject To Change Without Prior Notice
-            </Disclaimer>
-          </ParagraphsCol>
-        </Row>
-      </MainContainer>
-    </React.Fragment>
-  );
-};
+export const HealthCoaching = () => (
+  <React.Fragment>
+    <Title>
+      <ServiceTitle>HEALTH COACHING</ServiceTitle>
+      <Hr />
+    </Title>
+    <Background
+      background={"/resources/services/massages/health-coach-main.jpg"}
+    />
+    <MainContainer fluid>
+      <Row className="mb-5">
+        <ParagraphsCol xs={12} className="text-center">
+          <h1 className="text-center">Prices</h1>
+          <small className="m-0 p-0">
+            1 Hour: $97.00 | 1 Month: $347.00 | 6 Months: $2,000.00
+          </small>
+          <HeadingHr />
+        </ParagraphsCol>
+      </Row>
+      <Row>
+        <ParagraphsCol xs={12}>
+          <Disclaimer>
+            NOTICE: Prices Are Subject To Change Without Prior Notice
+          </Disclaimer>
+        </ParagraphsCol>
+      </Row>
+    </MainContainer>
+  </React.Fragment>
+);
