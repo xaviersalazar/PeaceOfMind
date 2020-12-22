@@ -3,7 +3,6 @@ import { Container, Row, Col } from "reactstrap";
 import { HomeJumbotron } from "./HomeJumbotron";
 import { HomeBanner } from "./HomeBanner";
 import { HomeServices } from "./HomeServices";
-import { InstagramFeed } from "./InstagramFeed";
 import { HomeSupportLocal } from "./HomeSupportLocal";
 import { HomeSpaBox } from "./HomeSpaBox";
 import { Reviews } from "./Reviews";
@@ -11,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styled from "styled-components";
 
 const ColoredRow = styled(Row)`
-  background: ${(props) => (props.odd === "true" ? "#f3eff5" : "#fff")};
+  background: ${(props) => props.bgColor};
 `;
 
 const Hr = styled.hr`
@@ -26,16 +25,16 @@ export const Home = () => (
   <Container className="p-0 m-0" fluid>
     <HomeJumbotron />
     <Container fluid>
-      <ColoredRow>
+      <ColoredRow bgColor={"#f3eff5"}>
         <HomeSupportLocal />
       </ColoredRow>
-      <ColoredRow odd={"true"}>
+      <ColoredRow bgColor={"#ffffff"}>
         <HomeSpaBox />
       </ColoredRow>
-      <ColoredRow>
+      <ColoredRow bgColor={"#f3eff5"}>
         <HomeBanner />
       </ColoredRow>
-      <ColoredRow odd={"true"} style={{ padding: "3rem 0" }}>
+      <ColoredRow bgColor={"#ffffff"} style={{ padding: "3rem 0" }}>
         <Col xs={12}>
           <h1 className="text-center px-5 mb-3">Services</h1>
           <Hr />
@@ -44,10 +43,7 @@ export const Home = () => (
           <HomeServices />
         </Col>
       </ColoredRow>
-      <ColoredRow>
-        <InstagramFeed />
-      </ColoredRow>
-      <ColoredRow odd={"true"}>
+      <ColoredRow bgColor={"#f3eff5"}>
         <Reviews />
       </ColoredRow>
     </Container>

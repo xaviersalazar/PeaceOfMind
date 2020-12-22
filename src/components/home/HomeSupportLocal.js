@@ -4,7 +4,6 @@ import { GiftCardMoal } from "./GiftCardModal";
 import styled from "styled-components";
 
 const ColoredCol = styled(Col)`
-  background: #ffffff;
   padding-top: 3rem;
   padding-bottom: 3rem;
   text-align: center;
@@ -50,7 +49,7 @@ export const HomeSupportLocal = () => {
   const toggle = () => setModal(!modal);
 
   return (
-    <div>
+    <>
       <ColoredCol xs={12}>
         <h1 className="text-center">Support your local businesses</h1>
         <Hr />
@@ -65,6 +64,6 @@ export const HomeSupportLocal = () => {
         <GiftCardButton onClick={toggle}>Purchase a gift card</GiftCardButton>
         <GiftCardMoal modal={modal} toggle={toggle} />
       </ColoredCol>
-    </div>
+    </>
   );
 };

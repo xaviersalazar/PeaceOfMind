@@ -3,7 +3,6 @@ import { Col, NavLink } from "reactstrap";
 import styled from "styled-components";
 
 const ColoredCol = styled(Col)`
-  background: #f3eff5;
   padding-top: 3rem;
   padding-bottom: 3rem;
   text-align: center;
@@ -49,7 +48,7 @@ const PriceText = styled.h6`
 `;
 
 export const HomeSpaBox = () => (
-  <div>
+  <>
     <ColoredCol xs={12}>
       <h1 className="text-center">Spa Boxes now available!</h1>
       <Hr />
@@ -77,5 +76,5 @@ export const HomeSpaBox = () => (
       </p>
       <ContactButton href="#contact">Contact us about one!</ContactButton>
     </ColoredCol>
-  </div>
+  </>
 );

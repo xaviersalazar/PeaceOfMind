@@ -3,7 +3,6 @@ import { Col, NavLink } from "reactstrap";
 import styled from "styled-components";
 
 const ColoredCol = styled(Col)`
-  background: ${(props) => (props.odd ? "#f3eff5" : "#fff")};
   padding-top: 3rem;
   padding-bottom: 3rem;
   text-align: center;
@@ -44,7 +43,7 @@ const Hr = styled.hr`
 `;
 
 export const HomeBanner = () => (
-  <div>
+  <>
     <ColoredCol xs={12}>
       <h1 className="text-center">Massage Therapy &amp; Natural Healing</h1>
       <Hr />
@@ -68,5 +67,5 @@ export const HomeBanner = () => (
       </p>
       <BookButton href="#contact">Book your appointment today!</BookButton>
     </ColoredCol>
-  </div>
+  </>
 );
