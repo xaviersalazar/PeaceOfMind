@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import {
   Container,
   Row,
@@ -8,8 +8,8 @@ import {
   CardBody,
   CardTitle,
 } from "reactstrap";
+import { ServiceCardRow } from "../common/ServiceCardRow";
 import styled, { keyframes } from "styled-components";
-import ServiceCardRow from "../common/ServiceCardRow";
 
 // Keyframes
 const expandHr = keyframes`
@@ -246,117 +246,107 @@ const ColorsRow = ({ rows }) => {
   });
 };
 
-export default class InfraredSauna extends Component {
-  render() {
-    return (
-      <div>
-        <Title>
-          <ServiceTitle>Infrared Sauna Color Light Therapy</ServiceTitle>
-          <Hr />
-        </Title>
-        <Background
-          background={"/resources/services/massages/infrared-sauna-main.jpg"}
-        />
-        <MainContainer fluid>
-          <Row className="mb-5">
-            <ParagraphsCol xs={12} className="text-center">
-              <h1 className="text-center">Prices</h1>
-              <small className="m-0 p-0">
-                15 minutes: $17.00 | 30 minutes: $32.00 | 45 minutes: $47.00 |
-                60 minutes: $62.00
-              </small>
-              <HeadingHr />
-            </ParagraphsCol>
-            <ParagraphsCol xs={12} className="text-center mt-5">
-              <h3 className="text-center">Medical Benefits</h3>
-              <HeadingHr />
-              <p className="light-text">
-                Light Therapy has been reported to reduce swelling, relieve
-                pain, decrease inflammation, accelerate open wound healing and
-                greatly reduce overall recovery after medical/surgical
-                procedures. Patients have demonstrated increased range of
-                motion, decreased muscle tension and spasm, and improved
-                circulation.
-              </p>
-              <p className="light-text">
-                Rejuvenating LED light therapy can be used pain management such
-                as joint and back pain, sore or torn muscles, sprains,
-                arthritis, post-surgical scars, burns, wounds and more. When
-                used with infrared technology, light therapy (phototherapy) is
-                one of the most effective and non-invasive ways to repair the
-                body.
-              </p>
-              <p className="light-text">
-                Light therapy is also used to relieve Seasonal Affective
-                Disorder (SAD). SAD effects individuals when the lack of
-                sunlight results in seasonal depression. Phototherapy helps with
-                SAD by resetting the internal biological (Circadian rhythms),
-                helping individuals sleep better and regulate their mood. Even
-                companies, such as GE and Philips, have created phototherapeutic
-                products to improve and regulate mood.
-              </p>
-            </ParagraphsCol>
-            <ParagraphsCol xs={12} className="text-center mt-5">
-              <h3 className="text-center">Cosmetic Benefits</h3>
-              <HeadingHr />
-              <p className="light-text">
-                Light therapy is also a growing treatment for anti-aging. Many
-                individuals have seen a reduction in the appearance of fine
-                lines, wrinkles, crow's feet, and age spots.
-              </p>
-              <p className="light-text">
-                Light therapy is "effective at improving the appearance of the
-                face, neck, and chest by reducing the signs of aging, wrinkles,
-                and age spots", says Web M.D. Combined with infrared therapy,
-                LED phototherapy can be a great way to revitalize skin. Light
-                therapy energizes skin cells, stimulating the production of
-                collagen and elastin, giving skin back it's youthful look.
-              </p>
-            </ParagraphsCol>
-            <ParagraphsCol xs={12} className="text-center mt-5">
-              <h3 className="text-center">Healing with Color</h3>
-              <HeadingHr />
-              <p className="light-text">
-                Color is light; split into different wavelength vibrating at
-                different speeds and at different frequencies. Objects that
-                ABSORB all wavelengths adn DO NOT reflect are black in nature.
-                Objects that REFLECT all wavelengths and DO reflect are white in
-                nature. Between black and white lies COLOR. Colors are
-                wavelengths of energy that, to us, appear as color because of
-                the potential and capabilities of the object to either absorb or
-                reflect the energy.
-              </p>
-              <p className="light-text">
-                Light therapy uses colors for their proposed healing abilities
-                in treating emotional and physical disturbances. Light therapy
-                is based on the premise that different colors evoke different
-                response in people. For example, some colors are considered to
-                be stimulating, whereas others may be soothing. Color therapy
-                has been suggested for many uses, based on tradition or on
-                scientific theories. Consult with a health care provider before
-                using color therapy for any use.
-              </p>
-              <ColorsRow rows={colors} />
-            </ParagraphsCol>
-          </Row>
-          <Row>
-            <ParagraphsCol xs={12} className="text-center mt-5">
-              <h3 className="text-center">
-                Advantages of Infrared Light Therapy
-              </h3>
-              <HeadingHr />
-              <ServiceCardRow rows={advantages} />
-            </ParagraphsCol>
-          </Row>
-          <Row>
-            <ParagraphsCol xs={12}>
-              <Disclaimer>
-                NOTICE: Prices Are Subject To Change Without Prior Notice
-              </Disclaimer>
-            </ParagraphsCol>
-          </Row>
-        </MainContainer>
-      </div>
-    );
-  }
-}
+export const InfraredSauna = () => (
+  <>
+    <Title>
+      <ServiceTitle>Infrared Sauna Color Light Therapy</ServiceTitle>
+      <Hr />
+    </Title>
+    <Background
+      background={"/resources/services/massages/infrared-sauna-main.jpg"}
+    />
+    <MainContainer fluid>
+      <Row className="mb-5">
+        <ParagraphsCol xs={12} className="text-center">
+          <h1 className="text-center">Prices</h1>
+          <small className="m-0 p-0">
+            15 minutes: $17.00 | 30 minutes: $32.00 | 45 minutes: $47.00 | 60
+            minutes: $62.00
+          </small>
+          <HeadingHr />
+        </ParagraphsCol>
+        <ParagraphsCol xs={12} className="text-center mt-5">
+          <h3 className="text-center">Medical Benefits</h3>
+          <HeadingHr />
+          <p className="light-text">
+            Light Therapy has been reported to reduce swelling, relieve pain,
+            decrease inflammation, accelerate open wound healing and greatly
+            reduce overall recovery after medical/surgical procedures. Patients
+            have demonstrated increased range of motion, decreased muscle
+            tension and spasm, and improved circulation.
+          </p>
+          <p className="light-text">
+            Rejuvenating LED light therapy can be used pain management such as
+            joint and back pain, sore or torn muscles, sprains, arthritis,
+            post-surgical scars, burns, wounds and more. When used with infrared
+            technology, light therapy (phototherapy) is one of the most
+            effective and non-invasive ways to repair the body.
+          </p>
+          <p className="light-text">
+            Light therapy is also used to relieve Seasonal Affective Disorder
+            (SAD). SAD effects individuals when the lack of sunlight results in
+            seasonal depression. Phototherapy helps with SAD by resetting the
+            internal biological (Circadian rhythms), helping individuals sleep
+            better and regulate their mood. Even companies, such as GE and
+            Philips, have created phototherapeutic products to improve and
+            regulate mood.
+          </p>
+        </ParagraphsCol>
+        <ParagraphsCol xs={12} className="text-center mt-5">
+          <h3 className="text-center">Cosmetic Benefits</h3>
+          <HeadingHr />
+          <p className="light-text">
+            Light therapy is also a growing treatment for anti-aging. Many
+            individuals have seen a reduction in the appearance of fine lines,
+            wrinkles, crow's feet, and age spots.
+          </p>
+          <p className="light-text">
+            Light therapy is "effective at improving the appearance of the face,
+            neck, and chest by reducing the signs of aging, wrinkles, and age
+            spots", says Web M.D. Combined with infrared therapy, LED
+            phototherapy can be a great way to revitalize skin. Light therapy
+            energizes skin cells, stimulating the production of collagen and
+            elastin, giving skin back it's youthful look.
+          </p>
+        </ParagraphsCol>
+        <ParagraphsCol xs={12} className="text-center mt-5">
+          <h3 className="text-center">Healing with Color</h3>
+          <HeadingHr />
+          <p className="light-text">
+            Color is light; split into different wavelength vibrating at
+            different speeds and at different frequencies. Objects that ABSORB
+            all wavelengths adn DO NOT reflect are black in nature. Objects that
+            REFLECT all wavelengths and DO reflect are white in nature. Between
+            black and white lies COLOR. Colors are wavelengths of energy that,
+            to us, appear as color because of the potential and capabilities of
+            the object to either absorb or reflect the energy.
+          </p>
+          <p className="light-text">
+            Light therapy uses colors for their proposed healing abilities in
+            treating emotional and physical disturbances. Light therapy is based
+            on the premise that different colors evoke different response in
+            people. For example, some colors are considered to be stimulating,
+            whereas others may be soothing. Color therapy has been suggested for
+            many uses, based on tradition or on scientific theories. Consult
+            with a health care provider before using color therapy for any use.
+          </p>
+          <ColorsRow rows={colors} />
+        </ParagraphsCol>
+      </Row>
+      <Row>
+        <ParagraphsCol xs={12} className="text-center mt-5">
+          <h3 className="text-center">Advantages of Infrared Light Therapy</h3>
+          <HeadingHr />
+          <ServiceCardRow rows={advantages} />
+        </ParagraphsCol>
+      </Row>
+      <Row>
+        <ParagraphsCol xs={12}>
+          <Disclaimer>
+            NOTICE: Prices Are Subject To Change Without Prior Notice
+          </Disclaimer>
+        </ParagraphsCol>
+      </Row>
+    </MainContainer>
+  </>
+);

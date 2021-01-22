@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import ServicePage from "../common/ServicePage";
+import React from "react";
+import { ServicePage } from "../common/ServicePage";
 
 const background = "/resources/services/salon/specialty-main.jpg";
 const title = "Specialty w/ Extensions";
@@ -12,7 +12,7 @@ const specialtyExtensions = [
         price: "$150.00",
         desc: "",
         sm: 12,
-        xl: 4
+        xl: 4,
       },
       {
         icon: "/resources/services/salon/specialty-rope.jpg",
@@ -20,7 +20,7 @@ const specialtyExtensions = [
         price: "$170.00",
         desc: "",
         sm: 12,
-        xl: 4
+        xl: 4,
       },
       {
         icon: "/resources/services/salon/specialty-micro.jpg",
@@ -28,20 +28,16 @@ const specialtyExtensions = [
         price: "$300.00 - $450.00",
         desc: "",
         sm: 12,
-        xl: 4
-      }
-    ]
-  }
+        xl: 4,
+      },
+    ],
+  },
 ];
 
-export default class SpecialtyExtensions extends Component {
-  render() {
-    return (
-      <ServicePage
-        background={background}
-        title={title}
-        rows={specialtyExtensions}
-      />
-    );
-  }
-}
+export const SpecialtyExtensions = () => (
+  <ServicePage
+    background={background}
+    title={title}
+    rows={specialtyExtensions}
+  />
+);

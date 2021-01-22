@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import ServicePage from "../common/ServicePage";
+import React from "react";
+import { ServicePage } from "../common/ServicePage";
 
 const background = "/resources/services/massages/waxing-main.jpg";
 const title = "Waxing";
@@ -138,8 +138,6 @@ const waxes = [
   },
 ];
 
-export default class Waxes extends Component {
-  render() {
-    return <ServicePage background={background} title={title} rows={waxes} />;
-  }
-}
+export const Waxes = () => (
+  <ServicePage background={background} title={title} rows={waxes} />
+);

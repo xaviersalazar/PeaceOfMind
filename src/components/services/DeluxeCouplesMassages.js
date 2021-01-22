@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import ServicePage from "../common/ServicePage";
+import React from "react";
+import { ServicePage } from "../common/ServicePage";
 
 const background = "/resources/services/massages/massage-couples-main.jpg";
 const title = "Deluxe/Couples Massages";
@@ -68,14 +68,10 @@ const deluxeCouplesMassages = [
   },
 ];
 
-export default class DeluxeCouplesMassages extends Component {
-  render() {
-    return (
-      <ServicePage
-        background={background}
-        title={title}
-        rows={deluxeCouplesMassages}
-      />
-    );
-  }
-}
+export const DeluxeCouplesMassages = () => (
+  <ServicePage
+    background={background}
+    title={title}
+    rows={deluxeCouplesMassages}
+  />
+);

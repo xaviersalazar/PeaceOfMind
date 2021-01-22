@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import { Container, Row, Col } from "reactstrap";
+import { ServiceCardRow } from "../common/ServiceCardRow";
 import styled, { keyframes } from "styled-components";
-import ServiceCardRow from "../common/ServiceCardRow";
 
 // Keyframes
 const expandHr = keyframes`
@@ -105,46 +105,39 @@ const benefits = [
   },
 ];
 
-export default class OxygenBar extends Component {
-  render() {
-    return (
-      <div>
-        <Title>
-          <ServiceTitle>Oxygen Bar</ServiceTitle>
-          <Hr />
-        </Title>
-        <Background
-          background={"/resources/services/massages/oxygen-main.jpg"}
-        />
-        <MainContainer fluid>
-          <Row className="mb-5">
-            <ParagraphsCol xs={12} className="text-center">
-              <h1 className="text-center">Price</h1>
-              <small className="m-0 p-0">$1.50 per minute</small>
-              <HeadingHr />
-              <ParagraphsCol xs={12} className="text-center">
-                <p className="light-text">
-                  A high purity way to get oxygen for recreation and relaxation.
-                  Indulge in Aroma O2 oxygen giving you a mild safe euphoric
-                  feeling. Oxygen is nutrient for the brain, The brain of an
-                  adult accounts for 2 to 3 percent of the whole body in terms
-                  of weight but consumes 20% of oxygen absorbed into the body.
-                  Brain cells need 200 liters of oxygen a day for proper
-                  operation.
-                </p>
-              </ParagraphsCol>
-            </ParagraphsCol>
-          </Row>
-          <ServiceCardRow rows={benefits} />
-          <Row>
-            <ParagraphsCol xs={12}>
-              <Disclaimer>
-                NOTICE: Prices Are Subject To Change Without Prior Notice
-              </Disclaimer>
-            </ParagraphsCol>
-          </Row>
-        </MainContainer>
-      </div>
-    );
-  }
-}
+export const OxygenBar = () => (
+  <>
+    <Title>
+      <ServiceTitle>Oxygen Bar</ServiceTitle>
+      <Hr />
+    </Title>
+    <Background background={"/resources/services/massages/oxygen-main.jpg"} />
+    <MainContainer fluid>
+      <Row className="mb-5">
+        <ParagraphsCol xs={12} className="text-center">
+          <h1 className="text-center">Price</h1>
+          <small className="m-0 p-0">$1.50 per minute</small>
+          <HeadingHr />
+          <ParagraphsCol xs={12} className="text-center">
+            <p className="light-text">
+              A high purity way to get oxygen for recreation and relaxation.
+              Indulge in Aroma O2 oxygen giving you a mild safe euphoric
+              feeling. Oxygen is nutrient for the brain, The brain of an adult
+              accounts for 2 to 3 percent of the whole body in terms of weight
+              but consumes 20% of oxygen absorbed into the body. Brain cells
+              need 200 liters of oxygen a day for proper operation.
+            </p>
+          </ParagraphsCol>
+        </ParagraphsCol>
+      </Row>
+      <ServiceCardRow rows={benefits} />
+      <Row>
+        <ParagraphsCol xs={12}>
+          <Disclaimer>
+            NOTICE: Prices Are Subject To Change Without Prior Notice
+          </Disclaimer>
+        </ParagraphsCol>
+      </Row>
+    </MainContainer>
+  </>
+);

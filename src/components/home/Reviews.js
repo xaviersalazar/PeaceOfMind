@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import { Row, Col } from "reactstrap";
-import ReviewCard from "../common/ReviewCard";
+import { ReviewCard } from "../common/ReviewCard";
 import styled from "styled-components";
 
 const MainContainer = styled.div`
@@ -59,27 +59,23 @@ const reviews = [
   },
 ];
 
-export default class Reviews extends Component {
-  render() {
-    return (
-      <MainContainer className="w-100">
-        <ColoredCol xs={12} odd={"true"} className="text-center">
-          <h1 className="text-center">Some of our happy customers</h1>
-          <Hr />
-          <Row className="justify-content-center">
-            {reviews.map((r) => {
-              return (
-                <ReviewCard
-                  key={r.user}
-                  user={r.user}
-                  review={r.review}
-                  feedback={r.feedback}
-                />
-              );
-            })}
-          </Row>
-        </ColoredCol>
-      </MainContainer>
-    );
-  }
-}
+export const Reviews = () => (
+  <MainContainer className="w-100">
+    <ColoredCol xs={12} odd={"true"} className="text-center">
+      <h1 className="text-center">Some of our happy customers</h1>
+      <Hr />
+      <Row className="justify-content-center">
+        {reviews.map((r) => {
+          return (
+            <ReviewCard
+              key={r.user}
+              user={r.user}
+              review={r.review}
+              feedback={r.feedback}
+            />
+          );
+        })}
+      </Row>
+    </ColoredCol>
+  </MainContainer>
+);

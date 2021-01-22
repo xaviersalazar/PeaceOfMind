@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import ServicePage from "../common/ServicePage";
+import React from "react";
+import { ServicePage } from "../common/ServicePage";
 
 const background = "/resources/services/salon/sets-main.jpg";
 const title = "Sets and Twists";
@@ -12,7 +12,7 @@ const setsAndTwists = [
         price: "$100.00 - $150.00",
         desc: "",
         sm: 12,
-        xl: 4
+        xl: 4,
       },
       {
         icon: "/resources/services/salon/sets-shampoo-rinse.jpg",
@@ -20,7 +20,7 @@ const setsAndTwists = [
         price: "$95.00 - $110.00",
         desc: "",
         sm: 12,
-        xl: 4
+        xl: 4,
       },
       {
         icon: "/resources/services/salon/sets-shampoo-rinse-flat.jpg",
@@ -28,9 +28,9 @@ const setsAndTwists = [
         price: "$95.00 - $110.00",
         desc: "",
         sm: 12,
-        xl: 4
-      }
-    ]
+        xl: 4,
+      },
+    ],
   },
   {
     row: [
@@ -40,7 +40,7 @@ const setsAndTwists = [
         price: "$90.00 - $200.00",
         desc: "",
         sm: 12,
-        xl: 4
+        xl: 4,
       },
       {
         icon: "/resources/services/salon/sets-double-twist.jpg",
@@ -48,7 +48,7 @@ const setsAndTwists = [
         price: "$90.00 - $200.00",
         desc: "",
         sm: 12,
-        xl: 4
+        xl: 4,
       },
       {
         icon: "/resources/services/salon/sets-straw.jpg",
@@ -56,9 +56,9 @@ const setsAndTwists = [
         price: "$90.00 - $150.00",
         desc: "",
         sm: 12,
-        xl: 4
-      }
-    ]
+        xl: 4,
+      },
+    ],
   },
   {
     row: [
@@ -68,16 +68,12 @@ const setsAndTwists = [
         price: "$90.00 - $150.00",
         desc: "",
         sm: 12,
-        xl: 4
-      }
-    ]
-  }
+        xl: 4,
+      },
+    ],
+  },
 ];
 
-export default class SetsAndTwists extends Component {
-  render() {
-    return (
-      <ServicePage background={background} title={title} rows={setsAndTwists} />
-    );
-  }
-}
+export const SetsAndTwists = () => (
+  <ServicePage background={background} title={title} rows={setsAndTwists} />
+);

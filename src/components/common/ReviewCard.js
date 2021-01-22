@@ -59,27 +59,23 @@ const Quotes = styled.span`
   font-style: normal;
 `;
 
-const ReviewCard = ({ ...props }) => {
-  return (
-    <Col xs={12} sm={12} md={12} lg={6} xl={6} className="mb-4">
-      <ReviewCardMain>
-        <ReviewCardBody>
-          <div className="mt-5">
-            {[1, 2, 3, 4, 5].map(x => {
-              return <StarRating key={x} className="fas fa-star"></StarRating>;
-            })}
-          </div>
-          <h1 className="mb-5">{props.user}</h1>
-          <ReviewCardText>
-            <Quotes>"</Quotes>
-            {props.review}
-            <Quotes>"</Quotes>
-          </ReviewCardText>
-          <Feedback>Our Response: {props.feedback}</Feedback>
-        </ReviewCardBody>
-      </ReviewCardMain>
-    </Col>
-  );
-};
-
-export default ReviewCard;
+export const ReviewCard = ({ user, review, feedback }) => (
+  <Col xs={12} sm={12} md={12} lg={6} xl={6} className="mb-4">
+    <ReviewCardMain>
+      <ReviewCardBody>
+        <div className="mt-5">
+          {[1, 2, 3, 4, 5].map((x) => {
+            return <StarRating key={x} className="fas fa-star"></StarRating>;
+          })}
+        </div>
+        <h1 className="mb-5">{user}</h1>
+        <ReviewCardText>
+          <Quotes>"</Quotes>
+          {review}
+          <Quotes>"</Quotes>
+        </ReviewCardText>
+        <Feedback>Our Response: {feedback}</Feedback>
+      </ReviewCardBody>
+    </ReviewCardMain>
+  </Col>
+);

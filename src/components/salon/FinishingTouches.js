@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import ServicePage from "../common/ServicePage";
+import React from "react";
+import { ServicePage } from "../common/ServicePage";
 
 const background = "/resources/services/salon/finishing-touches-main.jpg";
 const title = "Finishing Touches";
@@ -55,14 +55,6 @@ const finishingTouches = [
   },
 ];
 
-export default class FinishingTouches extends Component {
-  render() {
-    return (
-      <ServicePage
-        background={background}
-        title={title}
-        rows={finishingTouches}
-      />
-    );
-  }
-}
+export const FinishingTouches = () => (
+  <ServicePage background={background} title={title} rows={finishingTouches} />
+);

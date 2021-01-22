@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import ServicePage from "../common/ServicePage";
+import React from "react";
+import { ServicePage } from "../common/ServicePage";
 
 const background = "/resources/services/massages/scrub-weightloss-main.jpg";
 const title = "Scrubs/Weightloss";
@@ -37,8 +37,6 @@ const scrubs = [
   },
 ];
 
-export default class ScrubsWeightloss extends Component {
-  render() {
-    return <ServicePage background={background} title={title} rows={scrubs} />;
-  }
-}
+export const ScrubsWeightloss = () => (
+  <ServicePage background={background} title={title} rows={scrubs} />
+);

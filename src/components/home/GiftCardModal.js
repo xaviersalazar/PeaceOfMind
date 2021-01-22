@@ -7,7 +7,7 @@ import {
   ModalBody,
   FormGroup,
   Input,
-  FormFeedback
+  FormFeedback,
 } from "reactstrap";
 import NetlifyForm from "react-netlify-form";
 import { toast } from "react-toastify";
@@ -81,7 +81,7 @@ export const GiftCardMoal = ({ ...props }) => {
   const [giftAmount, setGiftAmount] = useState("");
   const [validate, setValidate] = useState({ emailState: "" });
 
-  const validateEmail = e => {
+  const validateEmail = (e) => {
     const emailRex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
     if (emailRex.test(e.target.value)) {
@@ -91,7 +91,7 @@ export const GiftCardMoal = ({ ...props }) => {
     }
   };
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     e.persist();
 
     const { target } = e;
@@ -115,7 +115,7 @@ export const GiftCardMoal = ({ ...props }) => {
     toast(
       "Thank you! We'll get back with you shortly with a confirmation about your Gift Card",
       {
-        type: toast.TYPE.SUCCESS
+        type: toast.TYPE.SUCCESS,
       }
     );
 
@@ -131,12 +131,12 @@ export const GiftCardMoal = ({ ...props }) => {
 
   const onError = () => {
     toast("Uh oh! Something went wrong. Please try again", {
-      type: toast.TYPE.ERROR
+      type: toast.TYPE.ERROR,
     });
   };
 
   return (
-    <div>
+    <>
       <Modal isOpen={props.modal} toggle={props.toggle}>
         <ModalHeader toggle={props.toggle}>Gift Card</ModalHeader>
         <ModalBody>
@@ -147,16 +147,16 @@ export const GiftCardMoal = ({ ...props }) => {
               onError={() => onError()}
             >
               {({ loading, error, success }) => (
-                <div>
+                <>
                   {
-                    <div>
+                    <>
                       <FormGroup className="py-3">
                         <FormInput
                           type="text"
                           name="name"
                           id="name"
                           value={name}
-                          onChange={e => handleChange(e)}
+                          onChange={(e) => handleChange(e)}
                           placeholder="Your name"
                         />
                       </FormGroup>
@@ -168,7 +168,7 @@ export const GiftCardMoal = ({ ...props }) => {
                           value={email}
                           valid={validate.emailState === "has-success"}
                           invalid={validate.emailState === "has-danger"}
-                          onChange={e => {
+                          onChange={(e) => {
                             validateEmail(e);
                             handleChange(e);
                           }}
@@ -186,7 +186,7 @@ export const GiftCardMoal = ({ ...props }) => {
                           name="phone"
                           id="phone"
                           value={phone}
-                          onChange={e => handleChange(e)}
+                          onChange={(e) => handleChange(e)}
                           placeholder="Your phone number"
                         />
                       </FormGroup>
@@ -196,7 +196,7 @@ export const GiftCardMoal = ({ ...props }) => {
                           name="giftName"
                           id="giftName"
                           value={giftName}
-                          onChange={e => handleChange(e)}
+                          onChange={(e) => handleChange(e)}
                           placeholder="Name of person receiving Gift Card"
                         />
                       </FormGroup>
@@ -206,7 +206,7 @@ export const GiftCardMoal = ({ ...props }) => {
                           name="giftAmount"
                           id="giftAmount"
                           value={giftAmount}
-                          onChange={e => handleChange(e)}
+                          onChange={(e) => handleChange(e)}
                           placeholder="Amount on Gift Card"
                         />
                       </FormGroup>
@@ -225,14 +225,14 @@ export const GiftCardMoal = ({ ...props }) => {
                           </CancelButton>
                         </Col>
                       </Row>
-                    </div>
+                    </>
                   }
-                </div>
+                </>
               )}
             </NetlifyForm>
           </FormCol>
         </ModalBody>
       </Modal>
-    </div>
+    </>
   );
 };

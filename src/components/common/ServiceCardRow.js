@@ -1,12 +1,12 @@
 import React from "react";
 import { Row } from "reactstrap";
-import ServiceCard from "./ServiceCard";
+import { ServiceCard } from "./ServiceCard";
 
-const ServiceCardRow = ({ rows }) => {
+export const ServiceCardRow = ({ rows }) => {
   return rows.map((row, i) => {
     return (
       <Row key={i} className="justify-content-center">
-        {row.row.map(s => {
+        {row.row.map((s) => {
           return (
             <ServiceCard
               key={s.title}
@@ -26,5 +26,3 @@ const ServiceCardRow = ({ rows }) => {
     );
   });
 };
-
-export default ServiceCardRow;

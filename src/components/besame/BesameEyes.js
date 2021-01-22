@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import ServicePage from "../common/ServicePage";
+import React from "react";
+import { ServicePage } from "../common/ServicePage";
 
 const background = "/resources/eyes/eyes-main.jpg";
 const title = "Eyes";
@@ -13,7 +13,7 @@ const eyeProducts = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/eyes/mascara.jpg",
@@ -21,7 +21,7 @@ const eyeProducts = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/eyes/mascara.jpg",
@@ -29,21 +29,16 @@ const eyeProducts = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
-      }
-    ]
-  }
+        xl: 2,
+      },
+    ],
+  },
 ];
-
-export default class BesameEyes extends Component {
-  render() {
-    return (
-      <ServicePage
-        background={background}
-        title={title}
-        rows={eyeProducts}
-        otherNotice={otherNotice}
-      />
-    );
-  }
-}
+export const BesameEyes = () => (
+  <ServicePage
+    background={background}
+    title={title}
+    rows={eyeProducts}
+    otherNotice={otherNotice}
+  />
+);

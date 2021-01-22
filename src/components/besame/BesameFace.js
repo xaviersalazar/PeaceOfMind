@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import ServicePage from "../common/ServicePage";
+import React from "react";
+import { ServicePage } from "../common/ServicePage";
 
 const background = "/resources/face/face-main.jpg";
 const title = "Face";
@@ -13,7 +13,7 @@ const faceProducts = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/face/bisque-souffle-foundation.jpg",
@@ -21,7 +21,7 @@ const faceProducts = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/face/brightening-violet-powder.jpg",
@@ -29,7 +29,7 @@ const faceProducts = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/face/crimson-cream-rouge.jpg",
@@ -37,7 +37,7 @@ const faceProducts = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/face/dark-cashmere-powder-compact.jpg",
@@ -45,7 +45,7 @@ const faceProducts = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/face/honey-souffle-foundation.jpg",
@@ -53,9 +53,9 @@ const faceProducts = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
-      }
-    ]
+        xl: 2,
+      },
+    ],
   },
   {
     row: [
@@ -65,7 +65,7 @@ const faceProducts = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/face/medium-beige-souffle-foundation.jpg",
@@ -73,7 +73,7 @@ const faceProducts = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/face/medium-cashmere-powder-compact.jpg",
@@ -81,7 +81,7 @@ const faceProducts = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/face/porcelain-cashmere-powder-compact.jpg",
@@ -89,7 +89,7 @@ const faceProducts = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/face/refill-dark.jpg",
@@ -97,7 +97,7 @@ const faceProducts = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/face/refill-light.jpg",
@@ -105,9 +105,9 @@ const faceProducts = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
-      }
-    ]
+        xl: 2,
+      },
+    ],
   },
   {
     row: [
@@ -117,7 +117,7 @@ const faceProducts = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/face/refill-porcelain.jpg",
@@ -125,7 +125,7 @@ const faceProducts = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/face/refill-violet.jpg",
@@ -133,7 +133,7 @@ const faceProducts = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/face/true-beige-souffle-foundation.jpg",
@@ -141,7 +141,7 @@ const faceProducts = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/face/violet-brightening-powder-compacts.jpg",
@@ -149,7 +149,7 @@ const faceProducts = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
+        xl: 2,
       },
       {
         icon: "/resources/face/yellow-cameo-souffle-foundation.jpg",
@@ -157,20 +157,16 @@ const faceProducts = [
         sm: 12,
         md: 6,
         lg: 4,
-        xl: 2
-      }
-    ]
-  }
+        xl: 2,
+      },
+    ],
+  },
 ];
-export default class BesameFace extends Component {
-  render() {
-    return (
-      <ServicePage
-        background={background}
-        title={title}
-        rows={faceProducts}
-        otherNotice={otherNotice}
-      />
-    );
-  }
-}
+export const BesameFace = () => (
+  <ServicePage
+    background={background}
+    title={title}
+    rows={faceProducts}
+    otherNotice={otherNotice}
+  />
+);

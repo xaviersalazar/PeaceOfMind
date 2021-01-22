@@ -41,29 +41,18 @@ const BenefitsCardItem = styled(ListGroupItem)`
   }
 `;
 
-const ServiceCard = ({ ...props }) => {
-  return (
-    <Col
-      key={props.title}
-      xs={props.xs}
-      md={props.md}
-      lg={props.lg}
-      xl={props.xl}
-      className="mb-4"
-    >
-      <BenefitsCardMain>
-        <CardImg top width="100%" src={props.icon} alt={props.title} />
-        <BenefitsCardBody>
-          <CardTitle>{props.title}</CardTitle>
-          <ListGroup>
-            {props.items.map((item) => {
-              return <BenefitsCardItem key={item}>{item}</BenefitsCardItem>;
-            })}
-          </ListGroup>
-        </BenefitsCardBody>
-      </BenefitsCardMain>
-    </Col>
-  );
-};
-
-export default ServiceCard;
+export const MassageBenefitsCard = ({ title, xs, md, lg, xl, icon, items }) => (
+  <Col key={title} xs={xs} md={md} lg={lg} xl={xl} className="mb-4">
+    <BenefitsCardMain>
+      <CardImg top width="100%" src={icon} alt={title} />
+      <BenefitsCardBody>
+        <CardTitle>{title}</CardTitle>
+        <ListGroup>
+          {items.map((item) => {
+            return <BenefitsCardItem key={item}>{item}</BenefitsCardItem>;
+          })}
+        </ListGroup>
+      </BenefitsCardBody>
+    </BenefitsCardMain>
+  </Col>
+);

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
+import { ServiceCardRow } from "../common/ServiceCardRow";
 import styled, { keyframes } from "styled-components";
-import ServiceCardRow from "../common/ServiceCardRow";
 
 // Keyframes
 const expandHr = keyframes`
@@ -162,66 +162,62 @@ const yogaExpectations = [
   },
 ];
 
-export const KidsYoga = () => {
-  return (
-    <React.Fragment>
-      <Title>
-        <ServiceTitle>KIDS YOGA</ServiceTitle>
-        <Hr />
-      </Title>
-      <Background
-        background={"/resources/services/massages/kids-yoga-main.jpg"}
-      />
-      <MainContainer fluid>
-        <Row className="mb-5">
-          <ParagraphsCol xs={12} className="text-center">
-            <h1 className="text-center">Prices</h1>
-            <small className="m-0 p-0">
-              Class Session: $27.00 | Private Session: $67.00
-            </small>
-            <HeadingHr />
-          </ParagraphsCol>
-          <ParagraphsCol xs={12} className="text-center mt-5">
-            <h3 className="text-center">Yoga Helps Kids</h3>
-            <HeadingHr />
-            <p className="light-text">
-              The kids develop body awareness and learn how to use their bodies
-              in a healthy way. It helps them manage stress through breathing,
-              awareness, meditation, and healthy movement. They are able to
-              build concentration and increase their confidence and create a
-              positive self-image. The kids participating in yoga are able to
-              feel part of a healthy, non-competitive group while giving them
-              alternative to constantly being attached to electronic devices.
-            </p>
-          </ParagraphsCol>
-          <ParagraphsCol xs={12} className="text-center mt-5">
-            <h3 className="text-center">
-              Yoga For Kids Also Benefits Teachers
-            </h3>
-            <HeadingHr />
-            <p className="light-text">
-              The teachers can have an alternative way to handle challenges they
-              may face in the classroom. It also gives the teachers a healthy
-              activity to integrate into the daily lesson plan while benefiting
-              from blending exercise into the class.
-            </p>
-          </ParagraphsCol>
-        </Row>
-        <Row>
-          <ParagraphsCol xs={12} className="text-center mt-5">
-            <h3 className="text-center">What to expect in our yoga class</h3>
-            <HeadingHr />
-            <ServiceCardRow rows={yogaExpectations} />
-          </ParagraphsCol>
-        </Row>
-        <Row>
-          <ParagraphsCol xs={12}>
-            <Disclaimer>
-              NOTICE: Prices Are Subject To Change Without Prior Notice
-            </Disclaimer>
-          </ParagraphsCol>
-        </Row>
-      </MainContainer>
-    </React.Fragment>
-  );
-};
+export const KidsYoga = () => (
+  <React.Fragment>
+    <Title>
+      <ServiceTitle>KIDS YOGA</ServiceTitle>
+      <Hr />
+    </Title>
+    <Background
+      background={"/resources/services/massages/kids-yoga-main.jpg"}
+    />
+    <MainContainer fluid>
+      <Row className="mb-5">
+        <ParagraphsCol xs={12} className="text-center">
+          <h1 className="text-center">Prices</h1>
+          <small className="m-0 p-0">
+            Class Session: $27.00 | Private Session: $67.00
+          </small>
+          <HeadingHr />
+        </ParagraphsCol>
+        <ParagraphsCol xs={12} className="text-center mt-5">
+          <h3 className="text-center">Yoga Helps Kids</h3>
+          <HeadingHr />
+          <p className="light-text">
+            The kids develop body awareness and learn how to use their bodies in
+            a healthy way. It helps them manage stress through breathing,
+            awareness, meditation, and healthy movement. They are able to build
+            concentration and increase their confidence and create a positive
+            self-image. The kids participating in yoga are able to feel part of
+            a healthy, non-competitive group while giving them alternative to
+            constantly being attached to electronic devices.
+          </p>
+        </ParagraphsCol>
+        <ParagraphsCol xs={12} className="text-center mt-5">
+          <h3 className="text-center">Yoga For Kids Also Benefits Teachers</h3>
+          <HeadingHr />
+          <p className="light-text">
+            The teachers can have an alternative way to handle challenges they
+            may face in the classroom. It also gives the teachers a healthy
+            activity to integrate into the daily lesson plan while benefiting
+            from blending exercise into the class.
+          </p>
+        </ParagraphsCol>
+      </Row>
+      <Row>
+        <ParagraphsCol xs={12} className="text-center mt-5">
+          <h3 className="text-center">What to expect in our yoga class</h3>
+          <HeadingHr />
+          <ServiceCardRow rows={yogaExpectations} />
+        </ParagraphsCol>
+      </Row>
+      <Row>
+        <ParagraphsCol xs={12}>
+          <Disclaimer>
+            NOTICE: Prices Are Subject To Change Without Prior Notice
+          </Disclaimer>
+        </ParagraphsCol>
+      </Row>
+    </MainContainer>
+  </React.Fragment>
+);
