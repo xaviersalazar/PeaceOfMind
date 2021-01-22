@@ -1,7 +1,5 @@
-import React from "react";
-import { Row, Col, Form, Input, Button, Image } from 'antd';
-import { UserOutlined, LockOutlined } from '@ant-design/icons';
-import "../Admin.css"
+import React, { useState } from "react";
+import { Button, Col, Form, FormGroup, Input, Row } from "reactstrap";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -21,7 +19,7 @@ const FormContainer = styled.div`
   background: #ffffff;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.12) 0 0 70px 6px;
-  
+
   @media (min-width: 576px) {
     width: 75%;
   }
@@ -39,16 +37,29 @@ const FormContainer = styled.div`
   }
 `;
 
-const FormUserIcon = styled(UserOutlined)`
-  color: rgba(0,0,0,.25);
-`;
+const FormInput = styled(Input)`
+  && {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    padding: 1.5rem;
+    background: inherit;
+    transition: 0.8s all;
 
-const FormPasswordIcon = styled(LockOutlined)`
-  color: rgba(0,0,0,.25);
+    &:focus {
+      background: inherit;
+      border-top-color: none;
+      border-left-color: none;
+      border-right-color: none;
+      border-bottom-color: #b3ffab;
+      box-shadow: none;
+    }
+  }
 `;
 
 const LoginButton = styled(Button)`
-   && {
+  && {
     border-radius: 8px;
     padding: 0.5rem 2rem;
     box-shadow: rgba(0, 0, 0, 0.12) 0 3px 13px 1px;
@@ -65,30 +76,61 @@ const LoginButton = styled(Button)`
 `;
 
 export const Login = () => {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleChange = (e) => {
+    e.persist();
+
+    const { target } = e;
+    const value = target.value;
+    const { name } = target;
+
+    if (name === "name") {
+      setUsername(value);
+    }
+
+    if (name === "password") {
+      setPassword(value);
+    }
+  };
+
   return (
     <Container>
       <FormContainer>
         <Row>
-          <Col className="text-center" span={24}>
-            <Image className="mb-4" width={175} src="/resources/logo_black.png" />
+          <Col className="text-center" xs={12}>
+            <img
+              className="mb-4"
+              width={175}
+              src="/resources/logo_black.png"
+              alt="logo"
+            />
           </Col>
-          <Col span={24}>
-            <Form labelCol={24} wrapperCol={24} name="login">
-              <Form.Item name="username">
-                <Input placeholder="Username" prefix={<FormUserIcon />} />
-              </Form.Item>
-              <Form.Item name="password">
-                <Input placeholder="Password" prefix={<FormPasswordIcon />} />
-              </Form.Item>
-              <Form.Item>
-                <LoginButton type="primary">
-                  Log in
-                </LoginButton>
-              </Form.Item>
+          <Col xs={12}>
+            <Form>
+              <FormGroup className="py-3">
+                <FormInput
+                  name="username"
+                  value={username}
+                  onChange={(e) => handleChange(e)}
+                  placeholder="Username"
+                />
+              </FormGroup>
+              <FormGroup className="py-3">
+                <FormInput
+                  type="password"
+                  name="password"
+                  value={password}
+                  onChange={(e) => handleChange(e)}
+                  placeholder="Password"
+                />
+              </FormGroup>
+              <LoginButton type="primary">Log in</LoginButton>
             </Form>
           </Col>
         </Row>
       </FormContainer>
     </Container>
-  )
-}
+  );
+};

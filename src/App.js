@@ -6,6 +6,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Navigation } from "./components/layout/Navigation";
 import { Routing } from "./components/Routing";
 import { Footer } from "./components/layout/Footer";
+import { Login } from "./components/admin/login/Login";
 import ScrollToTop from "./components/common/ScrollToTop";
 import rootReducer from "./redux/reducers";
 import { ToastContainer } from "react-toastify";
@@ -78,11 +79,20 @@ export const App = () => (
   <Provider store={store}>
     <Router>
       <ScrollToTop>
-        <GlobalStyle />
-        <Navigation />
-        <Routing />
-        <Footer />
-        <ToastContainer />
+        {window.location.pathname !== "/admin" ? (
+          <>
+            <GlobalStyle />
+            <Navigation />
+            <Routing />
+            <Footer />
+            <ToastContainer />
+          </>
+        ) : (
+          <>
+            <GlobalStyle />
+            <Login />
+          </>
+        )}
       </ScrollToTop>
     </Router>
   </Provider>
