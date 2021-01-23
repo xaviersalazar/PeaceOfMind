@@ -1,9 +1,9 @@
 import express from "express";
 import bodyParser from "body-parser";
-import { graphqlHTTP } from "express-graphql";
 import mongoose from "mongoose";
 import cors from "cors";
-import schema from "./graphql/schema";
+import { ApolloServer } from "apollo-server-express";
+import typeDefs from "./graphql/schema";
 import resolvers from "./graphql/resolvers";
 
 require("dotenv").config();
@@ -14,14 +14,15 @@ const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@pea
 
 app.use(cors(), bodyParser.json());
 
-app.use(
-  "/graphql",
-  graphqlHTTP({
-    schema: schema,
-    rootValue: resolvers,
-    graphiql: true,
-  })
-);
+const server = new ApolloServer({
+  typeDefs,
+  resolvers,
+  playground: {
+    endpoint: "/graphql",
+  },
+});
+
+server.applyMiddleware({ app });
 
 mongoose
   .connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
