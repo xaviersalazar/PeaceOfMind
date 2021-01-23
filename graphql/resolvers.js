@@ -28,7 +28,7 @@ const resolvers = {
       return { ...user._doc, password: null };
     },
     getService: async (_, { id }) => {
-      const service = await Service.findById({ id });
+      const service = await Service.findById(id);
 
       if (!service) throw new Error(`Service with ID ${id} does not exist`);
 
