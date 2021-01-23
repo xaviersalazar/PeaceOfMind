@@ -1,4 +1,4 @@
-import * as auth from "./auth/auth";
+import * as auth from "./handleAuth/auth";
 
 export default {
   ...auth,

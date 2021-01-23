@@ -53,3 +53,15 @@ export const login = async (args) => {
     throw err;
   }
 };
+
+export const verifyToken = async (args) => {
+  try {
+    const { token } = args;
+    const decoded = jwt.verify(token, process.env.SECRET_KEY);
+    const user = await User.findOne({ _id: decoded.id });
+
+    return { ...user._doc, password: null };
+  } catch (err) {
+    throw err;
+  }
+};
