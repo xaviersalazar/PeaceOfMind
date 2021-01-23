@@ -3,6 +3,8 @@ import bodyParser from "body-parser";
 import { graphqlHTTP } from "express-graphql";
 import mongoose from "mongoose";
 import cors from "cors";
+import schema from "./graphql/schema";
+import resolvers from "./graphql/resolvers";
 
 require("dotenv").config();
 
@@ -15,8 +17,8 @@ app.use(cors(), bodyParser.json());
 app.use(
   "/graphql",
   graphqlHTTP({
-    schema: {},
-    rootValue: {},
+    schema: schema,
+    rootValue: resolvers,
     graphiql: true,
   })
 );
