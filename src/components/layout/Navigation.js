@@ -414,6 +414,15 @@ export const Navigation = () => {
                 <StyleDropdownItem>
                   <RouterNavLink
                     className="link-item"
+                    to="/salon/manicures"
+                    onClick={clickedLink}
+                  >
+                    MANICURES
+                  </RouterNavLink>
+                </StyleDropdownItem>
+                <StyleDropdownItem>
+                  <RouterNavLink
+                    className="link-item"
                     to="/salon/makeup"
                     onClick={clickedLink}
                   >
