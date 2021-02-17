@@ -26,7 +26,7 @@ const finishingTouches = [
         icon:
           "/resources/services/salon/straightening-organic-thermal-straightening-haircut.jpg",
         title: "Ironworks",
-        price: "$25.00",
+        price: "$27.00",
         desc: "",
         sm: 12,
         xl: 4,

@@ -45,7 +45,7 @@ const eyes = [
       {
         icon: "/resources/services/salon/eyes-lash-ext.jpg",
         title: "Eyelash Extensions",
-        price: "$202.00",
+        price: "$202.00+",
         desc: "",
         sm: 12,
         xl: 4,

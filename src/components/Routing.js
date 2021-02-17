@@ -25,7 +25,6 @@ import { MensServices } from "./salon/MensServices";
 import { Perms } from "./salon/Perms";
 import { SetsAndTwists } from "./salon/SetsAndTwists";
 import { Locs } from "./salon/Locs";
-import { Relaxer } from "./salon/Relaxer";
 import { NaturalStyling } from "./salon/NaturalStyling";
 import { SpecialtyExtensions } from "./salon/SpecialtyExtensions";
 import { FinishingTouches } from "./salon/FinishingTouches";
@@ -59,7 +58,6 @@ export const Routing = () => (
     <Route path="/salon/mens-services" component={MensServices} />
     <Route path="/salon/natural-styling" component={NaturalStyling} />
     <Route path="/salon/perms" component={Perms} />
-    <Route path="/salon/relaxer" component={Relaxer} />
     <Route path="/salon/sets-twists" component={SetsAndTwists} />
     <Route path="/salon/specialty-extensions" component={SpecialtyExtensions} />
     <Route

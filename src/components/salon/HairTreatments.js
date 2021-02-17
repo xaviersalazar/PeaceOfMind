@@ -116,6 +116,18 @@ const hairTreatment = [
       },
     ],
   },
+  {
+    row: [
+      {
+        icon: "/resources/services/salon/hair-treatments-silk-press.jpg",
+        title: "Silk Press",
+        price: "",
+        desc: "",
+        sm: 12,
+        xl: 4,
+      },
+    ],
+  },
 ];
 
 export const HairTreatments = () => (
