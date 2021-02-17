@@ -157,12 +157,6 @@ const ScrollDown = styled.div`
     top: 10px;
     width: 6px;
   }
-
-  @media (min-width: 768px) {
-    .scroll-down {
-      display: none;
-    }
-  }
 `;
 
 const ScrollText = styled.p`
@@ -331,9 +325,11 @@ export const Navigation = () => {
                 SALON
               </DropdownToggle>
               <StyleDropdownMenu right id="salon-menu">
-                <ScrollDown className="scroll-down">
-                  <ScrollText>scroll</ScrollText>
-                </ScrollDown>
+                {windowWidth < 768 && (
+                  <ScrollDown className="scroll-down">
+                    <ScrollText>scroll</ScrollText>
+                  </ScrollDown>
+                )}
                 <StyleDropdownItem>
                   <RouterNavLink
                     className="link-item"
@@ -502,9 +498,11 @@ export const Navigation = () => {
                 SERVICES
               </DropdownToggle>
               <StyleDropdownMenu right id="services-menu">
-                <ScrollDown className="scroll-down">
-                  <ScrollText>scroll</ScrollText>
-                </ScrollDown>
+                {windowWidth < 768 && (
+                  <ScrollDown className="scroll-down">
+                    <ScrollText>scroll</ScrollText>
+                  </ScrollDown>
+                )}
                 <StyleDropdownItem>
                   <RouterNavLink
                     className="link-item"
