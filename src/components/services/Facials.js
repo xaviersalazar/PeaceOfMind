@@ -139,6 +139,46 @@ const facials = [
         sm: 12,
         xl: 4,
       },
+      {
+        icon: "/resources/services/massages/facials-vagacial.jpg",
+        title: "Vagacial Facial",
+        price: "$167.00",
+        desc:
+          "Using our Phytomer products that help replenish minerals that you lose from stress or other contraindications. This facial helps with discoloration of the skin, ingrown hair, and stretch marks.",
+        sm: 12,
+        xl: 4,
+      },
+      {
+        icon: "/resources/services/massages/facials-fanny.jpg",
+        title: "Fanny Facial",
+        price: "$177.00",
+        desc:
+          "Using our Phytomer products that help replenish minerals that you lose from stress or other contraindications. This facial helps with discoloration of the skin, ingrown hair, and stretch marks.",
+        sm: 12,
+        xl: 4,
+      },
+    ],
+  },
+  {
+    row: [
+      {
+        icon: "/resources/services/massages/facial-microderm-addon.jpg",
+        title: "Microdermabrasion Facial",
+        price: "Add onto any facial for $75.00",
+        desc:
+          "A non-invasive procedure that uses tiny crystals or other exfoliating surfaces to help remove the superficial layer of dead skin cells",
+        sm: 12,
+        xl: 4,
+      },
+      {
+        icon: "/resources/services/massages/facials-black-detox-addon.jpg",
+        title: "Black Detox Add-on",
+        price: "Add onto any facial for $27.00",
+        desc:
+          "Self-Heating Back Detox that pulls toxins out, relieves tension, water retention, and relaxes deeply.",
+        sm: 12,
+        xl: 4,
+      },
     ],
   },
 ];

@@ -99,15 +99,6 @@ const addons = [
   {
     row: [
       {
-        icon: "/resources/services/massages/addons-micro-facial.jpg",
-        title: "Microdermabrasion Facial",
-        price: "Contact us for a price",
-        desc:
-          "A non-invasive procedure that uses tiny crystals or other exfoliating surfaces to help remove the superficial layer of dead skin cells",
-        sm: 12,
-        xl: 4,
-      },
-      {
         icon: "/resources/services/massages/addons-pedicure.jpg",
         title: "Pedicure",
         price: "45 Minutes - 1 Hour: $82.00",
@@ -122,6 +113,15 @@ const addons = [
         price: "Add onto Swedish or Deep Tissue Massage: $80.00",
         desc:
           "Kills Bacteria Pathogens, Reduces Inflammation, Supports the Immune System, Eases Respiratory Discomfort, Lifts the Spirit, Relaxes Muscles, Curbs Digestive Upset, Relieves Body & Joint Pain, Balances Energy, Restores Calmness, Increases Concentration",
+        sm: 12,
+        xl: 4,
+      },
+      {
+        icon: "/resources/services/massages/addons-cbd.jpg",
+        title: "CBD Infused Massage",
+        price: "$57.00",
+        desc:
+          "CBD oil reduces inflammation, is a potent pain reliever. It alleviates stress and anxiety, may help with skin cancer and other skin stresses. Also helps clear toxins' ultimate skin protector and moisturizer.",
         sm: 12,
         xl: 4,
       },
@@ -166,24 +166,6 @@ const addons = [
         price: "$47.00",
         desc:
           "Enhancement to any facial to reduces dark circles & puffiness around the eyes, help to suppress acne flare-ups, help to firm and tighten skin prior to a makeup application, increase circulation, diminish the appearance of wrinkles, suppress hair growth, help to rejuvenate the skin and reduce skin inflammation.",
-        sm: 12,
-        xl: 4,
-      },
-      {
-        icon: "/resources/services/massages/addons-cbd.jpg",
-        title: "CBD Infused Massage",
-        price: "$57.00",
-        desc:
-          "CBD oil reduces inflammation, is a potent pain reliever. It alleviates stress and anxiety, may help with skin cancer and other skin stresses. Also helps clear toxins' ultimate skin protector and moisturizer.",
-        sm: 12,
-        xl: 4,
-      },
-      {
-        icon: "/resources/services/massages/addons-facial.jpg",
-        title: "Facial Add-on",
-        price: "Add onto any facial for $27.00",
-        desc:
-          "Self-Heating Back Detox that pulls toxins out, relieves tension, water retention, and relaxes deeply.",
         sm: 12,
         xl: 4,
       },
