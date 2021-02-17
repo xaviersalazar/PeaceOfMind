@@ -1,6 +1,22 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import styled, { keyframes } from "styled-components";
+import { ServiceCardRow } from "../common/ServiceCardRow";
+
+const venusLegacy = [
+  {
+    row: [
+      {
+        icon: "/resources/services/massages/breast-buttlift-venus.jpg",
+        price: "30 Minutes: $250.00 | 1 Hour: $300.00",
+        desc:
+          "What is Venus Legacy? Venus Legacy is an advanced non-invasive medical device that effectively resolves challenging Face and body aesthetic needs, such as nonsurgical circumferential reduction, cellulite reduction, skin tightening, and wrinkle reduction. It decreases swelling and helps tighten the skin. We also advise all our patients receiving laser treatments that they too should improve the tightening of their skin. (We will have packets available when you purchase 6 you'll get the 7th one free.)",
+        sm: 12,
+        xl: 4,
+      },
+    ],
+  },
+];
 
 // Keyframes
 const expandHr = keyframes`
@@ -154,6 +170,13 @@ export const BreastButtLiftFatEliminator = () => (
             For the <span style={{ fontWeight: 700 }}>skin</span>: The
             stimulation of the middle layers of the skin makes skin more toned.
           </p>
+        </ParagraphsCol>
+      </Row>
+      <Row>
+        <ParagraphsCol xs={12} className="text-center mt-5">
+          <h3 className="text-center">Venus Legacy</h3>
+          <HeadingHr />
+          <ServiceCardRow rows={venusLegacy} />
         </ParagraphsCol>
       </Row>
       <Row>
