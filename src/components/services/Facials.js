@@ -108,6 +108,37 @@ const facials = [
         sm: 12,
         xl: 4,
       },
+      {
+        icon: "/resources/services/massages/facials-phytomer.jpg",
+        title: "Phytomer Resurfacing Facial",
+        price: "$147.00",
+        desc:
+          "This facial purifies and cleanses the skin of city dwellers by providing a deep cleanse with our Cleansing Foaming Cream that helps tired, polluted dull skin. 1st with our Multi- Resurfacing Exfoliant that reduces the depth of wrinkles and restores radiance. 2nd we apply the Pure Pore Heating Mask that completely depollutes, sanitizes, and leaves pores unclogged. Lastly we moisturize with City Life Face &amp; Eye Contour Sorbet Cream that protects skin from pollutants in the air.",
+        sm: 12,
+        xl: 4,
+      },
+      {
+        icon: "/resources/services/massages/facials-luminating-phytomer.jpg",
+        title: "Luminating Phytomer Facial",
+        price: "$157.00",
+        desc:
+          "This facial firms, brightens, and tightens along with protecting the skin from pollutants in the air. Next we exfoliate with our Marine Scrub that’s for normal, combination or oily skin. It helps loosen impurities and eliminates dead cells that make skin appear dull and restore the shine and softness. Then we top it off with the Luminous Complexion and Eye Radiance Plasticizing Masks. To seal in masks we apply Oligoforce Contouring Serum. Then finish off with City Life Face &amp; Eye Contour Sorbet Cream that protects skin from pollutants in the air.",
+        sm: 12,
+        xl: 4,
+      },
+    ],
+  },
+  {
+    row: [
+      {
+        icon: "/resources/services/massages/facials-confidence.jpg",
+        title: "Confidence Facial",
+        price: "$147.00",
+        desc:
+          "This facial helps reduce acne blemishing and scaring by providing a deep cleanse with our Gentle Cleansing Milk for all skin types. 1st we exfoliate with our Marine Scrub that’s for normal, combination or oily skin. It helps loosen impurities and eliminates dead cells that make skin appear dull and restores the shine and softness. 2nd we apply the Pure Pore Heating Mask that completely depollutes, sanitizes, and leave pores unclogged. Then to seal everything in we apply the Dark Spot Complexion Gel Serum that reduces the unevenness of the skin. Then to set that we apply the Purifying Enforcement Serum with Oligomer. Lastly we finish off with City Life Face &amp; Eye Contour Sorbet Cream that protects skin from pollutants in the air.",
+        sm: 12,
+        xl: 4,
+      },
     ],
   },
 ];

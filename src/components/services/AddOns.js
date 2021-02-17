@@ -178,6 +178,15 @@ const addons = [
         sm: 12,
         xl: 4,
       },
+      {
+        icon: "/resources/services/massages/addons-facial.jpg",
+        title: "Facial Add-on",
+        price: "Add onto any facial for $27.00",
+        desc:
+          "Self-Heating Back Detox that pulls toxins out, relieves tension, water retention, and relaxes deeply.",
+        sm: 12,
+        xl: 4,
+      },
     ],
   },
 ];
