@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import styled, { keyframes } from "styled-components";
 import { ServiceCardRow } from "../common/ServiceCardRow";
+import styled, { keyframes } from "styled-components";
 
 const venusLegacy = [
   {
