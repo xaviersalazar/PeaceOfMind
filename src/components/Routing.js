@@ -36,6 +36,7 @@ import { KidsYoga } from "./services/KidsYoga";
 import { HealthCoaching } from "./services/HealthCoaching";
 import { BreastButtLiftFatEliminator } from "./services/BreastButtLiftFatEliminator";
 import { FacialEnhancements } from "./services/FacialEnhancements";
+import { Pedicures } from "./salon/Pedicures";
 
 export const Routing = () => (
   <Switch>
@@ -58,6 +59,7 @@ export const Routing = () => (
     <Route path="/salon/mens-services" component={MensServices} />
     <Route path="/salon/natural-styling" component={NaturalStyling} />
     <Route path="/salon/perms" component={Perms} />
+    <Route path="/salon/pedicures" component={Pedicures} />
     <Route path="/salon/sets-twists" component={SetsAndTwists} />
     <Route path="/salon/specialty-extensions" component={SpecialtyExtensions} />
     <Route

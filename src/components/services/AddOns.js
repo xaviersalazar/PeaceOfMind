@@ -86,28 +86,6 @@ const addons = [
         xl: 4,
       },
       {
-        icon: "/resources/services/massages/addons-manicure.jpg",
-        title: "Manicure",
-        price: "45 Minutes: $47.00",
-        desc:
-          "Wrapping hands in herbal & Aromatherapy infused towels to insure full relaxation and deep moisturization. Cleaning up cuticles, cut and crystal file leaving nails silky smooth. Mesmerizing hand massages with organic lotions that help skin rebuild itself, for brilliant younger looking hands. Finishing off with our signature all organic nontoxic, Free of DBP, Toluene, Formaldehyde, Formaldehyde Resin, Non GMO, Nail Lacquer.",
-        sm: 12,
-        xl: 4,
-      },
-    ],
-  },
-  {
-    row: [
-      {
-        icon: "/resources/services/massages/addons-pedicure.jpg",
-        title: "Pedicure",
-        price: "45 Minutes - 1 Hour: $82.00",
-        desc:
-          "Unlike most nail salons where you dip your feet in the same contaminated foot bath bowl, we use fresh clean hot towels that are infused with Herbs & Aromatherapy oils, ensuring you to never get a foot fungus. Using hot stones to massage tired aching feet, an all-natural organic foot and leg scrub and a revitalizing foot massage. Cuticle clean up, cut and crystal file leaving nails silky smooth. Using an all organic nontoxic, Free of DBP, Toluene, Formaldehyde, Formaldehyde Resin, Non GMO, Nail Lacquer.",
-        sm: 12,
-        xl: 4,
-      },
-      {
         icon: "/resources/services/massages/addons-raindrop.jpg",
         title: "Rain Drop Therapy",
         price: "Add onto Swedish or Deep Tissue Massage: $80.00",
@@ -116,6 +94,10 @@ const addons = [
         sm: 12,
         xl: 4,
       },
+    ],
+  },
+  {
+    row: [
       {
         icon: "/resources/services/massages/addons-cbd.jpg",
         title: "CBD Infused Massage",
@@ -125,10 +107,6 @@ const addons = [
         sm: 12,
         xl: 4,
       },
-    ],
-  },
-  {
-    row: [
       {
         icon: "/resources/services/massages/addons-paraffin.jpg",
         title: "Paraffin Wax Treatment",
@@ -147,6 +125,10 @@ const addons = [
         sm: 12,
         xl: 4,
       },
+    ],
+  },
+  {
+    row: [
       {
         icon: "/resources/services/massages/addons-lava-shell.jpg",
         title: "Lava Shells",
@@ -156,10 +138,6 @@ const addons = [
         sm: 12,
         xl: 4,
       },
-    ],
-  },
-  {
-    row: [
       {
         icon: "/resources/services/massages/addons-glacier-shell.jpg",
         title: "Glacier Shells",
