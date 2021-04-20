@@ -3,7 +3,7 @@ import { ServicePage } from "../common/ServicePage";
 
 const background = "/resources/services/salon/highlight-main.jpg";
 const title = "Hair Highlights";
-const smallNotice = "+Upcharge of $20 for premium color";
+const smallNotice = "+ Up charge of $20 for premium colour";
 const hairHighlighting = [
   {
     row: [
@@ -69,7 +69,7 @@ const hairHighlighting = [
         title: "Ombre Hair",
         price: "$200.00+",
         desc:
-          "Coloring technique where a gradual fading of color from dark to light, or vice-versa, is achieved. Additional cost for add-on color",
+          "Coloring technique where a gradual fading of color from dark to light, or vice-versa, is achieved. Additional cost for add-on colour",
         sm: 12,
         xl: 4,
       },

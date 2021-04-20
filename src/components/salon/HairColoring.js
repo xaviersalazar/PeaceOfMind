@@ -3,7 +3,7 @@ import { ServicePage } from "../common/ServicePage";
 
 const background = "/resources/services/salon/haircolor-main.jpg";
 const title = "Hair Coloring";
-const smallNotice = "+Upcharge of $20 for premium color";
+const smallNotice = "+ Up charge of $20 for premium colour";
 const hairColoring = [
   {
     row: [
@@ -55,7 +55,7 @@ const hairColoring = [
       {
         icon: "/resources/services/salon/haircolor-allover-bleach.jpg",
         title: "All Over Bleach+",
-        price: "$167.00",
+        price: "$167.00+",
         desc: "",
         sm: 12,
         xl: 4,
@@ -67,7 +67,7 @@ const hairColoring = [
       {
         icon: "/resources/services/salon/haircolor-bleach-root.jpg",
         title: "Bleach Root Touch-up+",
-        price: "$112.00",
+        price: "$112.00+",
         desc: "",
         sm: 12,
         xl: 4,
@@ -75,7 +75,7 @@ const hairColoring = [
       {
         icon: "/resources/services/salon/haircolor-root-touchup.jpg",
         title: "Root Touch-up+",
-        price: "$82.00",
+        price: "$82.00+",
         desc: "",
         sm: 12,
         xl: 4,

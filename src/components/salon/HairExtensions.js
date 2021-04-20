@@ -8,10 +8,9 @@ const hairExtensions = [
     row: [
       {
         icon: "/resources/services/salon/hair-ext.jpg",
-        title: "Hair Extensions",
+        title: "Hair Extensions 'Install'",
         price: "",
-        desc:
-          "Preliminary consultation required. Cost of hair extensions additional. Price and time quoted at consultation. ong hair pricing may apply. Additional charge of $15 or $20",
+        desc: "Prices vary, contact us for a consultation.",
         sm: 12,
         xl: 4,
       },

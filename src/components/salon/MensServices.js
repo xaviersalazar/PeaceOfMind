@@ -27,7 +27,7 @@ const mensServices = [
         title: "Signature Experience",
         price: "$87.00+",
         desc:
-          "Includes scalp massage, hot towel, haircut, and facial hair trim",
+          "Includes scalp massage, hot towel, hair cut, and facial hair trim",
         sm: 12,
         xl: 4,
       },
