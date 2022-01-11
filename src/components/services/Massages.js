@@ -45,7 +45,7 @@ const massages = [
       {
         icon: "/resources/services/massages/massage-himalayan.jpg",
         title: "Himalayan Salt Stone",
-        price: "30 Minutes: $77.00 | 1 Hour: $147.00 | 1 Hour ½: $227.00",
+        price: "30 Minutes: $87.00 | 1 Hour: $167.00 | 1 Hour ½: $227.00",
         desc: "An innovative, detoxifying, healing technique using warm salt stones to ground and balance the body’s electromagnetic field, entral nervous system and meridians.",
         sm: 12,
         xl: 4,
@@ -65,7 +65,7 @@ const massages = [
       {
         icon: "/resources/services/massages/massage-medical.jpg",
         title: "Medical Massage",
-        price: "30 Minutes: $87.00 | 1 Hour: $177.00 | 1 hour ½: $267.00",
+        price: "30 Minutes: $97.00 | 1 Hour: $187.00 | 1 hour ½: $267.00",
         desc: "Medical massage involves therapeutic assessment, manipulation, and movement of the locomotor soft tissues to reduce or eliminate pain or dysfunction. A unique multidisciplinary approach is utilized to restore structural balance throughout the body, which allows focus on prevention and rehabilitation of musculoskeletal dysfunctions, chronic pain and sports injuries. Primary modalities include functional assessment, myofascial release, neuromuscular therapy,scar tissue mobilization techniques, neuromuscular re-education, PNF stretching, strengthening, and  specific client home-care protocols.",
         sm: 12,
         xl: 4,
@@ -159,6 +159,14 @@ const massages = [
         title: "Barefoot Massage: Deepest Deep Tissue Massage Possible",
         price: "30 Minutes: $87.00 | 1 Hour: $167.00 | 1 Hour ½: $237.00",
         desc: "Reduces Chronic Pain. This Deep Tissue massage works further into the fascia. It also will release trigger points and connective tissues. It is a slow and more forceful in the application. Not only adds more pressure but it also adds compression. And it throws myofascial stretching into the mix. Compression massage squeezes the entire body from above and below. It also affects internal organs. It is a soft structural integration that realigns the body. Skeletal adjustments often occur during a session. It also has myofascial benefits that relax and stretch contracted muscles. This unique modality combines three therapies into one. It also Improves Flexibility, No Residual Soreness, Reduces Stress, Effects Last Longer.",
+        sm: 12,
+        xl: 4,
+      },
+      {
+        icon: "/resources/services/massages/massage-deluxe-4-handed.jpg",
+        title: "4 Handed Massage",
+        price: "30 Minutes: $90.00 | 1 Hour: $180.00 | 1 Hour ½: $270.00",
+        desc: "A therapeutic, duet massage is performed by two therapists whose coordinated movements induce relaxation and ease tension. To promote self balance and clarity. A soothing scalp massage and reflexology will leave you with a sense of calm and well-being. The organic,balancing massage oil used during treatment soothes the senses and nourishes the skin. Emerge renewed, refreshed and relaxed.",
         sm: 12,
         xl: 4,
       },
