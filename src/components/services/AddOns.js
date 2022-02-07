@@ -25,7 +25,7 @@ const addons = [
       {
         icon: "/resources/services/massages/addons-cupping.jpg",
         title: "Therapeutic Cupping Massage",
-        price: "Add onto any massage $40.00",
+        price: "Add onto any massage $47.00",
         desc: "Pain Management, Injury and Surgical Recovery, Athletic Performance Enhancement, Clears Stagnation, Drains & Moves Fluids, Relieves Inflammation, Nervous System Sedation, Expels Congestion, Stretches Muscles & Connective Tissue, Loosens Adhesions, Nourishing Blood Supply To The Skin, Helps With Weight Loss, Helps Reduce Cellulite.",
         sm: 12,
         xl: 4,
