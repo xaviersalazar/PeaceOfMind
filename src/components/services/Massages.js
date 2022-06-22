@@ -37,7 +37,7 @@ const massages = [
       {
         icon: "/resources/services/massages/massage-deep-tissue.jpg",
         title: "Deep Tissue",
-        price: "30 Minutes: $67.00 | 1 Hour: $122.00 | 1 Hour ½: $167.00",
+        price: "30 Minutes: $67.00 | 1 Hour: $132.00 | 1 Hour ½: $167.00",
         desc: "A style of massage that is designed to get into the connective tissue of the body, rather than just the surface muscles. Many clients have a more intense experience with a deep tissue massage, but also feel that it is more beneficial, because it addresses deep-seated muscle pains. Like other types of massage,deep tissue is most beneficial when undertaken on a regular basis, so that therapist and client can work together to correct long term problems, relax the body, and prevent injury.",
         sm: 12,
         xl: 4,
@@ -53,7 +53,7 @@ const massages = [
       {
         icon: "/resources/services/massages/massage-hot-stone.jpg",
         title: "Hot Stone",
-        price: "30 Minutes: $87.00 | 1 Hour: $147.00 | 1 Hour ½: $227.00",
+        price: "30 Minutes: $87.00 | 1 Hour: $157.00 | 1 Hour ½: $227.00",
         desc: "Hot stone helps by improve overall mental, spiritual,and physical wellness. Native Americans used hot stones to detoxify and to find harmony and balance. Basalt stones, polished, hardened lava rocks, are heated by hot water. The heated stones are then placed strategically along pressure points to help melt away tension creating a calming atmosphere. Stress, deadlines, anxiety, and other life annoyances disappear long enough for your mind to relax at the deepest level. Over all it creates a sense of well being.",
         sm: 12,
         xl: 4,
@@ -101,7 +101,7 @@ const massages = [
       {
         icon: "/resources/services/massages/massage-pregnancy.jpg",
         title: "Pregnancy Massage",
-        price: "30 Minutes: $87.00 | 1 Hour: $147.00 | 1 Hour ½: $227.00",
+        price: "30 Minutes: $87.00 | 1 Hour: $157.00 | 1 Hour ½: $227.00",
         desc: "(Please consult with your doctor during your first trimester to get approval for massage.) Enhance your special time with massage therapy. Massage can help alleviate tension, fluid retention, fatigue and stress and improve circulation in the feet, legs, lower back, hips and neck. You will be lying comfortably on your side for a relaxing Swedish massage. Before making an appointment, please check with your physician to make sure that massage is right for you.",
         sm: 12,
         xl: 4,
@@ -129,7 +129,7 @@ const massages = [
       {
         icon: "/resources/services/massages/massage-swedish.jpg",
         title: "Swedish Massage",
-        price: "30 Minutes: $62.00 | 1 Hour: $97.00 | 1 Hour ½: $147.00",
+        price: "30 Minutes: $62.00 | 1 Hour: $107.00 | 1 Hour ½: $147.00",
         desc: "This classic massage treatment is also known as a Relaxation Massage and the goal is to relax the entire body through various techniques such as long, flowing strokes using light to medium pressure. Your session will address such issues as stress, tension and mild to moderate muscle discomfort. Swedish massage is often recommended for first time massage clients and is excellent for improving circulation and flexibility while easing tension.",
         sm: 12,
         xl: 4,
