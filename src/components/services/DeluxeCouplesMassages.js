@@ -25,7 +25,7 @@ const deluxeCouplesMassages = [
       {
         icon: "/resources/services/massages/massage-couples-3.jpg",
         title: "Couples #3",
-        price: "1 Hour & 30 mins: $522.00",
+        price: "1 Hour & 30 mins: $556.00",
         desc: "Deep Tissue Massage, Hot Stone, Aromatherapy & Indian Scalp Massage. Performed in a serene setting,the duet massage encourages unity, connection and collective calm. Ease stress and unwind as two therapists perform side-by-side Deep Tissue Massages that help the two of you relax.With a Cooling Eye mask. With our own Herbal breathing treatment and herbal foot detox spray.",
         sm: 12,
         xl: 4,
