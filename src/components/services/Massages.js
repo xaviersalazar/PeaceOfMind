@@ -165,7 +165,7 @@ const massages = [
       {
         icon: "/resources/services/massages/massage-deluxe-4-handed.jpg",
         title: "4 Handed Massage",
-        price: "30 Minutes: $90.00 | 1 Hour: $180.00 | 1 Hour ½: $270.00",
+        price: "30 Minutes: $142.00 | 1 Hour: $232.00 | 1 Hour ½: $352.00",
         desc: "A therapeutic, duet massage is performed by two therapists whose coordinated movements induce relaxation and ease tension. To promote self balance and clarity. A soothing scalp massage and reflexology will leave you with a sense of calm and well-being. The organic,balancing massage oil used during treatment soothes the senses and nourishes the skin. Emerge renewed, refreshed and relaxed.",
         sm: 12,
         xl: 4,
