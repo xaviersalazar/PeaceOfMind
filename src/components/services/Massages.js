@@ -73,7 +73,7 @@ const massages = [
       {
         icon: "/resources/services/massages/massage-myofascial.jpg",
         title: "Myofascial Release Blade Massage",
-        price: "30 Minutes: $77.00 | 1 Hour: $147.00",
+        price: "30 Minutes: $107.00 | 1 Hour: $157.00",
         desc: "The focus of myofascial release is on the myofascial, the web of interconnected connective tissue that wraps around and surrounds every muscle, bone, nerve, blood vessel and organ in the body. Trauma, inflammatory responses, and/or surgical procedures create Myofascial restrictions that can produce tensile pressures of approximately 2,000 pounds per square inch on pain sensitive structures that do not show up in many of the standard tests x-rays, myelograms, CAT scans, electromyography, etc.)",
         sm: 12,
         xl: 4,
